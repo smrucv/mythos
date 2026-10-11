@@ -12,7 +12,7 @@
 
 Se optó por separar modelos, persistencia, pantallas y widgets. Se conservan los nombres de campos del JSON de producción (`id`, `title`, `category`, `estimatedDuration`, `coverImage`, `description`, `nodes`, `choices`, `nextNodeId`, `image`). Las elecciones pueden llevar a un nodo con identificador compartido por varias entradas: para que el comportamiento sea reproducible, se resuelve el primer registro.
 
-`StoryProgress` almacena la ruta recorrida en `SharedPreferences` (clave `mythos.recovery.progress.v1`), con el nodo actual, el historial de IDs y la marca de final completado. Se mantiene un registro independiente por historia.
+`StoryProgress` almacena la ruta recorrida en `SharedPreferences` (clave `mythos.progress.v1`), con el nodo actual, el historial de IDs y la marca de final completado. Se mantiene un registro independiente por historia.
 
 ## Riesgo conocido: IDs duplicados
 

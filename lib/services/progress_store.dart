@@ -39,7 +39,7 @@ class StoryProgress {
 
 /// Persistencia local; deliberadamente no inicia Firebase ni solicita login.
 class ProgressStore extends ChangeNotifier {
-  static const storageKey = 'mythos.recovery.progress.v1';
+  static const storageKey = 'mythos.progress.v1';
   final SharedPreferences _preferences;
   final Map<String, StoryProgress> _progress;
 
@@ -79,6 +79,14 @@ class ProgressStore extends ChangeNotifier {
       return null;
     }
     return record;
+  }
+
+  /// Conserva la validacion de nodo para la ficha ligera de biblioteca.
+  StoryProgress? forSummary(StorySummary story) {
+    final record = _progress[story.id];
+    return record != null && story.nodeIds.contains(record.currentNodeId)
+        ? record
+        : null;
   }
 
   Future<void> moveTo(Story story, StoryNode nextNode) async {

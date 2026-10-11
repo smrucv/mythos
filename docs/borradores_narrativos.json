@@ -1,0 +1,696 @@
+{
+  "phase": 1,
+  "source": "assets/stories/stories.json",
+  "policy": "Disconnected nodes are preserved editorial drafts; no automatic reconnection or deletion.",
+  "stories": [
+    {
+      "storyId": "laberinto_medianoche",
+      "definitions": 69,
+      "uniqueIds": 69,
+      "reachableDefinitions": 69,
+      "drafts": []
+    },
+    {
+      "storyId": "odisea_destino",
+      "definitions": 157,
+      "uniqueIds": 157,
+      "reachableDefinitions": 157,
+      "drafts": []
+    },
+    {
+      "storyId": "android_secret",
+      "definitions": 12,
+      "uniqueIds": 12,
+      "reachableDefinitions": 12,
+      "drafts": []
+    },
+    {
+      "storyId": "cyberpunk_heist",
+      "definitions": 354,
+      "uniqueIds": 354,
+      "reachableDefinitions": 309,
+      "drafts": [
+        {
+          "id": "node7ae",
+          "definitionIndex": 85,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "node8bu",
+            "node8bv"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node7af",
+          "definitionIndex": 86,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "node8bw",
+            "node8bx"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bg__v2",
+          "definitionIndex": 153,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final86",
+            "final87"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bh__v2",
+          "definitionIndex": 154,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final88",
+            "final89"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bi__v2",
+          "definitionIndex": 155,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final90",
+            "final91"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bj__v2",
+          "definitionIndex": 156,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final92",
+            "final93"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bk__v2",
+          "definitionIndex": 157,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final94",
+            "final95"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bl__v2",
+          "definitionIndex": 158,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final96",
+            "final97"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bm__v2",
+          "definitionIndex": 159,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final98",
+            "final99"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bn__v2",
+          "definitionIndex": 160,
+          "isEnding": false,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final100",
+            "final101"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bu",
+          "definitionIndex": 167,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node7ae",
+              "definitionIndex": 85,
+              "choiceIndex": 0,
+              "text": "[INICIAR HACKEO] Comenzar el hackeo con total libertad"
+            }
+          ],
+          "outgoingIds": [
+            "final114",
+            "final115"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bv",
+          "definitionIndex": 168,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node7ae",
+              "definitionIndex": 85,
+              "choiceIndex": 1,
+              "text": "[OCULTAR HUELLAS] Borrar rastros antes de hackear"
+            }
+          ],
+          "outgoingIds": [
+            "final116",
+            "final117"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bw",
+          "definitionIndex": 169,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node7af",
+              "definitionIndex": 86,
+              "choiceIndex": 0,
+              "text": "[CONTINUAR AVANZANDO] Seguir hacia el núcleo a pesar de los bloqueos"
+            }
+          ],
+          "outgoingIds": [
+            "final118",
+            "final119"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8bx",
+          "definitionIndex": 170,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node7af",
+              "definitionIndex": 86,
+              "choiceIndex": 1,
+              "text": "[REORGANIZAR ESTRATEGIA] Cambiar tu enfoque para superar los bloqueos"
+            }
+          ],
+          "outgoingIds": [
+            "final120",
+            "final121"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "node8by",
+          "definitionIndex": 171,
+          "isEnding": false,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [],
+          "outgoingIds": [
+            "final122",
+            "final123"
+          ],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final86",
+          "definitionIndex": 265,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bg__v2",
+              "definitionIndex": 153,
+              "choiceIndex": 0,
+              "text": "[INICIAR HACKEO] Comenzar el hackeo con el plan mejorado"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final87",
+          "definitionIndex": 266,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bg__v2",
+              "definitionIndex": 153,
+              "choiceIndex": 1,
+              "text": "[IMPLEMENTAR TRAMPAS] Colocar trampas según el plan"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final88",
+          "definitionIndex": 267,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bh__v2",
+              "definitionIndex": 154,
+              "choiceIndex": 0,
+              "text": "[COMPLETAR HACKEO CON COORDINACIÓN] Proceder con el hackeo mejorado"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final89",
+          "definitionIndex": 268,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bh__v2",
+              "definitionIndex": 154,
+              "choiceIndex": 1,
+              "text": "[DESCUBRIR TRAICIONES] Detectas traiciones dentro del equipo"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final90",
+          "definitionIndex": 269,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bi__v2",
+              "definitionIndex": 155,
+              "choiceIndex": 0,
+              "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final91",
+          "definitionIndex": 270,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bi__v2",
+              "definitionIndex": 155,
+              "choiceIndex": 1,
+              "text": "[ESCAPAR PREVIA] Decidir escapar antes de finalizar el hackeo"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final92",
+          "definitionIndex": 271,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bj__v2",
+              "definitionIndex": 156,
+              "choiceIndex": 0,
+              "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final93",
+          "definitionIndex": 272,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bj__v2",
+              "definitionIndex": 156,
+              "choiceIndex": 1,
+              "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las trampas colocadas"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final94",
+          "definitionIndex": 273,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bk__v2",
+              "definitionIndex": 157,
+              "choiceIndex": 0,
+              "text": "[EXTRAER DATOS] Descargar toda la información necesaria"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final95",
+          "definitionIndex": 274,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bk__v2",
+              "definitionIndex": 157,
+              "choiceIndex": 1,
+              "text": "[DESACTIVAR SISTEMAS] Destruir todos los sistemas antes de extraer datos"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final96",
+          "definitionIndex": 275,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bl__v2",
+              "definitionIndex": 158,
+              "choiceIndex": 0,
+              "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final97",
+          "definitionIndex": 276,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bl__v2",
+              "definitionIndex": 158,
+              "choiceIndex": 1,
+              "text": "[RETIRARSE] Decidir abandonar el hackeo por seguridad"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final98",
+          "definitionIndex": 277,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bm__v2",
+              "definitionIndex": 159,
+              "choiceIndex": 0,
+              "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final99",
+          "definitionIndex": 278,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bm__v2",
+              "definitionIndex": 159,
+              "choiceIndex": 1,
+              "text": "[PROTEGER DATOS Y ESCAPAR] Asegurar los datos antes de escapar"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final100",
+          "definitionIndex": 279,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bn__v2",
+              "definitionIndex": 160,
+              "choiceIndex": 0,
+              "text": "[FINAL EXITOSO] Completar la misión con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final101",
+          "definitionIndex": 280,
+          "isEnding": true,
+          "reason": "downstream_of_unreferenced_duplicate_variant",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bn__v2",
+              "definitionIndex": 160,
+              "choiceIndex": 1,
+              "text": "[ABANDONAR MISION] Decidir abandonar la misión y escapar"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final114",
+          "definitionIndex": 293,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bu",
+              "definitionIndex": 167,
+              "choiceIndex": 0,
+              "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final115",
+          "definitionIndex": 294,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bu",
+              "definitionIndex": 167,
+              "choiceIndex": 1,
+              "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final116",
+          "definitionIndex": 295,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bv",
+              "definitionIndex": 168,
+              "choiceIndex": 0,
+              "text": "[COMPLETAR HACKEO] Finalizar el hackeo con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final117",
+          "definitionIndex": 296,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bv",
+              "definitionIndex": 168,
+              "choiceIndex": 1,
+              "text": "[RETIRARSE CON DATOS] Escapar con los datos antes de ser detectado"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final118",
+          "definitionIndex": 297,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bw",
+              "definitionIndex": 169,
+              "choiceIndex": 0,
+              "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final119",
+          "definitionIndex": 298,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bw",
+              "definitionIndex": 169,
+              "choiceIndex": 1,
+              "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final120",
+          "definitionIndex": 299,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bx",
+              "definitionIndex": 170,
+              "choiceIndex": 0,
+              "text": "[CONTINUAR HACKEO] Proceder con el hackeo usando la nueva estrategia"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final121",
+          "definitionIndex": 300,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8bx",
+              "definitionIndex": 170,
+              "choiceIndex": 1,
+              "text": "[ESCAPAR EFECTIVAMENTE] Decidir escapar aprovechando la nueva estrategia"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final122",
+          "definitionIndex": 301,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8by",
+              "definitionIndex": 171,
+              "choiceIndex": 0,
+              "text": "[UTILIZAR INFORMACIÓN] Implementar la información adicional en tu hackeo"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final123",
+          "definitionIndex": 302,
+          "isEnding": true,
+          "reason": "preexisting_disconnected_component",
+          "incomingReferences": [
+            {
+              "nodeId": "node8by",
+              "definitionIndex": 171,
+              "choiceIndex": 1,
+              "text": "[ALMACENAR INFORMACIÓN] Guardar la información para uso futuro"
+            }
+          ],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final134__v2",
+          "definitionIndex": 318,
+          "isEnding": true,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final135__v2",
+          "definitionIndex": 319,
+          "isEnding": true,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final136__v2",
+          "definitionIndex": 320,
+          "isEnding": true,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        },
+        {
+          "id": "final137__v2",
+          "definitionIndex": 321,
+          "isEnding": true,
+          "reason": "renamed_duplicate_without_incoming_reference",
+          "incomingReferences": [],
+          "outgoingIds": [],
+          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
+        }
+      ]
+    }
+  ]
+}

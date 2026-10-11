@@ -1,6 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/services.dart';
+
+import 'story_validation.dart';
 
 /// Datos narrativos: la unica fuente de verdad es el JSON extraido del APK.
 class StoryChoice {
@@ -9,9 +9,11 @@ class StoryChoice {
 
   const StoryChoice({required this.text, required this.nextNodeId});
 
-  factory StoryChoice.fromJson(Map<String, dynamic> json) => StoryChoice(
-        text: (json['text'] ?? '').toString(),
-        nextNodeId: (json['nextNodeId'] ?? '').toString(),
+  factory StoryChoice.fromJson(Map<String, dynamic> json,
+          {String storyId = '<desconocida>', String affected = 'decision'}) =>
+      StoryChoice(
+        text: narrativeString(json, 'text', storyId, affected),
+        nextNodeId: narrativeString(json, 'nextNodeId', storyId, affected),
       );
 }
 
@@ -30,38 +32,56 @@ class StoryNode {
 
   bool get isEnding => choices.isEmpty;
 
-  factory StoryNode.fromJson(Map<String, dynamic> json) {
+  factory StoryNode.fromJson(Map<String, dynamic> json,
+      {String storyId = '<desconocida>', String position = 'nodo'}) {
+    final id = narrativeString(json, 'id', storyId, position);
+    final affected = '$id ($position)';
     final rawChoices = json['choices'];
+    if (json.containsKey('choices') && rawChoices is! List) {
+      narrativeError(storyId, affected, 'choices debe ser una lista');
+    }
+    if (json.containsKey('image') && json['image'] is! String) {
+      narrativeError(storyId, affected, 'image debe ser texto');
+    }
     return StoryNode(
-      id: (json['id'] ?? '').toString(),
-      text: (json['text'] ?? '').toString(),
+      id: id,
+      text: narrativeString(json, 'text', storyId, affected),
       image: json['image'] is String && (json['image'] as String).isNotEmpty
           ? json['image'] as String
           : null,
       choices: rawChoices is List
-          ? rawChoices
-              .map((item) => StoryChoice.fromJson(
-                    Map<String, dynamic>.from(item as Map),
-                  ))
-              .toList(growable: false)
+          ? [
+              for (var i = 0; i < rawChoices.length; i++)
+                StoryChoice.fromJson(
+                  narrativeObject(
+                      rawChoices[i], storyId, '$affected choices[$i]'),
+                  storyId: storyId,
+                  affected: '$affected choices[$i]',
+                ),
+            ]
           : const [],
     );
   }
 }
 
-class Story {
+class Story implements StoryMetadata {
+  @override
   final String id;
+  @override
   final String title;
+  @override
   final String category;
+  @override
   final int estimatedDuration;
+  @override
   final String coverImage;
+  @override
   final String description;
   final List<StoryNode> nodes;
 
-  /// Mantiene la PRIMERA aparicion de un ID ambiguo, sin modificar el JSON.
-  /// No sabemos si el codigo fuente original elegia esta misma estrategia.
+  /// La construccion valida unicidad antes de crear el indice de lectura.
   late final Map<String, StoryNode> _nodesById = {
-    for (final node in nodes.reversed) node.id: node,
+    for (final node in nodes) node.id: node,
   };
 
   Story({
@@ -71,8 +91,33 @@ class Story {
     required this.estimatedDuration,
     required this.coverImage,
     required this.description,
-    required this.nodes,
-  });
+    required List<StoryNode> nodes,
+  }) : nodes = List.unmodifiable(nodes) {
+    if (id.trim().isEmpty) narrativeError(id, 'id', 'ID de historia vacio');
+    if (nodes.isEmpty) narrativeError(id, 'nodes[0]', 'no hay nodo inicial');
+    final positions = <String, int>{};
+    for (var i = 0; i < nodes.length; i++) {
+      final node = nodes[i];
+      if (node.id.trim().isEmpty) narrativeError(id, 'nodes[$i]', 'ID vacio');
+      if (positions.containsKey(node.id)) {
+        narrativeError(id, node.id,
+            'ID duplicado en nodes[${positions[node.id]}] y nodes[$i]');
+      }
+      positions[node.id] = i;
+    }
+    for (final node in nodes) {
+      for (var i = 0; i < node.choices.length; i++) {
+        final choice = node.choices[i];
+        if (choice.text.trim().isEmpty || choice.nextNodeId.trim().isEmpty) {
+          narrativeError(id, '${node.id} choices[$i]', 'decision vacia');
+        }
+        if (!positions.containsKey(choice.nextNodeId)) {
+          narrativeError(id, '${node.id} choices[$i]',
+              'destino inexistente "${choice.nextNodeId}"');
+        }
+      }
+    }
+  }
 
   StoryNode get startNode => nodes.first;
   StoryNode? nodeById(String id) => _nodesById[id];
@@ -98,22 +143,25 @@ class Story {
   }
 
   factory Story.fromJson(Map<String, dynamic> json) {
+    final id = narrativeStoryId(json);
     final rawNodes = json['nodes'];
     if (rawNodes is! List || rawNodes.isEmpty) {
-      throw FormatException('La historia ${json['id']} no contiene nodos.');
+      narrativeError(
+          id, 'nodes[0]', 'nodes debe ser una lista no vacia con inicio');
     }
     return Story(
-      id: (json['id'] ?? '').toString(),
-      title: (json['title'] ?? '').toString(),
-      category: (json['category'] ?? '').toString(),
-      estimatedDuration: (json['estimatedDuration'] as num?)?.toInt() ?? 0,
-      coverImage: (json['coverImage'] ?? '').toString(),
-      description: (json['description'] ?? '').toString(),
-      nodes: rawNodes
-          .map((item) => StoryNode.fromJson(
-                Map<String, dynamic>.from(item as Map),
-              ))
-          .toList(growable: false),
+      id: id,
+      title: narrativeString(json, 'title', id, 'title'),
+      category: narrativeString(json, 'category', id, 'category'),
+      estimatedDuration: narrativeDuration(json, id),
+      coverImage: narrativeString(json, 'coverImage', id, 'coverImage'),
+      description: narrativeString(json, 'description', id, 'description',
+          allowEmpty: true),
+      nodes: [
+        for (var i = 0; i < rawNodes.length; i++)
+          StoryNode.fromJson(narrativeObject(rawNodes[i], id, 'nodes[$i]'),
+              storyId: id, position: 'nodes[$i]'),
+      ],
     );
   }
 }
@@ -131,17 +179,97 @@ class StoryCatalog {
   }
 
   static StoryCatalog fromJsonString(String contents) {
-    final decoded = jsonDecode(contents);
+    final decoded = decodeNarrative(contents, '<catalogo>', 'historias');
     if (decoded is! List) {
       throw const FormatException('stories.json debe contener una lista.');
     }
-    return StoryCatalog(decoded
-        .map((item) => Story.fromJson(Map<String, dynamic>.from(item as Map)))
-        .toList(growable: false));
+    final stories = [
+      for (var i = 0; i < decoded.length; i++)
+        Story.fromJson(
+            narrativeObject(decoded[i], '<catalogo>', 'historias[$i]')),
+    ];
+    uniqueStoryIds(stories.map((story) => story.id));
+    return StoryCatalog(stories);
   }
 
   static Future<StoryCatalog> fromAssets() async {
     final data = await rootBundle.loadString('assets/stories/stories.json');
     return fromJsonString(data);
   }
+}
+
+/// Campos comunes a una historia cargada y a su ficha ligera de biblioteca.
+abstract interface class StoryMetadata {
+  String get id;
+  String get title;
+  String get category;
+  int get estimatedDuration;
+  String get coverImage;
+  String get description;
+}
+
+class StorySummary implements StoryMetadata {
+  @override
+  final String id;
+  @override
+  final String title;
+  @override
+  final String category;
+  @override
+  final int estimatedDuration;
+  @override
+  final String coverImage;
+  @override
+  final String description;
+  final String storyAsset;
+  // Permite validar el progreso en biblioteca sin leer los textos narrativos.
+  final Set<String> nodeIds;
+
+  const StorySummary(
+      {required this.id,
+      required this.title,
+      required this.category,
+      required this.estimatedDuration,
+      required this.coverImage,
+      required this.description,
+      required this.storyAsset,
+      required this.nodeIds});
+
+  factory StorySummary.fromJson(Map<String, dynamic> data) {
+    final id = narrativeStoryId(data);
+    final rawIds = data['nodeIds'];
+    if (rawIds is! List || rawIds.isEmpty) {
+      narrativeError(id, 'nodeIds', 'debe ser una lista no vacia');
+    }
+    final ids = <String>{};
+    for (var i = 0; i < rawIds.length; i++) {
+      final value = rawIds[i];
+      if (value is! String || value.trim().isEmpty) {
+        narrativeError(id, 'nodeIds[$i]', 'ID debe ser texto no vacio');
+      }
+      if (!ids.add(value)) narrativeError(id, value, 'ID duplicado en indice');
+    }
+    return StorySummary(
+      id: id,
+      title: narrativeString(data, 'title', id, 'title'),
+      category: narrativeString(data, 'category', id, 'category'),
+      estimatedDuration: narrativeDuration(data, id),
+      coverImage: narrativeString(data, 'coverImage', id, 'coverImage'),
+      description: narrativeString(data, 'description', id, 'description',
+          allowEmpty: true),
+      storyAsset: narrativeString(data, 'storyAsset', id, 'storyAsset'),
+      nodeIds: Set.unmodifiable(ids),
+    );
+  }
+
+  factory StorySummary.fromStory(Story story) => StorySummary(
+        id: story.id,
+        title: story.title,
+        category: story.category,
+        estimatedDuration: story.estimatedDuration,
+        coverImage: story.coverImage,
+        description: story.description,
+        storyAsset: '',
+        nodeIds: story.nodes.map((node) => node.id).toSet(),
+      );
 }

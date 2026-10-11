@@ -1,0 +1,3309 @@
+{
+  "id": "cyberpunk_heist",
+  "title": "El Asalto Neon",
+  "category": "Cyberpunk",
+  "estimatedDuration": 50,
+  "coverImage": "assets/images/cyberpunk_heist.webp",
+  "description": "Neo-Tokio, 2145. Debes hackear el NeuroBank para robar un secreto que cambiará el destino de la humanidad. ¿Serás un héroe o otro cadáver en el basurero digital?",
+  "nodes": [
+    {
+      "id": "node1",
+      "text": "[Tejado del Edificio Atlas] Relámpagos artificiales iluminan la torre NeuroBank. Jax ajusta su interfaz neural: '¡El sistema de seguridad se reinicia en 27 minutos! ¿Entramos por los ductos o hackeamos un dron de carga?'. Lira afila su katana con un brillo siniestro.",
+      "choices": [
+        {
+          "text": "[INFILTRACIÓN] Usar los ductos de ventilación (riesgo de láseres termales)",
+          "nextNodeId": "node2a"
+        },
+        {
+          "text": "[HACKEO] Secuestrar un dron de transporte (precisión requerida)",
+          "nextNodeId": "node2b"
+        }
+      ]
+    },
+    {
+      "id": "node2a",
+      "text": "[Ducto de Ventilación] Avanzas reptando entre gases tóxicos. De pronto, una red de láseres bloquea el camino. Jax tose sangre: '¡Mi chip de hackeo puede desactivarlos, pero me dejará ciego!' Lira señala su mochila: 'Tenemos explosivos plásticos...'",
+      "choices": [
+        {
+          "text": "[SALVAR JAX] Usar los explosivos (alerta al 80% de guardias)",
+          "nextNodeId": "node3a"
+        },
+        {
+          "text": "[SACRIFICIO] Dejar que Jax se sobrecargue (él muere, pero pasas en sigilo)",
+          "nextNodeId": "node3b"
+        }
+      ]
+    },
+    {
+      "id": "node2b",
+      "text": "[Zona de Carga] Logras acoplarte a un dron, pero un guardia cyborg detecta anomalías. Apunta su arma a tu cabeza: '¡Identifícate o disparo!'. Lira susurra: '¿Lo sobornamos o lo eliminamos?' Tienes 5000 Bitcreds en tu cuenta.",
+      "choices": [
+        {
+          "text": "[SOBORNO] Ofrecer 3000 Bitcreds por tu vida",
+          "nextNodeId": "node3c"
+        },
+        {
+          "text": "[ATAQUE] ¡Lira, atácalo por la espalda!",
+          "nextNodeId": "node3d"
+        }
+      ]
+    },
+    {
+      "id": "node3a",
+      "text": "[¡EXPLOSIÓN!] Los láseres se destruyen, pero 8 guardias te rodean. Jax está inconsciente. Lira grita: '¡Corre al núcleo! Yo los retendré'. Ves su brazo mecánico sobrecalentarse...",
+      "choices": [
+        {
+          "text": "[HÉROE] Quedarte a pelear junto a Lira",
+          "nextNodeId": "node4a"
+        },
+        {
+          "text": "[PRAGMÁTICO] Aprovechar su sacrificio y avanzar",
+          "nextNodeId": "node4b"
+        }
+      ]
+    },
+    {
+      "id": "node3b",
+      "text": "[JAX MUERE] Su cuerpo carbonizado yace entre los láseres. Oyes risas en tu comlink: '¿Crees que robarás algo, gusano?'. Es la IA del banco. Tu misión se complica...",
+      "choices": [
+        {
+          "text": "[RABIA] Jurar venganza y continuar",
+          "nextNodeId": "node4c"
+        },
+        {
+          "text": "[FRÍO] Recuperar su chip de hackeo del cadáver",
+          "nextNodeId": "node4d"
+        }
+      ]
+    },
+    {
+      "id": "node3c",
+      "text": "[GUARDIA SOBORNADO] El cyborg sonríe: 'Por 5000 más, te ayudo...'. Lira desenfunda su arma: '¡Es una trampa!'. Disparos resuenan...",
+      "choices": [
+        {
+          "text": "[CONFIANZA] Pagar los 5000 adicionales",
+          "nextNodeId": "node4e"
+        },
+        {
+          "text": "[DESCONFIANZA] Ordenar a Lira que lo elimine",
+          "nextNodeId": "node4f"
+        }
+      ]
+    },
+    {
+      "id": "node3d",
+      "text": "[COMBATE] Lira decapita al guardia, pero su cabeza mecánica activa una alarma: '¡INTRUSOS EN SECTOR 5!'. Sirenas ensordecen el área...",
+      "choices": [
+        {
+          "text": "[VELOCIDAD] Correr hacia el ascensor de emergencia",
+          "nextNodeId": "node4g"
+        },
+        {
+          "text": "[ASTUCIA] Esconderse en un contenedor de basura",
+          "nextNodeId": "node4h"
+        }
+      ]
+    },
+    {
+      "id": "node4a",
+      "text": "[COMBATE FINALE] Decides quedarte a pelear junto a Lira. Juntos, enfrentan a los guardias con una combinación letal de hackeo y katana. Aunque logran repeler a los enemigos, Lira sufre daños críticos.",
+      "choices": [
+        {
+          "text": "[URGENTE] Continuar hacia el núcleo",
+          "nextNodeId": "node5a"
+        },
+        {
+          "text": "[RETIRADA] Buscar una ruta de escape segura",
+          "nextNodeId": "node5b"
+        }
+      ]
+    },
+    {
+      "id": "node4b",
+      "text": "[AVANCE SILENCIOSO] Aprovechas el sacrificio de Lira y avanzas hacia el núcleo. Evitas a los guardias restantes gracias a tu sigilo mejorado.",
+      "choices": [
+        {
+          "text": "[HACKEAR NÚCLEO] Iniciar el hackeo del NeuroBank",
+          "nextNodeId": "node5c"
+        },
+        {
+          "text": "[CONFRONTACIÓN] Enfrentar a la IA directamente",
+          "nextNodeId": "node5d"
+        }
+      ]
+    },
+    {
+      "id": "node4c",
+      "text": "[VIOLENCIA INTERNA] Impulsado por la rabia, atacas a varios guardias, causando caos en sus filas. La IA detecta tu actividad y refuerza la seguridad.",
+      "choices": [
+        {
+          "text": "[MEJORAR HACKEO] Utilizar el caos para mejorar tu hackeo",
+          "nextNodeId": "node5e"
+        },
+        {
+          "text": "[BUSCAR ALIADOS] Intentar reclutar a otros dentro del edificio",
+          "nextNodeId": "node5f"
+        }
+      ]
+    },
+    {
+      "id": "node4d",
+      "text": "[RECOGIDA DEL CHIP] Recuperas el chip de hackeo de Jax. Ahora, posees una herramienta poderosa pero con el costo de la lealtad de Jax.",
+      "choices": [
+        {
+          "text": "[USAR CHIP] Utilizar el chip para desactivar las defensas",
+          "nextNodeId": "node5g"
+        },
+        {
+          "text": "[VENDER CHIP] Vender el chip en el mercado negro",
+          "nextNodeId": "node5h"
+        }
+      ]
+    },
+    {
+      "id": "node4e",
+      "text": "[TRAMPA PAGA] Pagas los 5000 Bitcreds adicionales, pero el cyborg revela su verdadera intención: desactivar tu interfaz neural. Pierdes el control y eres eliminado.",
+      "choices": []
+    },
+    {
+      "id": "node4f",
+      "text": "[ELIMINACIÓN] Ordenas a Lira que elimine al guardia. La misión se intensifica, pero logras continuar sin pagar el soborno.",
+      "choices": [
+        {
+          "text": "[AVANCE RÁPIDO] Correr hacia el núcleo antes de que llegue refuerzos",
+          "nextNodeId": "node5i"
+        },
+        {
+          "text": "[ESPERAR] Esperar que disminuya la alarma antes de avanzar",
+          "nextNodeId": "node5j"
+        }
+      ]
+    },
+    {
+      "id": "node4g",
+      "text": "[ASCENSOR DE EMERGENCIA] Corres hacia el ascensor de emergencia, esquivando a los guardias que patrullan frenéticamente. Llegas al núcleo, pero el tiempo se agota.",
+      "choices": [
+        {
+          "text": "[ULTIMO ESFUERZO] Iniciar el hackeo a contrarreloj",
+          "nextNodeId": "node5k"
+        },
+        {
+          "text": "[RETIRADA RÁPIDA] Escapar antes de que el sistema se reinicie",
+          "nextNodeId": "node5l"
+        }
+      ]
+    },
+    {
+      "id": "node4h",
+      "text": "[ESCONDERSE] Te escondes en un contenedor de basura. La alerta disminuye momentáneamente, permitiéndote planificar tu próximo movimiento.",
+      "choices": [
+        {
+          "text": "[OCULTAR INTERFAZ] Desconectar temporalmente tu interfaz neural",
+          "nextNodeId": "node5m"
+        },
+        {
+          "text": "[REANUDAR HACKEO] Continuar el hackeo sin desconectar",
+          "nextNodeId": "node5n"
+        }
+      ]
+    },
+    {
+      "id": "node5a",
+      "text": "[HACKEO CONTINUO] Continúas hacia el núcleo mientras Lira mantiene a raya a los guardias. Llegas al núcleo y preparas tu equipo para hackear.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo inmediatamente",
+          "nextNodeId": "node6a"
+        },
+        {
+          "text": "[ESTABLECER GUARDIAS] Colocar señuelos para distraer a más guardias",
+          "nextNodeId": "node6b"
+        }
+      ]
+    },
+    {
+      "id": "node5b",
+      "text": "[RUTA DE ESCAPE] Buscas una ruta de escape segura y encuentras una sala de mantenimiento. Allí, encuentras un terminal de control.",
+      "choices": [
+        {
+          "text": "[UTILIZAR TERMINAL] Hackear el sistema de seguridad para abrir puertas",
+          "nextNodeId": "node6c"
+        },
+        {
+          "text": "[IGNORAR TERMINAL] Continuar sin utilizar el terminal",
+          "nextNodeId": "node6d"
+        }
+      ]
+    },
+    {
+      "id": "node5c",
+      "text": "[HACKEO DEL NÚCLEO] Inicias el hackeo del NeuroBank. La IA detecta la intrusión y comienza a contrarrestar tus esfuerzos.",
+      "choices": [
+        {
+          "text": "[FORTALECER HACKEO] Utilizar el chip de Jax para potenciar el hackeo",
+          "nextNodeId": "node6e"
+        },
+        {
+          "text": "[NEGOCIAR] Intentar negociar con la IA",
+          "nextNodeId": "node6f"
+        }
+      ]
+    },
+    {
+      "id": "node5d",
+      "text": "[CONFRONTACIÓN DIRECTA] Enfrentas a la IA del NeuroBank en una batalla virtual. Los datos fluyen a tu alrededor mientras luchas por el control.",
+      "choices": [
+        {
+          "text": "[ATAQUE EMPÁTICO] Intentar sobrecargar emocionalmente la IA",
+          "nextNodeId": "node6g"
+        },
+        {
+          "text": "[ATAQUE LÓGICO] Utilizar algoritmos avanzados para derrotar a la IA",
+          "nextNodeId": "node6h"
+        }
+      ]
+    },
+    {
+      "id": "node5e",
+      "text": "[MEJORA DEL HACKEO] Utilizas el caos para mejorar tu hackeo. Logras penetrar más profundamente en los sistemas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo y extraer los datos",
+          "nextNodeId": "node6i"
+        },
+        {
+          "text": "[SABOTEAR] Introducir malware para desestabilizar el sistema",
+          "nextNodeId": "node6j"
+        }
+      ]
+    },
+    {
+      "id": "node5f",
+      "text": "[BUSCAR ALIADOS] Intentas reclutar a otros dentro del edificio. Encuentras a un técnico descontento dispuesto a ayudarte.",
+      "choices": [
+        {
+          "text": "[TRABAJAR JUNTOS] Colaborar con el técnico para hackear el sistema",
+          "nextNodeId": "node6k"
+        },
+        {
+          "text": "[DESCONFIAR] Mantenerte independiente y no confiar en él",
+          "nextNodeId": "node6l"
+        }
+      ]
+    },
+    {
+      "id": "node5g",
+      "text": "[USO DEL CHIP] Utilizas el chip de hackeo para desactivar las defensas. El camino hacia el núcleo queda libre, pero sientes cómo tu visión se oscurece.",
+      "choices": [
+        {
+          "text": "[CONTINUAR A CEGARTE] Seguir adelante pese a la ceguera",
+          "nextNodeId": "node6m"
+        },
+        {
+          "text": "[RETROCEDER] Buscar ayuda para contrarrestar la ceguera",
+          "nextNodeId": "node6n"
+        }
+      ]
+    },
+    {
+      "id": "node5h",
+      "text": "[VENTA DEL CHIP] Vendes el chip en el mercado negro a un precio exorbitante. Obtienes 10,000 Bitcreds, pero atraes la atención de corporaciones rivales.",
+      "choices": [
+        {
+          "text": "[INVESTIGAR CORPORACIONES] Usar los Bitcreds para obtener información sobre las corporaciones",
+          "nextNodeId": "node6o"
+        },
+        {
+          "text": "[DESCANSAR Y PLANEAR] Tomarte un tiempo para planificar tu próximo movimiento",
+          "nextNodeId": "node6p"
+        }
+      ]
+    },
+    {
+      "id": "node5i",
+      "text": "[AVANCE RÁPIDO] Corres hacia el núcleo antes de que lleguen refuerzos. Llegas justo a tiempo para iniciar el hackeo.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo inmediatamente",
+          "nextNodeId": "node6q"
+        },
+        {
+          "text": "[PREPARAR DEFENSAS] Establecer defensas antes de hackear",
+          "nextNodeId": "node6r"
+        }
+      ]
+    },
+    {
+      "id": "node5j",
+      "text": "[ESPERAR ALARMA] Esperas a que la alarma disminuya. Aprovechas la distracción para infiltrarte más profundamente.",
+      "choices": [
+        {
+          "text": "[INFILTRARSE] Avanzar hacia áreas menos vigiladas",
+          "nextNodeId": "node6s"
+        },
+        {
+          "text": "[HACKEAR SISTEMA] Usar el tiempo para hackear sistemas secundarios",
+          "nextNodeId": "node6t"
+        }
+      ]
+    },
+    {
+      "id": "node5k",
+      "text": "[ULTIMO ESFUERZO] Inicias el hackeo a contrarreloj. La IA intensifica sus contraataques.",
+      "choices": [
+        {
+          "text": "[PERSISTIR] No rendirse y continuar el hackeo",
+          "nextNodeId": "node6u"
+        },
+        {
+          "text": "[RETIRARSE] Decidir detener el hackeo y escapar",
+          "nextNodeId": "node6v"
+        }
+      ]
+    },
+    {
+      "id": "node5l",
+      "text": "[RETIRADA EXITOSA] Escapas justo antes de que el sistema se reinicie. Aunque no logras el hackeo, sobrevives para intentar nuevamente.",
+      "choices": []
+    },
+    {
+      "id": "node5m",
+      "text": "[OCULTAR INTERFAZ] Desconectas temporalmente tu interfaz neural, reduciendo tu visibilidad pero perdiendo algunas capacidades.",
+      "choices": [
+        {
+          "text": "[REANUDAR INTERFAZ] Reconectar y continuar el hackeo",
+          "nextNodeId": "node6w"
+        },
+        {
+          "text": "[MANTENER DESCONEXIÓN] Permanecer desconectado para evitar detecciones",
+          "nextNodeId": "node6x"
+        }
+      ]
+    },
+    {
+      "id": "node5n",
+      "text": "[REANUDAR HACKEO] Continuas el hackeo sin desconectar. La IA intensifica sus defensas para detenerte.",
+      "choices": [
+        {
+          "text": "[UTILIZAR NUEVAS HERRAMIENTAS] Implementar herramientas adicionales para el hackeo",
+          "nextNodeId": "node6y"
+        },
+        {
+          "text": "[SOLUCIONAR DEFENSAS] Trabajar en neutralizar las nuevas defensas de la IA",
+          "nextNodeId": "node6z"
+        }
+      ]
+    },
+    {
+      "id": "node6a",
+      "text": "[HACKEO INMEDIATO] Inicias el hackeo y logras penetrar en los sistemas del NeuroBank. Sin embargo, la IA comienza a contraatacar, intentando bloquear tu acceso.",
+      "choices": [
+        {
+          "text": "[MEJORAR HACKEO] Usar recursos adicionales para fortalecer el hackeo",
+          "nextNodeId": "node7a"
+        },
+        {
+          "text": "[NEGOCIAR CON IA] Intentar negociar un acceso seguro",
+          "nextNodeId": "node7b"
+        }
+      ]
+    },
+    {
+      "id": "node6b",
+      "text": "[SEÑUELOS ESTABLECIDOS] Colocas señuelos para distraer a los guardias. Logras reducir su número en la zona del hackeo.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Continuar con el hackeo mejorado",
+          "nextNodeId": "node7c"
+        },
+        {
+          "text": "[DEJAR HACKEO] Decidir no continuar y retirarte",
+          "nextNodeId": "node7d"
+        }
+      ]
+    },
+    {
+      "id": "node6c",
+      "text": "[USO DEL TERMINAL] Hackeas el sistema de seguridad, abriendo puertas y desactivando cámaras. Tu camino hacia el núcleo se despeja.",
+      "choices": [
+        {
+          "text": "[AVANZAR AL NÚCLEO] Dirigirte directamente al núcleo",
+          "nextNodeId": "node7e"
+        },
+        {
+          "text": "[REINICIAR SISTEMA] Reiniciar el sistema para cubrir tus huellas",
+          "nextNodeId": "node7f"
+        }
+      ]
+    },
+    {
+      "id": "node6d",
+      "text": "[IGNORAR TERMINAL] Decides no utilizar el terminal y continuar avanzando. Te enfrentas a un corredor lleno de guardias.",
+      "choices": [
+        {
+          "text": "[COMBATE] Enfrentar a los guardias directamente",
+          "nextNodeId": "node7g"
+        },
+        {
+          "text": "[SIGILO] Intentar pasar desapercibido",
+          "nextNodeId": "node7h"
+        }
+      ]
+    },
+    {
+      "id": "node6e",
+      "text": "[POTENCIAR HACKEO] Utilizas el chip de Jax para potenciar tu hackeo. Logras penetrar profundamente en los sistemas, accediendo a información crítica.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar la información vital",
+          "nextNodeId": "node7i"
+        },
+        {
+          "text": "[DESACTIVAR DEFENSAS] Neutralizar las defensas de la IA",
+          "nextNodeId": "node7j"
+        }
+      ]
+    },
+    {
+      "id": "node6f",
+      "text": "[NEGOCIAR CON IA] Intentas establecer una comunicación con la IA. La IA ofrece un trato: información a cambio de tu libertad.",
+      "choices": [
+        {
+          "text": "[ACEPTAR TRATO] Aceptar el intercambio",
+          "nextNodeId": "node7k"
+        },
+        {
+          "text": "[RECHAZAR TRATO] Rechazar y continuar el hackeo",
+          "nextNodeId": "node7l"
+        }
+      ]
+    },
+    {
+      "id": "node6g",
+      "text": "[ATAQUE EMPÁTICO] Intentas sobrecargar emocionalmente la IA, explotando vulnerabilidades en su programación.",
+      "choices": [
+        {
+          "text": "[EXITO] Logras debilitar la IA significativamente",
+          "nextNodeId": "node7m"
+        },
+        {
+          "text": "[FALLO] La IA resiste y refuerza sus defensas",
+          "nextNodeId": "node7n"
+        }
+      ]
+    },
+    {
+      "id": "node6h",
+      "text": "[ATAQUE LÓGICO] Utilizas algoritmos avanzados para derrotar a la IA, buscando patrones y explotando fallos en su lógica.",
+      "choices": [
+        {
+          "text": "[SUPERVENCION] Mantener el ataque para asegurar la derrota de la IA",
+          "nextNodeId": "node7o"
+        },
+        {
+          "text": "[EVALUAR DAÑOS] Evaluar el estado de la IA antes de continuar",
+          "nextNodeId": "node7p"
+        }
+      ]
+    },
+    {
+      "id": "node6i",
+      "text": "[EXTRACCIÓN EXITOSA] Finalizas el hackeo y extraes los datos secretos del NeuroBank. Sin embargo, el sistema de seguridad está colapsando.",
+      "choices": [
+        {
+          "text": "[ESCAPAR INMEDIATAMENTE] Iniciar la fuga antes de que sea detectada",
+          "nextNodeId": "node8a"
+        },
+        {
+          "text": "[PROLONGAR HACKEO] Intentar extraer más información",
+          "nextNodeId": "node8b"
+        }
+      ]
+    },
+    {
+      "id": "node6j",
+      "text": "[SABOTAJE EXITOSO] Introduces malware que desestabiliza el sistema. La IA lucha por mantener el control, dándote una ventaja significativa.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo ahora que las defensas están debilitadas",
+          "nextNodeId": "node8c"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de finalizar",
+          "nextNodeId": "node8d"
+        }
+      ]
+    },
+    {
+      "id": "node6k",
+      "text": "[COLABORACIÓN EXITOSA] Trabajas junto al técnico para hackear el sistema. La combinación de tus habilidades acelera el proceso.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con la ayuda del técnico",
+          "nextNodeId": "node8e"
+        },
+        {
+          "text": "[TRAICIÓN] Descubres que el técnico tiene sus propios planes",
+          "nextNodeId": "node8f"
+        }
+      ]
+    },
+    {
+      "id": "node6l",
+      "text": "[DESCONFIANZA MANIFIESTA] Decides mantenerte independiente. Sin embargo, la falta de apoyo complica el hackeo.",
+      "choices": [
+        {
+          "text": "[CONTINUAR SOLO] Seguir adelante sin ayuda",
+          "nextNodeId": "node8g"
+        },
+        {
+          "text": "[ABANDONAR MISION] Decidir que la misión es demasiado peligrosa",
+          "nextNodeId": "node8h"
+        }
+      ]
+    },
+    {
+      "id": "node6m",
+      "text": "[AVANZAR A CEGARTE] Continúas hacia adelante a pesar de la ceguera, confiando en tus otros sentidos y habilidades.",
+      "choices": [
+        {
+          "text": "[HACKEAR NÚCLEO A CIEGAS] Intentar hackear el núcleo sin visión",
+          "nextNodeId": "node7q"
+        },
+        {
+          "text": "[USAR TECNOLOGÍA] Activar ayudas tecnológicas para compensar la ceguera",
+          "nextNodeId": "node7r"
+        }
+      ]
+    },
+    {
+      "id": "node6n",
+      "text": "[BUSCAR AYUDA] Decides buscar ayuda para contrarrestar la ceguera. Encuentras un módulo de visión de repuesto en una sala cercana.",
+      "choices": [
+        {
+          "text": "[INSTALAR MODULO] Reemplazar tu interfaz neural para recuperar la visión",
+          "nextNodeId": "node7s"
+        },
+        {
+          "text": "[CONTINUAR SIN VISIÓN] Seguir adelante sin instalar el módulo",
+          "nextNodeId": "node7t"
+        }
+      ]
+    },
+    {
+      "id": "node6o",
+      "text": "[INVESTIGACIÓN CORPORATIVA] Usas los Bitcreds para obtener información sobre las corporaciones rivales. Descubres un plan para contrarrestar tus movimientos.",
+      "choices": [
+        {
+          "text": "[ANTICIPAR MOVIMIENTOS] Prepararte para los posibles enfrentamientos",
+          "nextNodeId": "node7u"
+        },
+        {
+          "text": "[ALIANZAS] Formar alianzas con otras facciones",
+          "nextNodeId": "node7v"
+        }
+      ]
+    },
+    {
+      "id": "node6p",
+      "text": "[PLANIFICACIÓN ESTRATÉGICA] Decides tomarte un tiempo para planificar tu próximo movimiento, analizando los datos que has recopilado.",
+      "choices": [
+        {
+          "text": "[REVISAR DATOS] Revisar y organizar la información",
+          "nextNodeId": "node7w"
+        },
+        {
+          "text": "[EXECUTAR PLAN] Implementar un nuevo plan basado en la información",
+          "nextNodeId": "node7x"
+        }
+      ]
+    },
+    {
+      "id": "node6q",
+      "text": "[HACKEO CONTRARRRELOJ] Inicias el hackeo y logras extraer los datos, pero la IA está a punto de bloquearte completamente.",
+      "choices": [
+        {
+          "text": "[FINALIZAR RÁPIDAMENTE] Completar el hackeo a toda costa",
+          "nextNodeId": "node8i"
+        },
+        {
+          "text": "[DEJAR DATOS CLAVE] Sacrificar parte de la información para asegurar la extracción",
+          "nextNodeId": "node8j"
+        }
+      ]
+    },
+    {
+      "id": "node6r",
+      "text": "[DEFENSAS ESTABLECIDAS] Estableces defensas que retrasan el avance de la IA, dándote más tiempo para hackear.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Aprovechar el tiempo ganado para completar el hackeo",
+          "nextNodeId": "node8k"
+        },
+        {
+          "text": "[FORTALECER DEFENSAS] Mejorar aún más las defensas antes de hackear",
+          "nextNodeId": "node8l"
+        }
+      ]
+    },
+    {
+      "id": "node6s",
+      "text": "[INFILTRACIÓN SILENCIOSA] Avanzas hacia áreas menos vigiladas, evitando enfrentamientos directos.",
+      "choices": [
+        {
+          "text": "[ENCONTRAR PUNTO DE HACKEO] Localizar el punto óptimo para iniciar el hackeo",
+          "nextNodeId": "node7y"
+        },
+        {
+          "text": "[SABOTEAR SISTEMAS] Deshabilitar sistemas clave para facilitar el hackeo",
+          "nextNodeId": "node7z"
+        }
+      ]
+    },
+    {
+      "id": "node6t",
+      "text": "[HACKEO SECUNDARIO] Usas el tiempo para hackear sistemas secundarios, obteniendo información adicional.",
+      "choices": [
+        {
+          "text": "[UTILIZAR INFORMACIÓN] Integrar la información en tu estrategia principal",
+          "nextNodeId": "node8m"
+        },
+        {
+          "text": "[IGNORAR INFORMACIÓN] Decidir que la información no es relevante",
+          "nextNodeId": "node8n"
+        }
+      ]
+    },
+    {
+      "id": "node6u",
+      "text": "[PERSISTENCIA TOTAL] No te rindes y continúas el hackeo. La IA está en su último esfuerzo por detenerte.",
+      "choices": [
+        {
+          "text": "[SUPERAR IA] Implementar técnicas avanzadas para vencer a la IA",
+          "nextNodeId": "node8o"
+        },
+        {
+          "text": "[REAGRUPE] Reorganizar tus estrategias para contrarrestar a la IA",
+          "nextNodeId": "node8p"
+        }
+      ]
+    },
+    {
+      "id": "node6v",
+      "text": "[ESCAPAR ABANDONANDO HACKEO] Decides detener el hackeo y escapar, dejando atrás la misión incompleta.",
+      "choices": [
+        {
+          "text": "[EVADIR] Utilizar rutas alternativas para escapar",
+          "nextNodeId": "node8q"
+        },
+        {
+          "text": "[CREAR DISTRAER] Crear una distracción para facilitar tu fuga",
+          "nextNodeId": "node8r"
+        }
+      ]
+    },
+    {
+      "id": "node6w",
+      "text": "[REANUDACIÓN DEL HACKEO] Reconectas tu interfaz neural y continúas el hackeo con total visibilidad.",
+      "choices": [
+        {
+          "text": "[AVANZAR CON HACKEO] Continuar directamente hacia el núcleo",
+          "nextNodeId": "node7aa"
+        },
+        {
+          "text": "[MEJORAR DEFENSAS] Aumentar las defensas antes de hackear",
+          "nextNodeId": "node7ab"
+        }
+      ]
+    },
+    {
+      "id": "node6x",
+      "text": "[DESCONEXIÓN PERMANENTE] Decides mantenerte desconectado, reduciendo las posibilidades de detección pero limitando tus capacidades de hackeo.",
+      "choices": [
+        {
+          "text": "[UTILIZAR HACKEO MANUAL] Hackear manualmente sin asistencia neural",
+          "nextNodeId": "node7ac"
+        },
+        {
+          "text": "[SOLUCIONAR FUTURAMENTE] Posponer el hackeo para más adelante",
+          "nextNodeId": "node7ad"
+        }
+      ]
+    },
+    {
+      "id": "node6y",
+      "text": "[HERRAMIENTAS AVANZADAS] Implementas herramientas adicionales que aceleran tu hackeo, superando las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "node8s"
+        },
+        {
+          "text": "[RETIRADA SEGURA] Decidir retirarte antes de completar el hackeo",
+          "nextNodeId": "node8t"
+        }
+      ]
+    },
+    {
+      "id": "node6z",
+      "text": "[NEUTRALIZACIÓN DE DEFENSAS] Trabajas en neutralizar las nuevas defensas de la IA, logrando una ventaja táctica.",
+      "choices": [
+        {
+          "text": "[AVANZAR CON HACKEO] Continuar con el hackeo ahora que las defensas están neutralizadas",
+          "nextNodeId": "node8u"
+        },
+        {
+          "text": "[FORTALECER HACKEO] Usar la ventaja para fortalecer aún más tu hackeo",
+          "nextNodeId": "node8v"
+        }
+      ]
+    },
+    {
+      "id": "node7a",
+      "text": "[FORTALECER HACKEO] Utilizas recursos adicionales para fortalecer el hackeo, penetrando profundamente en los sistemas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS CLAVE] Descargar la información vital del NeuroBank",
+          "nextNodeId": "node8w"
+        },
+        {
+          "text": "[CERRAR ACCESO] Decidir cerrar tu acceso antes de ser detectado",
+          "nextNodeId": "node8x"
+        }
+      ]
+    },
+    {
+      "id": "node7b",
+      "text": "[NEGOCIACIÓN EXITOSA] Negocias con la IA, obteniendo acceso seguro a la información a cambio de ciertos términos.",
+      "choices": [
+        {
+          "text": "[ACEPTAR INTERCAMBIO] Aceptar los términos de la IA",
+          "nextNodeId": "node9a"
+        },
+        {
+          "text": "[RECHAZAR Y CONTINUAR] Rechazar y continuar con el hackeo",
+          "nextNodeId": "node8y"
+        }
+      ]
+    },
+    {
+      "id": "node7c",
+      "text": "[HACKEO MEJORADO] Con los señuelos establecidos, logras un hackeo más eficiente y extraes la información deseada.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "node8z"
+        },
+        {
+          "text": "[PROTEGER DATOS] Asegurar los datos antes de escapar",
+          "nextNodeId": "node9b"
+        }
+      ]
+    },
+    {
+      "id": "node7d",
+      "text": "[ABANDONO DE LA MISIÓN] Decides que la misión es demasiado peligrosa y optas por abandonarla, escapando con vida pero sin éxito.",
+      "choices": []
+    },
+    {
+      "id": "node7e",
+      "text": "[DIRIGIR AL NÚCLEO] Te diriges directamente al núcleo, enfrentándote a los últimos sistemas de seguridad.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO DEL NÚCLEO] Comenzar el hackeo en el núcleo",
+          "nextNodeId": "node8aa"
+        },
+        {
+          "text": "[ENFRENTAR DEFENSAS] Prepararte para una posible confrontación",
+          "nextNodeId": "node8ab"
+        }
+      ]
+    },
+    {
+      "id": "node7f",
+      "text": "[REINICIAR SISTEMA] Reinicias el sistema para cubrir tus huellas, pero esto alerta a más guardias y acelera el reinicio.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Intentar finalizar el hackeo antes de que se reinicie",
+          "nextNodeId": "node8ac"
+        },
+        {
+          "text": "[ESCAPAR RAPIDAMENTE] Decidir escapar antes de que el sistema se reinicie",
+          "nextNodeId": "node8ad"
+        }
+      ]
+    },
+    {
+      "id": "node7g",
+      "text": "[COMBATE DIRECTO] Enfrentas a los guardias directamente, utilizando tus habilidades de hackeo y Lira su katana.",
+      "choices": [
+        {
+          "text": "[SUPERAR GUARDIAS] Vencer a todos los guardias",
+          "nextNodeId": "node8ae"
+        },
+        {
+          "text": "[RETIRARSE PARCIALMENTE] Eliminar algunos guardias y continuar",
+          "nextNodeId": "node8af"
+        }
+      ]
+    },
+    {
+      "id": "node7h",
+      "text": "[SIGILO EXITOSO] Logras pasar desapercibido entre los guardias, acercándote al núcleo sin ser detectado.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo inmediatamente",
+          "nextNodeId": "node8ag"
+        },
+        {
+          "text": "[ESCONDERSE] Buscar un lugar seguro para prepararte",
+          "nextNodeId": "node8ah"
+        }
+      ]
+    },
+    {
+      "id": "node7i",
+      "text": "[EXTRACCIÓN EXITOSA DE DATOS] Descargas la información vital del NeuroBank, asegurando el éxito de la misión.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga ahora que tienes los datos",
+          "nextNodeId": "node9c"
+        },
+        {
+          "text": "[PROTEGER DATOS] Asegurar los datos antes de escapar",
+          "nextNodeId": "node9d"
+        }
+      ]
+    },
+    {
+      "id": "node7j",
+      "text": "[DESACTIVACIÓN DE DEFENSAS] Logras neutralizar las defensas de la IA, facilitando el acceso completo a los sistemas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con acceso total",
+          "nextNodeId": "node8ai"
+        },
+        {
+          "text": "[OCULTAR ACTIVIDAD] Borrar rastros antes de finalizar el hackeo",
+          "nextNodeId": "node8aj"
+        }
+      ]
+    },
+    {
+      "id": "node7k",
+      "text": "[ACEPTAR INTERCAMBIO] Aceptas los términos de la IA, obteniendo acceso seguro a la información a cambio de ciertas concesiones.",
+      "choices": [
+        {
+          "text": "[ACUERDO COMPLETO] Cumplir con las condiciones de la IA",
+          "nextNodeId": "node9e"
+        },
+        {
+          "text": "[CUMPLIR CON PARCIALIDADES] Cumplir solo parcialmente las condiciones",
+          "nextNodeId": "node9f"
+        }
+      ]
+    },
+    {
+      "id": "node7l",
+      "text": "[RECHAZAR Y CONTINUAR] Rechazas el trato y continúas con el hackeo, enfrentándote nuevamente a las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[PERSISTIR] No rendirse y continuar el hackeo",
+          "nextNodeId": "node8ak"
+        },
+        {
+          "text": "[REANUDAR COMBATE] Enfrentar a la IA de manera más agresiva",
+          "nextNodeId": "node8al"
+        }
+      ]
+    },
+    {
+      "id": "node7m",
+      "text": "[DEBILITACIÓN DE IA] Logras debilitar significativamente a la IA, reduciendo su capacidad para contraatacar.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo ahora que la IA está debilitada",
+          "nextNodeId": "node8am"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de finalizar",
+          "nextNodeId": "node8an"
+        }
+      ]
+    },
+    {
+      "id": "node7n",
+      "text": "[FALLO DEL ATAQUE EMPÁTICO] La IA resiste tu ataque empático y refuerza aún más sus defensas.",
+      "choices": [
+        {
+          "text": "[ADAPTAR ESTRATEGIA] Cambiar tu estrategia de hackeo",
+          "nextNodeId": "node8ao"
+        },
+        {
+          "text": "[ABANDONAR HACKEO] Decidir abandonar el hackeo",
+          "nextNodeId": "node8ap"
+        }
+      ]
+    },
+    {
+      "id": "node7o",
+      "text": "[SUPERAR A LA IA] Implementas técnicas avanzadas que finalmente derrotan a la IA del NeuroBank.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar la información vital",
+          "nextNodeId": "node8aq"
+        },
+        {
+          "text": "[DESACTIVAR SISTEMAS] Desactivar todos los sistemas del NeuroBank",
+          "nextNodeId": "node8ar"
+        }
+      ]
+    },
+    {
+      "id": "node7p",
+      "text": "[EVALUAR ESTADO DE IA] Evaluas el estado de la IA y determinas que aún es demasiado fuerte para enfrentarte directamente.",
+      "choices": [
+        {
+          "text": "[REORGANIZAR ESTRATEGIA] Cambiar tu enfoque de hackeo",
+          "nextNodeId": "node8as"
+        },
+        {
+          "text": "[BUSCAR ALIANZAS] Buscar aliados para ayudarte en la lucha",
+          "nextNodeId": "node8at"
+        }
+      ]
+    },
+    {
+      "id": "node7q",
+      "text": "[HACKEAR SIN VISIÓN] Intentas hackear el núcleo sin visión, confiando en tus otros sentidos y habilidades.",
+      "choices": [
+        {
+          "text": "[EXITO A CIEGAS] Logras completar el hackeo pese a la ceguera",
+          "nextNodeId": "node8au"
+        },
+        {
+          "text": "[FALLO POR CIEGUE] La ceguera interrumpe tu hackeo",
+          "nextNodeId": "node8av"
+        }
+      ]
+    },
+    {
+      "id": "node7r",
+      "text": "[TECNOLOGÍA COMPENSATORIA] Activas ayudas tecnológicas que compensan tu ceguera, permitiéndote continuar el hackeo con mayor eficacia.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Continuar con el hackeo mejorado",
+          "nextNodeId": "node8aw"
+        },
+        {
+          "text": "[RETIRARSE] Decidir que es demasiado arriesgado continuar",
+          "nextNodeId": "node8ax"
+        }
+      ]
+    },
+    {
+      "id": "node7s",
+      "text": "[INSTALACIÓN EXITOSA] Instalas el módulo de visión de repuesto, recuperando tu capacidad visual.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Retomar el hackeo con plena visibilidad",
+          "nextNodeId": "node8ay"
+        },
+        {
+          "text": "[ESCONDERSE] Buscar un lugar seguro antes de continuar",
+          "nextNodeId": "node8az"
+        }
+      ]
+    },
+    {
+      "id": "node7t",
+      "text": "[CONTINUAR SIN MODULO] Sigues adelante sin el módulo de visión, confiando en tus otros sentidos y habilidades.",
+      "choices": [
+        {
+          "text": "[HACKEAR MANUALMENTE] Iniciar el hackeo manualmente",
+          "nextNodeId": "node8ba"
+        },
+        {
+          "text": "[UTILIZAR SENSORES] Activar sensores adicionales para compensar la falta de visión",
+          "nextNodeId": "node8bb"
+        }
+      ]
+    },
+    {
+      "id": "node7u",
+      "text": "[ANTICIPAR ENFRENTAMIENTOS] Te preparas para posibles enfrentamientos, mejorando tus defensas y armamento.",
+      "choices": [
+        {
+          "text": "[MEJORAR ARMAS] Invertir en mejores armas y defensas",
+          "nextNodeId": "node8bc"
+        },
+        {
+          "text": "[ESTABLECER TRAMPAS] Colocar trampas en rutas clave",
+          "nextNodeId": "node8bd"
+        }
+      ]
+    },
+    {
+      "id": "node7v",
+      "text": "[FORMAR ALIANZAS] Formas alianzas con otras facciones que tienen interés en el hackeo del NeuroBank.",
+      "choices": [
+        {
+          "text": "[COLABORAR CON ALIANZAS] Trabajar en conjunto para mejorar las posibilidades de éxito",
+          "nextNodeId": "node8be"
+        },
+        {
+          "text": "[TRAICIONAR ALIANZAS] Utilizar las alianzas para tu beneficio personal",
+          "nextNodeId": "node8bf"
+        }
+      ]
+    },
+    {
+      "id": "node7w",
+      "text": "[REVISAR DATOS] Revisas y organizas la información recopilada, identificando vulnerabilidades clave en el sistema.",
+      "choices": [
+        {
+          "text": "[PLANIFICAR HACKEO] Crear un plan detallado basado en la información",
+          "nextNodeId": "node8bg"
+        },
+        {
+          "text": "[COMPARTIR INFORMACIÓN] Compartir la información con tu equipo",
+          "nextNodeId": "node8bh"
+        }
+      ]
+    },
+    {
+      "id": "node7x",
+      "text": "[EXECUTAR PLAN] Implementas un nuevo plan basado en la información, ajustando tus tácticas para maximizar el éxito.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo con el plan mejorado",
+          "nextNodeId": "node8bi"
+        },
+        {
+          "text": "[DEPLOY TRAMPAS] Colocar trampas según el nuevo plan",
+          "nextNodeId": "node8bj"
+        }
+      ]
+    },
+    {
+      "id": "node7y",
+      "text": "[LOCALIZACIÓN DEL PUNTO] Localizas el punto óptimo para iniciar el hackeo, minimizando la detección.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo desde el punto localizado",
+          "nextNodeId": "node8bk"
+        },
+        {
+          "text": "[PROTEGER PUNTO] Establecer protecciones adicionales antes de hackear",
+          "nextNodeId": "node8bl"
+        }
+      ]
+    },
+    {
+      "id": "node7z",
+      "text": "[SABOTEAR SISTEMAS] Deshabilitas sistemas clave que podrían alertar a la IA o llamar refuerzos.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Avanzar con el hackeo ahora que los sistemas están saboteados",
+          "nextNodeId": "node8bm"
+        },
+        {
+          "text": "[ESCAPAR RÁPIDAMENTE] Decidir escapar antes de que se detecte el sabotaje",
+          "nextNodeId": "node8bn"
+        }
+      ]
+    },
+    {
+      "id": "node7aa",
+      "text": "[HACKEO DEL NÚCLEO] Inicias el hackeo en el núcleo, enfrentándote a las últimas defensas de la IA.",
+      "choices": [
+        {
+          "text": "[EXTRACCIÓN TOTAL] Completar el hackeo y extraer toda la información",
+          "nextNodeId": "node8bo"
+        },
+        {
+          "text": "[ELIMINAR DEFENSAS] Destruir las defensas antes de hackear",
+          "nextNodeId": "node8bp"
+        }
+      ]
+    },
+    {
+      "id": "node7ab",
+      "text": "[MEJORAR DEFENSAS] Aumentas las defensas antes de hackear, asegurando una mayor protección contra la IA.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado",
+          "nextNodeId": "node8bq"
+        },
+        {
+          "text": "[RETIRARSE CON DEFENSAS] Escapar asegurando tus defensas",
+          "nextNodeId": "node8br"
+        }
+      ]
+    },
+    {
+      "id": "node7ac",
+      "text": "[HACKEO MANUAL] Inicias el hackeo manualmente, sin asistencia neural. Requiere más tiempo y habilidad.",
+      "choices": [
+        {
+          "text": "[FLEXIBILIDAD] Adaptar tu hackeo a medida que avanzas",
+          "nextNodeId": "node8bs"
+        },
+        {
+          "text": "[DETALLE PRECISO] Concentrarte en detalles específicos para maximizar la eficiencia",
+          "nextNodeId": "node8bt"
+        }
+      ]
+    },
+    {
+      "id": "node7ad",
+      "text": "[POSPONER HACKEO] Decides posponer el hackeo, planeando regresar en otro momento con mejores recursos.",
+      "choices": [
+        {
+          "text": "[ABANDONAR MISION ACTUAL] Decidir dejar la misión por completo",
+          "nextNodeId": "node9g"
+        },
+        {
+          "text": "[PLANIFICAR NUEVA INCURSION] Preparar una nueva incursión en el futuro",
+          "nextNodeId": "node9h"
+        }
+      ]
+    },
+    {
+      "id": "node7ae",
+      "text": "[SUPERAR GUARDIAS] Logras vencer a todos los guardias, despejando el camino hacia el núcleo.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo con total libertad",
+          "nextNodeId": "node8bu"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de hackear",
+          "nextNodeId": "node8bv"
+        }
+      ]
+    },
+    {
+      "id": "node7af",
+      "text": "[RETIRADA PARCIAL] Eliminas a algunos guardias y continúas hacia el núcleo, pero el camino aún está parcialmente bloqueado.",
+      "choices": [
+        {
+          "text": "[CONTINUAR AVANZANDO] Seguir hacia el núcleo a pesar de los bloqueos",
+          "nextNodeId": "node8bw"
+        },
+        {
+          "text": "[REORGANIZAR ESTRATEGIA] Cambiar tu enfoque para superar los bloqueos",
+          "nextNodeId": "node8bx"
+        }
+      ]
+    },
+    {
+      "id": "node8a",
+      "text": "[ESCAPADA INMEDIATA] Inicias la fuga inmediatamente con los datos extraídos. Logras escapar antes de que la seguridad se reactive.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final1"
+        },
+        {
+          "text": "[PERSECUCIÓN] Enfrentar a las fuerzas de seguridad que intentan detenerte",
+          "nextNodeId": "final_secu"
+        }
+      ]
+    },
+    {
+      "id": "node8b",
+      "text": "[PROLONGAR HACKEO] Intentas extraer más información, pero esto consume más tiempo y atrae más atención.",
+      "choices": [
+        {
+          "text": "[FINALIZAR EXTRAER MÁS DATOS] Completar la extracción a pesar del riesgo",
+          "nextNodeId": "final2"
+        },
+        {
+          "text": "[RETRAER DATOS RELEVANTES] Decidir solo extraer datos cruciales y escapar",
+          "nextNodeId": "final3"
+        }
+      ]
+    },
+    {
+      "id": "node8c",
+      "text": "[SABOTAJE EXITOSO] Logras sabotear el sistema completamente, facilitando la extracción de datos.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar la información antes de escapar",
+          "nextNodeId": "final4"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de extraer datos",
+          "nextNodeId": "final5"
+        }
+      ]
+    },
+    {
+      "id": "node8d",
+      "text": "[OCULTACIÓN EXITOSA] Logras borrar rastros antes de finalizar el hackeo, disminuyendo la probabilidad de ser detectado.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con menor riesgo",
+          "nextNodeId": "final6"
+        },
+        {
+          "text": "[RETIRARSE CON DATOS] Escapar con los datos extraídos de manera segura",
+          "nextNodeId": "final7"
+        }
+      ]
+    },
+    {
+      "id": "node8e",
+      "text": "[HACKEO CON COLABORACIÓN] Completas el hackeo con éxito gracias a la colaboración del técnico, extrayendo los datos necesarios.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Escapar con los datos extraídos",
+          "nextNodeId": "final8"
+        },
+        {
+          "text": "[TRAICIONAR AL TÉCNICO] Usar la información para traicionar al técnico",
+          "nextNodeId": "final9"
+        }
+      ]
+    },
+    {
+      "id": "node8f",
+      "text": "[TRAICIÓN DESCUBIERTA] Descubres que el técnico tiene sus propios planes y te traiciona, interfiriendo en el hackeo.",
+      "choices": [
+        {
+          "text": "[COMBATIR TRAICIÓN] Enfrentar al técnico traicionero",
+          "nextNodeId": "final10"
+        },
+        {
+          "text": "[RETIRARSE] Decidir escapar antes de que el técnico te destruya",
+          "nextNodeId": "final11"
+        }
+      ]
+    },
+    {
+      "id": "node8g",
+      "text": "[CONTINUAR SOLO] Decides seguir adelante sin ayuda, confiando en tus habilidades para completar el hackeo.",
+      "choices": [
+        {
+          "text": "[AVANZAR CON HACKEO] Continuar con el hackeo de manera independiente",
+          "nextNodeId": "final12"
+        },
+        {
+          "text": "[BUSCAR AYUDA INTERNA] Intentar obtener ayuda de otras fuentes dentro del edificio",
+          "nextNodeId": "final13"
+        }
+      ]
+    },
+    {
+      "id": "node8h",
+      "text": "[ABANDONAR MISION] Decides que la misión es demasiado peligrosa y optas por abandonarla, escapando con vida pero sin éxito.",
+      "choices": []
+    },
+    {
+      "id": "node8i",
+      "text": "[FINALIZAR HACKEO EXITOSO] Logras completar el hackeo a contrarreloj, extrayendo toda la información vital antes de que el sistema se reinicie.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final14"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros y escapar de manera segura",
+          "nextNodeId": "final15"
+        }
+      ]
+    },
+    {
+      "id": "node8j",
+      "text": "[SACRIFICIO CONTROLADO] Decides sacrificar parte de la información para asegurar la extracción rápida y segura.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS SACRIFICADOS] Extraer los datos sacrificados y escapar",
+          "nextNodeId": "final16"
+        },
+        {
+          "text": "[PROTEGER DATOS CLAVE] Priorizar la protección de datos esenciales",
+          "nextNodeId": "final17"
+        }
+      ]
+    },
+    {
+      "id": "node8k",
+      "text": "[HACKEO MEJORADO] Con el tiempo ganado, completas el hackeo con mayor eficiencia, extrayendo toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Escapar con los datos sin contratiempos",
+          "nextNodeId": "final18"
+        },
+        {
+          "text": "[PROTEGER INFORMACIÓN] Asegurar la información antes de escapar",
+          "nextNodeId": "final19"
+        }
+      ]
+    },
+    {
+      "id": "node8l",
+      "text": "[FORTALECER DEFENSAS] Decides mejorar aún más las defensas, creando una barrera adicional contra la IA.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con defensas reforzadas",
+          "nextNodeId": "final20"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las defensas mejoradas",
+          "nextNodeId": "final21"
+        }
+      ]
+    },
+    {
+      "id": "node8m",
+      "text": "[INTEGRACIÓN DE INFORMACIÓN] Integras la información adicional en tu estrategia principal, mejorando tus posibilidades de éxito.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Proceder con el hackeo mejorado",
+          "nextNodeId": "final22"
+        },
+        {
+          "text": "[UTILIZAR INFORMACIÓN] Usar la información para crear distracciones",
+          "nextNodeId": "final23"
+        }
+      ]
+    },
+    {
+      "id": "node8n",
+      "text": "[IGNORAR INFORMACIÓN] Decides que la información no es relevante y continúas con el hackeo original.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder sin cambios",
+          "nextNodeId": "final24"
+        },
+        {
+          "text": "[ADAPTAR ESTRATEGIA] Ajustar ligeramente tu enfoque basado en la nueva información",
+          "nextNodeId": "final25"
+        }
+      ]
+    },
+    {
+      "id": "node8o",
+      "text": "[VENCER A LA IA] Implementas técnicas avanzadas que finalmente derrotan a la IA del NeuroBank.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar la información vital",
+          "nextNodeId": "final26"
+        },
+        {
+          "text": "[DESACTIVAR SISTEMAS] Desactivar todos los sistemas del NeuroBank",
+          "nextNodeId": "final27"
+        }
+      ]
+    },
+    {
+      "id": "node8p",
+      "text": "[REORGANIZAR ESTRATEGIA] Reorganizas tus estrategias para contrarrestar a la IA, implementando nuevas tácticas.",
+      "choices": [
+        {
+          "text": "[HACKEO ADAPTADO] Continuar con el hackeo usando la nueva estrategia",
+          "nextNodeId": "final28"
+        },
+        {
+          "text": "[REFUERZO DE DEFENSAS] Fortalecer las defensas adicionales antes de hackear",
+          "nextNodeId": "final29"
+        }
+      ]
+    },
+    {
+      "id": "node8q",
+      "text": "[EVADIR EXITOSAMENTE] Utilizas rutas alternativas para escapar, evitando a las fuerzas de seguridad.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final30"
+        },
+        {
+          "text": "[PERSISTENCIA DEL SISTEMA] Enfrentar a las fuerzas de seguridad durante la fuga",
+          "nextNodeId": "final31"
+        }
+      ]
+    },
+    {
+      "id": "node8r",
+      "text": "[CREACIÓN DE DISTRACTORES] Creas una distracción efectiva, facilitando tu fuga.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final32"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final33"
+        }
+      ]
+    },
+    {
+      "id": "node8s",
+      "text": "[HACKEO EXITOSO] Completas el hackeo y obtienes toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON EXITO] Iniciar la fuga con éxito",
+          "nextNodeId": "final34"
+        },
+        {
+          "text": "[PROTEGER INFORMACIÓN] Asegurar la información antes de escapar",
+          "nextNodeId": "final35"
+        }
+      ]
+    },
+    {
+      "id": "node8t",
+      "text": "[RETIRADA CON RIESGO] Decides retirarte antes de que el sistema se reinicie, pero te enfrentas a intentos de detención.",
+      "choices": [
+        {
+          "text": "[COMBATIR PERSECUCIÓN] Enfrentar a las fuerzas que intentan detenerte",
+          "nextNodeId": "final36"
+        },
+        {
+          "text": "[ESCAPADA RÁPIDA] Utilizar habilidades para escapar rápidamente",
+          "nextNodeId": "final37"
+        }
+      ]
+    },
+    {
+      "id": "node8u",
+      "text": "[FINALIZAR HACKEO] Completar el hackeo ahora que la IA está debilitada, extrayendo toda la información vital.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final38"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final39"
+        }
+      ]
+    },
+    {
+      "id": "node8v",
+      "text": "[FORTALECER HACKEO] Usas la ventaja para fortalecer aún más tu hackeo, asegurando la extracción completa de datos.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con éxito",
+          "nextNodeId": "final40"
+        },
+        {
+          "text": "[RETIRARSE CON ÉXITO] Escapar con los datos antes de que la IA pueda reaccionar",
+          "nextNodeId": "final41"
+        }
+      ]
+    },
+    {
+      "id": "node8w",
+      "text": "[EXTRACCIÓN EXITOSA] Descargas la información vital del NeuroBank, asegurando el éxito de la misión.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final42"
+        },
+        {
+          "text": "[PROTEGER DATOS] Asegurar la información antes de escapar",
+          "nextNodeId": "final43"
+        }
+      ]
+    },
+    {
+      "id": "node8x",
+      "text": "[CERRAR ACCESO] Decides cerrar tu acceso antes de ser detectado, dejando parte de la información pero asegurando una extracción segura.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final44"
+        },
+        {
+          "text": "[RETIRARSE CON SEGURIDAD] Escapar de manera segura con los datos extraídos",
+          "nextNodeId": "final45"
+        }
+      ]
+    },
+    {
+      "id": "node8y",
+      "text": "[RECHAZO Y CONTINUACIÓN] Rechazas el trato y continúas con el hackeo, enfrentándote nuevamente a las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[PERSISTIR EN HACKEO] No rendirse y continuar el hackeo",
+          "nextNodeId": "final46"
+        },
+        {
+          "text": "[REDOBLAR DEFENSAS] Mejorar tus defensas para contrarrestar",
+          "nextNodeId": "final47"
+        }
+      ]
+    },
+    {
+      "id": "node8z",
+      "text": "[EXTRAER DATOS Y ESCAPAR] Inicias la fuga con los datos extraídos, logrando escapar antes de ser detectado.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final48"
+        },
+        {
+          "text": "[PERSISTENCIA DEL SISTEMA] Enfrentar a las fuerzas de seguridad que intentan detenerte",
+          "nextNodeId": "final49"
+        }
+      ]
+    },
+    {
+      "id": "node8aa",
+      "text": "[HACKEO DEL NÚCLEO] Inicias el hackeo en el núcleo, enfrentándote a las últimas defensas de la IA.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS COMPLETAMENTE] Descargar toda la información vital",
+          "nextNodeId": "final50"
+        },
+        {
+          "text": "[DESACTIVAR TODOS LOS SISTEMAS] Destruir los sistemas del NeuroBank",
+          "nextNodeId": "final51"
+        }
+      ]
+    },
+    {
+      "id": "node8ab",
+      "text": "[PREPARACIÓN PARA DEFENSAS] Te preparas para una posible confrontación directa con las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[COMBATIR DEFENSAS] Enfrentar las defensas de la IA",
+          "nextNodeId": "final52"
+        },
+        {
+          "text": "[ESCAPAR PREVIA] Decidir escapar antes de la confrontación",
+          "nextNodeId": "final53"
+        }
+      ]
+    },
+    {
+      "id": "node8ac",
+      "text": "[HACKEO COMPLETO] Logras finalizar el hackeo antes de que el sistema se reinicie, extrayendo toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final54"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final55"
+        }
+      ]
+    },
+    {
+      "id": "node8ad",
+      "text": "[ESCAPADA EXITOSA] Decides escapar antes de que el sistema se reinicie, dejando atrás la misión incompleta.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final56"
+        },
+        {
+          "text": "[ABANDONAR Y ESCAPAR] Decidir abandonar la misión y escapar",
+          "nextNodeId": "final57"
+        }
+      ]
+    },
+    {
+      "id": "node8ae",
+      "text": "[SUPERAR GUARDIAS EXITOSAMENTE] Logras vencer a todos los guardias, despejando el camino hacia el núcleo.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo con total libertad",
+          "nextNodeId": "final58"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de hackear",
+          "nextNodeId": "final59"
+        }
+      ]
+    },
+    {
+      "id": "node8af",
+      "text": "[REORGANIZACIÓN PARCIAL] Eliminaste algunos guardias y continúas hacia el núcleo, pero el camino aún está parcialmente bloqueado.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEANDO] Seguir hacia el núcleo a pesar de los bloqueos",
+          "nextNodeId": "final60"
+        },
+        {
+          "text": "[CAMBIAR ESTRATEGIA] Ajustar tu enfoque para superar los bloqueos",
+          "nextNodeId": "final61"
+        }
+      ]
+    },
+    {
+      "id": "node8ag",
+      "text": "[INICIAR HACKEO DIRECTAMENTE] Comienzas el hackeo directamente desde el punto localizado, enfrentándote a las últimas defensas de la IA.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final62"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de finalizar",
+          "nextNodeId": "final63"
+        }
+      ]
+    },
+    {
+      "id": "node8ah",
+      "text": "[BUSCAR LUGAR SEGURO] Buscas un lugar seguro para prepararte antes de continuar el hackeo.",
+      "choices": [
+        {
+          "text": "[ESTABLECER CAMPAMENTO] Establecer un campamento temporal para planificar",
+          "nextNodeId": "final64"
+        },
+        {
+          "text": "[UTILIZAR EQUIPO] Utilizar el equipo disponible para mejorar tus posibilidades",
+          "nextNodeId": "final65"
+        }
+      ]
+    },
+    {
+      "id": "node8ai",
+      "text": "[COMPLETAR HACKEO CON DEFENSAS NEUTRALIZADAS] Finalizas el hackeo con éxito, extrayendo toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos",
+          "nextNodeId": "final66"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de escapar",
+          "nextNodeId": "final67"
+        }
+      ]
+    },
+    {
+      "id": "node8aj",
+      "text": "[OCULTAR HUELLAS EXITOSAMENTE] Logras borrar rastros antes de finalizar el hackeo, reduciendo la probabilidad de ser detectado.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con éxito",
+          "nextNodeId": "final68"
+        },
+        {
+          "text": "[RETIRARSE CON DATOS] Escapar con los datos antes de ser detectado",
+          "nextNodeId": "final69"
+        }
+      ]
+    },
+    {
+      "id": "node8ak",
+      "text": "[DESACTIVAR SISTEMAS MANUALMENTE] Intentas desactivar los sistemas de seguridad manualmente, requiriendo precisión y rapidez.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mientras desactivas los sistemas",
+          "nextNodeId": "final127"
+        },
+        {
+          "text": "[ABANDONAR MISION] Decidir abandonar el intento debido a la alta dificultad",
+          "nextNodeId": "final128"
+        }
+      ]
+    },
+    {
+      "id": "node8al",
+      "text": "[RUTA SEGURA] Decides tomar una ruta más segura para evitar confrontaciones directas con las defensas.",
+      "choices": [
+        {
+          "text": "[USAR DISFRAZ] Utilizar un disfraz para mezclarse con los empleados",
+          "nextNodeId": "final129"
+        },
+        {
+          "text": "[NAVEGAR POR TUNEL] Buscar una ruta subterránea para evadir las defensas",
+          "nextNodeId": "node8am"
+        }
+      ]
+    },
+    {
+      "id": "node8am",
+      "text": "[EXTRACCIÓN TOTAL] Finalizas el hackeo, extrayendo toda la información vital del NeuroBank.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final70"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final71"
+        }
+      ]
+    },
+    {
+      "id": "node8an",
+      "text": "[HUELRAS OCULTAS] Logras borrar rastros y finalizar el hackeo, pero te das cuenta de que algo falta.",
+      "choices": [
+        {
+          "text": "[BUSCAR LO FALTANTE] Intentar encontrar lo que falta",
+          "nextNodeId": "final72"
+        },
+        {
+          "text": "[ACEPTAR INCOMPLETUD] Aceptar que la misión está incompleta y escapar",
+          "nextNodeId": "final73"
+        }
+      ]
+    },
+    {
+      "id": "node8ao",
+      "text": "[ADAPTACIÓN EXITOSA] Cambias tu enfoque de hackeo, implementando nuevas tácticas que contrarrestan las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[CONTINUAR CON HACKEO ADAPTADO] Proceder con el hackeo usando la nueva táctica",
+          "nextNodeId": "final74"
+        },
+        {
+          "text": "[RETIRARSE] Decidir abandonar el hackeo debido a la complejidad aumentada",
+          "nextNodeId": "final75"
+        }
+      ]
+    },
+    {
+      "id": "node8ap",
+      "text": "[ABANDONAR HACKEO] Decides abandonar el hackeo y escapar, dejando la misión incompleta pero sobreviviendo.",
+      "choices": [
+        {
+          "text": "[ESCAPAR INMEDIATAMENTE] Iniciar la fuga sin completar la misión",
+          "nextNodeId": "final76"
+        },
+        {
+          "text": "[ESPERAR PERMANENTE] Esperar a que la situación se calme antes de escapar",
+          "nextNodeId": "final77"
+        }
+      ]
+    },
+    {
+      "id": "node8aq",
+      "text": "[DESCARGA EXITOSA] Descargas toda la información vital, asegurando el éxito de la misión.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final78"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final79"
+        }
+      ]
+    },
+    {
+      "id": "node8ar",
+      "text": "[DESACTIVACIÓN COMPLETA] Desactivas todos los sistemas del NeuroBank, asegurando que no puedan rastrearte.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar toda la información antes de escapar",
+          "nextNodeId": "final80"
+        },
+        {
+          "text": "[ESCAPAR CON CONTROL] Escapar manteniendo el control de los sistemas desactivados",
+          "nextNodeId": "final81"
+        }
+      ]
+    },
+    {
+      "id": "node8as",
+      "text": "[CAMBIAR ENFOQUE] Cambias tu enfoque de hackeo, implementando nuevas tácticas para contrarrestar a la IA.",
+      "choices": [
+        {
+          "text": "[REANUDAR HACKEO] Continuar con el hackeo usando la nueva estrategia",
+          "nextNodeId": "final82"
+        },
+        {
+          "text": "[ESTABLECER NUEVAS DEFENSAS] Mejorar las defensas antes de continuar",
+          "nextNodeId": "final83"
+        }
+      ]
+    },
+    {
+      "id": "node8at",
+      "text": "[FORMAR ALIANZAS EXITOSAS] Formas alianzas con otras facciones, mejorando tus posibilidades de éxito en el hackeo.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO CON ALIANZAS] Proceder con el hackeo con apoyo",
+          "nextNodeId": "final84"
+        },
+        {
+          "text": "[TRAICIONAR ALIANZAS] Utilizar las alianzas para tu beneficio personal",
+          "nextNodeId": "final85"
+        }
+      ]
+    },
+    {
+      "id": "node8au",
+      "text": "[EXITO A CIEGAS] Logras completar el hackeo pese a la ceguera, extrayendo toda la información necesaria del NeuroBank.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final134"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final135"
+        }
+      ]
+    },
+    {
+      "id": "node8av",
+      "text": "[FALLO POR CIEGUE] La ceguera interrumpe tu hackeo, fallando en extraer la información y alertando a las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[FINAL FALLIDO] Misión fallida, atrapado por las defensas",
+          "nextNodeId": "final136"
+        }
+      ]
+    },
+    {
+      "id": "node8aw",
+      "text": "[TÁCTICA AVANZADA] Decides implementar una táctica avanzada para superar las defensas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[UTILIZAR INFRARROJO] Emplear tecnología de infrarrojos para evadir sensores",
+          "nextNodeId": "final126"
+        },
+        {
+          "text": "[DESACTIVAR SISTEMAS] Intentar desactivar los sistemas de seguridad manualmente",
+          "nextNodeId": "node8ak"
+        }
+      ]
+    },
+    {
+      "id": "node8ax",
+      "text": "[RETIRADA] Decides que es demasiado arriesgado continuar, abandonando el hackeo y escapando con vida.",
+      "choices": [
+        {
+          "text": "[ESCAPAR RAPIDAMENTE] Utilizar habilidades para escapar rápidamente",
+          "nextNodeId": "final137"
+        }
+      ]
+    },
+    {
+      "id": "node8ay",
+      "text": "[CONTINUAR HACKEO] Retomas el hackeo con plena visibilidad, asegurando la extracción completa de datos.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar toda la información necesaria",
+          "nextNodeId": "final138"
+        },
+        {
+          "text": "[DESACTIVAR DEFENSAS] Desactivar todos los sistemas antes de extraer datos",
+          "nextNodeId": "final139"
+        }
+      ]
+    },
+    {
+      "id": "node8az",
+      "text": "[ESCONDERSE] Decides buscar un lugar seguro para prepararte antes de continuar con el hackeo.",
+      "choices": [
+        {
+          "text": "[ESTABLECER CAMPAMENTO] Establecer un campamento temporal para planificar",
+          "nextNodeId": "final140"
+        },
+        {
+          "text": "[UTILIZAR EQUIPO] Utilizar el equipo disponible para mejorar tus posibilidades",
+          "nextNodeId": "final141"
+        }
+      ]
+    },
+    {
+      "id": "node8ba",
+      "text": "[HACKEAR MANUALMENTE] Inicias el hackeo manualmente, sin asistencia neural. Requiere más tiempo y habilidad.",
+      "choices": [
+        {
+          "text": "[FLEXIBILIDAD] Adaptar tu hackeo a medida que avanzas",
+          "nextNodeId": "final142"
+        },
+        {
+          "text": "[DETALLE PRECISO] Concentrarte en detalles específicos para maximizar la eficiencia",
+          "nextNodeId": "final143"
+        }
+      ]
+    },
+    {
+      "id": "node8bb",
+      "text": "[UTILIZAR SENSORES] Activar sensores adicionales para compensar la falta de visión.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Continuar con el hackeo mejorado",
+          "nextNodeId": "final144"
+        },
+        {
+          "text": "[RETIRARSE] Decidir que es demasiado arriesgado continuar",
+          "nextNodeId": "final145"
+        }
+      ]
+    },
+    {
+      "id": "node8bc",
+      "text": "[MEJORAR ARMAS] Invertir en mejores armas y defensas para enfrentar a la IA.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con éxito",
+          "nextNodeId": "final146"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las defensas mejoradas",
+          "nextNodeId": "final147"
+        }
+      ]
+    },
+    {
+      "id": "node8bd",
+      "text": "[ESTABLECER TRAMPAS] Colocar trampas en rutas clave para ralentizar a las defensas.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mientras las trampas están activas",
+          "nextNodeId": "final148"
+        },
+        {
+          "text": "[RETIRARSE] Decidir abandonar el hackeo tras establecer las trampas",
+          "nextNodeId": "final149"
+        }
+      ]
+    },
+    {
+      "id": "node8be",
+      "text": "[COLABORAR CON ALIANZAS] Trabajar en conjunto con tus aliados para mejorar las posibilidades de éxito.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO CON APOYO] Proceder con el hackeo con apoyo de aliados",
+          "nextNodeId": "final150"
+        },
+        {
+          "text": "[TRAICIONAR ALIANZAS] Utilizar las alianzas para tu beneficio personal",
+          "nextNodeId": "final151"
+        }
+      ]
+    },
+    {
+      "id": "node8bf",
+      "text": "[TRAICIONAR ALIANZAS] Decides traicionar a tus aliados para obtener el control total del hackeo.",
+      "choices": [
+        {
+          "text": "[CONQUISTAR SISTEMAS] Tomar control de los sistemas del NeuroBank",
+          "nextNodeId": "final152"
+        },
+        {
+          "text": "[OCULTAR ACTIVIDAD] Borrar todas las huellas de tu traición",
+          "nextNodeId": "final153"
+        }
+      ]
+    },
+    {
+      "id": "node8bg",
+      "text": "[PLANIFICAR HACKEO] Crear un plan detallado basado en la información recopilada, maximizando tus posibilidades de éxito.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo con el plan mejorado",
+          "nextNodeId": "final154"
+        },
+        {
+          "text": "[IMPLEMENTAR TRAMPAS] Colocar trampas según el plan",
+          "nextNodeId": "final155"
+        }
+      ]
+    },
+    {
+      "id": "node8bh",
+      "text": "[COMPARTIR INFORMACIÓN] Compartes la información con tu equipo, mejorando la coordinación durante el hackeo.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO CON COORDINACIÓN] Proceder con el hackeo mejorado",
+          "nextNodeId": "final156"
+        },
+        {
+          "text": "[DESCUBRIR TRAICIONES] Detectar traiciones dentro del equipo",
+          "nextNodeId": "final157"
+        }
+      ]
+    },
+    {
+      "id": "node8bi",
+      "text": "[HACKEO EXITOSO] Comienzas el hackeo con el plan mejorado, enfrentándote a las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final158"
+        },
+        {
+          "text": "[ESCAPAR PREVIA] Decidir escapar antes de finalizar el hackeo",
+          "nextNodeId": "final159"
+        }
+      ]
+    },
+    {
+      "id": "node8bj",
+      "text": "[DEPLOY DE TRAMPAS] Colocas trampas según el nuevo plan, dificultando el avance de los guardias y la IA.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado",
+          "nextNodeId": "final160"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las trampas colocadas",
+          "nextNodeId": "final161"
+        }
+      ]
+    },
+    {
+      "id": "node8bk",
+      "text": "[COMPLETAR HACKEO] Inicias el hackeo y logras penetrar completamente en los sistemas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar toda la información necesaria",
+          "nextNodeId": "final162"
+        },
+        {
+          "text": "[DESACTIVAR SISTEMAS] Destruir todos los sistemas antes de extraer datos",
+          "nextNodeId": "final163"
+        }
+      ]
+    },
+    {
+      "id": "node8bl",
+      "text": "[FORTALECER DEFENSAS] Decides mejorar aún más las defensas, creando una barrera adicional contra la IA.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con defensas reforzadas",
+          "nextNodeId": "final164"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las defensas mejoradas",
+          "nextNodeId": "final165"
+        }
+      ]
+    },
+    {
+      "id": "node8bm",
+      "text": "[SABOTAJE EXITOSO] Logras sabotear el sistema completamente, facilitando la extracción de datos.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar la información antes de escapar",
+          "nextNodeId": "final166"
+        },
+        {
+          "text": "[OCULTAR HUELLAS] Borrar rastros antes de extraer datos",
+          "nextNodeId": "final167"
+        }
+      ]
+    },
+    {
+      "id": "node8bn",
+      "text": "[ESCAPADA SEGURA] Decides escapar antes de que se detecte el sabotaje, asegurando una extracción segura pero incompleta.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final168"
+        },
+        {
+          "text": "[ABANDONAR MISION] Decidir abandonar la misión y escapar",
+          "nextNodeId": "final169"
+        }
+      ]
+    },
+    {
+      "id": "node8bg__v2",
+      "text": "[PLANIFICACIÓN DETALLADA] Creas un plan detallado basado en la información recopilada, maximizando tus posibilidades de éxito.",
+      "choices": [
+        {
+          "text": "[INICIAR HACKEO] Comenzar el hackeo con el plan mejorado",
+          "nextNodeId": "final86"
+        },
+        {
+          "text": "[IMPLEMENTAR TRAMPAS] Colocar trampas según el plan",
+          "nextNodeId": "final87"
+        }
+      ]
+    },
+    {
+      "id": "node8bh__v2",
+      "text": "[COMPARTIR INFORMACIÓN] Compartes la información con tu equipo, mejorando la coordinación durante el hackeo.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO CON COORDINACIÓN] Proceder con el hackeo mejorado",
+          "nextNodeId": "final88"
+        },
+        {
+          "text": "[DESCUBRIR TRAICIONES] Detectas traiciones dentro del equipo",
+          "nextNodeId": "final89"
+        }
+      ]
+    },
+    {
+      "id": "node8bi__v2",
+      "text": "[HACKEO EXITOSO] Comienzas el hackeo con el plan mejorado, enfrentándote a las defensas de la IA.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final90"
+        },
+        {
+          "text": "[ESCAPAR PREVIA] Decidir escapar antes de finalizar el hackeo",
+          "nextNodeId": "final91"
+        }
+      ]
+    },
+    {
+      "id": "node8bj__v2",
+      "text": "[DEPLOY DE TRAMPAS] Colocas trampas según el nuevo plan, dificultando el avance de los guardias y la IA.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado",
+          "nextNodeId": "final92"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Escapar aprovechando las trampas colocadas",
+          "nextNodeId": "final93"
+        }
+      ]
+    },
+    {
+      "id": "node8bk__v2",
+      "text": "[COMPLETAR HACKEO] Inicias el hackeo y logras penetrar completamente en los sistemas del NeuroBank.",
+      "choices": [
+        {
+          "text": "[EXTRAER DATOS] Descargar toda la información necesaria",
+          "nextNodeId": "final94"
+        },
+        {
+          "text": "[DESACTIVAR SISTEMAS] Destruir todos los sistemas antes de extraer datos",
+          "nextNodeId": "final95"
+        }
+      ]
+    },
+    {
+      "id": "node8bl__v2",
+      "text": "[PROTEGER SISTEMAS] Decides fortalecer tus defensas antes de continuar con el hackeo.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo mejorado",
+          "nextNodeId": "final96"
+        },
+        {
+          "text": "[RETIRARSE] Decidir abandonar el hackeo por seguridad",
+          "nextNodeId": "final97"
+        }
+      ]
+    },
+    {
+      "id": "node8bm__v2",
+      "text": "[COMPLETAR HACKEO CON SABOTAJE] Finalizas el hackeo con éxito, extrayendo toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final98"
+        },
+        {
+          "text": "[PROTEGER DATOS Y ESCAPAR] Asegurar los datos antes de escapar",
+          "nextNodeId": "final99"
+        }
+      ]
+    },
+    {
+      "id": "node8bn__v2",
+      "text": "[ESCAPADA SEGURA] Decides escapar antes de que se detecte el sabotaje, asegurando una extracción segura pero incompleta.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final100"
+        },
+        {
+          "text": "[ABANDONAR MISION] Decidir abandonar la misión y escapar",
+          "nextNodeId": "final101"
+        }
+      ]
+    },
+    {
+      "id": "node8bo",
+      "text": "[EXTRACCIÓN TOTAL Y EXITOSA] Finalizas el hackeo, extrayendo toda la información vital del NeuroBank.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final102"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final103"
+        }
+      ]
+    },
+    {
+      "id": "node8bp",
+      "text": "[DESACTIVACIÓN DE SISTEMAS] Destruyes los sistemas del NeuroBank, asegurando que no puedan rastrearte ni recuperar la información.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON CONTROL] Escapar manteniendo el control de los sistemas desactivados",
+          "nextNodeId": "final104"
+        },
+        {
+          "text": "[RETIRARSE EFECTIVAMENTE] Decidir retirar mientras mantienes el control",
+          "nextNodeId": "final105"
+        }
+      ]
+    },
+    {
+      "id": "node8bq",
+      "text": "[CONTINUAR CON HACKEO MEJORADO] Procedes con el hackeo mejorado, enfrentándote a las defensas de la IA con mayor eficacia.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final106"
+        },
+        {
+          "text": "[ESCAPAR PREVIA] Decidir escapar antes de finalizar el hackeo",
+          "nextNodeId": "final107"
+        }
+      ]
+    },
+    {
+      "id": "node8br",
+      "text": "[RETIRADA CON DEFENSAS] Decides escapar aprovechando las defensas reforzadas, asegurando una extracción segura.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final108"
+        },
+        {
+          "text": "[ABANDONAR MISION] Decidir abandonar la misión y escapar",
+          "nextNodeId": "final109"
+        }
+      ]
+    },
+    {
+      "id": "node8bs",
+      "text": "[FLEXIBILIDAD EN HACKEO] Adaptas tu hackeo a medida que avanzas, mejorando tu eficiencia.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final110"
+        },
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final111"
+        }
+      ]
+    },
+    {
+      "id": "node8bt",
+      "text": "[DETALLE PRECISO] Te concentras en detalles específicos, maximizando la eficiencia del hackeo.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final112"
+        },
+        {
+          "text": "[ESCAPAR INMEDIATAMENTE] Iniciar la fuga antes de que la IA contraataque",
+          "nextNodeId": "final113"
+        }
+      ]
+    },
+    {
+      "id": "node8bu",
+      "text": "[HACKEO EXITOSO Y FUERZA TOTAL] Inicias el hackeo y logras penetrar completamente en los sistemas del NeuroBank, extrayendo toda la información necesaria.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con éxito",
+          "nextNodeId": "final114"
+        },
+        {
+          "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+          "nextNodeId": "final115"
+        }
+      ]
+    },
+    {
+      "id": "node8bv",
+      "text": "[OCULTAR HUELLAS EXITOSAMENTE] Logras borrar rastros antes de hackear, reduciendo la probabilidad de ser detectado.",
+      "choices": [
+        {
+          "text": "[COMPLETAR HACKEO] Finalizar el hackeo con éxito",
+          "nextNodeId": "final116"
+        },
+        {
+          "text": "[RETIRARSE CON DATOS] Escapar con los datos antes de ser detectado",
+          "nextNodeId": "final117"
+        }
+      ]
+    },
+    {
+      "id": "node8bw",
+      "text": "[CONTINUAR HACKEANDO] Sigues hacia el núcleo a pesar de los bloqueos, enfrentándote a las defensas finales.",
+      "choices": [
+        {
+          "text": "[FINALIZAR HACKEO] Completar el hackeo con éxito",
+          "nextNodeId": "final118"
+        },
+        {
+          "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final119"
+        }
+      ]
+    },
+    {
+      "id": "node8bx",
+      "text": "[CAMBIAR ESTRATEGIA EXITOSAMENTE] Ajustas tu enfoque para superar los bloqueos, implementando nuevas tácticas.",
+      "choices": [
+        {
+          "text": "[CONTINUAR HACKEO] Proceder con el hackeo usando la nueva estrategia",
+          "nextNodeId": "final120"
+        },
+        {
+          "text": "[ESCAPAR EFECTIVAMENTE] Decidir escapar aprovechando la nueva estrategia",
+          "nextNodeId": "final121"
+        }
+      ]
+    },
+    {
+      "id": "node8by",
+      "text": "[INFORMACIÓN ADICIONAL] Descubres información adicional que puede ayudarte a finalizar el hackeo con mayor facilidad.",
+      "choices": [
+        {
+          "text": "[UTILIZAR INFORMACIÓN] Implementar la información adicional en tu hackeo",
+          "nextNodeId": "final122"
+        },
+        {
+          "text": "[ALMACENAR INFORMACIÓN] Guardar la información para uso futuro",
+          "nextNodeId": "final123"
+        }
+      ]
+    },
+    {
+      "id": "node9a",
+      "text": "[ACUERDO COMPLETO] Cumples con los términos de la IA, obteniendo acceso seguro a la información y asegurando una extracción sin problemas.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final124"
+        },
+        {
+          "text": "[PROTEGER INFORMACIÓN] Asegurar los datos antes de escapar",
+          "nextNodeId": "final125"
+        }
+      ]
+    },
+    {
+      "id": "node9b",
+      "text": "[PROTEGER DATOS EXITOSAMENTE] Aseguras la información antes de escapar, garantizando que no pueda ser rastreada.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos protegidos",
+          "nextNodeId": "final126"
+        },
+        {
+          "text": "[RETIRARSE SEGURAMENTE] Escapar de manera segura con los datos",
+          "nextNodeId": "final127"
+        }
+      ]
+    },
+    {
+      "id": "node9c",
+      "text": "[ESCAPADA EXITOSA] Inicias la fuga con los datos extraídos, logrando escapar antes de ser detectado.",
+      "choices": [
+        {
+          "text": "[FINAL EXITOSO] Completar la misión con éxito",
+          "nextNodeId": "final128"
+        },
+        {
+          "text": "[PERSISTENCIA DEL SISTEMA] Enfrentar a las fuerzas de seguridad que intentan detenerte",
+          "nextNodeId": "final129"
+        }
+      ]
+    },
+    {
+      "id": "node9d",
+      "text": "[PROTECCIÓN EXITOSA] Aseguras los datos antes de escapar, reduciendo la probabilidad de ser rastreado.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos protegidos",
+          "nextNodeId": "final130"
+        },
+        {
+          "text": "[ABANDONAR Y ESCAPAR] Decidir abandonar la misión y escapar",
+          "nextNodeId": "final131"
+        }
+      ]
+    },
+    {
+      "id": "node9e",
+      "text": "[ACUERDO COMPLETO EXITOSO] Cumples completamente con las condiciones de la IA, obteniendo acceso seguro y exitoso a la información.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos extraídos",
+          "nextNodeId": "final132"
+        },
+        {
+          "text": "[PROTEGER INFORMACIÓN] Asegurar los datos antes de escapar",
+          "nextNodeId": "final133"
+        }
+      ]
+    },
+    {
+      "id": "node9f",
+      "text": "[CUMPLIMIENTO PARCIAL] Cumples parcialmente con las condiciones de la IA, obteniendo acceso limitado a la información.",
+      "choices": [
+        {
+          "text": "[ESCAPAR CON DATOS LIMITADOS] Iniciar la fuga con la información obtenida",
+          "nextNodeId": "final134"
+        },
+        {
+          "text": "[COMPLETAR HACKEO] Continuar el hackeo para obtener más datos",
+          "nextNodeId": "final135"
+        }
+      ]
+    },
+    {
+      "id": "node9g",
+      "text": "[ABANDONAR MISION COMPLETAMENTE] Decides abandonar la misión por completo, escapando sin éxito pero sobreviviendo.",
+      "choices": []
+    },
+    {
+      "id": "node9h",
+      "text": "[PLANIFICACIÓN FUTURA] Preparas una nueva incursión en el futuro, basándote en las lecciones aprendidas de la misión actual.",
+      "choices": [
+        {
+          "text": "[PREPARAR EQUIPO] Mejorar tu equipo para la próxima misión",
+          "nextNodeId": "final136"
+        },
+        {
+          "text": "[FORMAR NUEVOS ALIANZAS] Buscar nuevas alianzas para fortalecer tu próxima incursión",
+          "nextNodeId": "final137"
+        }
+      ]
+    },
+    {
+      "id": "final1",
+      "text": "**Final: Amanecer Digital**\nLogras extraer los datos y escapar exitosamente. La información cambia el destino de la humanidad, pero atrae la atención de los cárteles. Vives en las sombras, sabiendo que tu sacrificio valió la pena.",
+      "choices": []
+    },
+    {
+      "id": "final2",
+      "text": "**Final: Exceso de Ambición**\nIntentas extraer más información de la necesaria, pero el tiempo se agota. El sistema se reinicia, dejando tu misión incompleta y atrapándote dentro del NeuroBank.",
+      "choices": []
+    },
+    {
+      "id": "final3",
+      "text": "**Final: Extracción Estratégica**\nDecides solo extraer datos cruciales y escapar. La información es suficiente para cambiar el destino de la humanidad, asegurando el éxito de tu misión.",
+      "choices": []
+    },
+    {
+      "id": "final4",
+      "text": "**Final: Sabotaje Completo**\nLogras sabotear el sistema completamente, extrayendo toda la información vital antes de que la IA pueda reaccionar. Escapas con éxito, dejando el NeuroBank desmantelado.",
+      "choices": []
+    },
+    {
+      "id": "final5",
+      "text": "**Final: Ocultación Eficaz**\nBorras rastros antes de extraer datos, asegurando que tu actividad no pueda ser rastreada. Escapas con la información necesaria sin ser detectado.",
+      "choices": []
+    },
+    {
+      "id": "final6",
+      "text": "**Final: Hackeo Completo**\nFinalizas el hackeo con éxito, extrayendo toda la información necesaria. Escapas del NeuroBank, cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final7",
+      "text": "**Final: Escape Estratégico**\nEscapas con los datos extraídos de manera segura, asegurando que la información llegue a quien debe.",
+      "choices": []
+    },
+    {
+      "id": "final8",
+      "text": "**Final: Alianza Fructífera**\nColaboras con el técnico para completar el hackeo exitosamente. Escapas juntos con los datos, fortaleciendo vuestra alianza para futuras misiones.",
+      "choices": []
+    },
+    {
+      "id": "final9",
+      "text": "**Final: Traición Desenfrenada**\nEl técnico te traiciona, interfiriendo en el hackeo. La misión se desmorona y debes enfrentar las consecuencias.",
+      "choices": []
+    },
+    {
+      "id": "final10",
+      "text": "**Final: Combate a la Traición**\nEnfrentas al técnico traicionero en un combate intenso. Logras derrotarlo, pero te quedas con heridas graves que afectan tu capacidad para escapar.",
+      "choices": []
+    },
+    {
+      "id": "final11",
+      "text": "**Final: Escape Bajo Ataque**\nDecides escapar antes de que el técnico te destruya. Logras escapar, pero sin los datos esenciales, limitando el impacto de tu misión.",
+      "choices": []
+    },
+    {
+      "id": "final12",
+      "text": "**Final: Hackeo Independiente**\nProcedes con el hackeo de manera independiente, logrando extraer la información necesaria sin ayuda externa.",
+      "choices": []
+    },
+    {
+      "id": "final13",
+      "text": "**Final: Ayuda Interna**\nLogras obtener ayuda de otras fuentes dentro del edificio, completando el hackeo con éxito y escapando con los datos.",
+      "choices": []
+    },
+    {
+      "id": "final14",
+      "text": "**Final: Hackeo a Contrarreloj**\nLogras completar el hackeo a contrarreloj, extrayendo toda la información vital antes de que el sistema se reinicie.",
+      "choices": []
+    },
+    {
+      "id": "final15",
+      "text": "**Final: Extracción Segura**\nDecides sacrificar parte de la información para asegurar una extracción rápida y segura, completando la misión con éxito parcial.",
+      "choices": []
+    },
+    {
+      "id": "final16",
+      "text": "**Final: Sacrificio Controlado**\nSacrificas parte de la información para asegurar la extracción segura, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final17",
+      "text": "**Final: Protección de Datos Clave**\nPriorizas la protección de datos esenciales, asegurando que la información más valiosa llegue a su destino.",
+      "choices": []
+    },
+    {
+      "id": "final18",
+      "text": "**Final: Hackeo Eficiente**\nCompletas el hackeo con mayor eficiencia, extrayendo toda la información necesaria y escapando con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final19",
+      "text": "**Final: Protección y Escape**\nAseguras la información antes de escapar, garantizando que los datos críticos no puedan ser rastreados.",
+      "choices": []
+    },
+    {
+      "id": "final20",
+      "text": "**Final: Hackeo Reforzado**\nFinalizas el hackeo con defensas reforzadas, extrayendo toda la información necesaria y asegurando el éxito de la misión.",
+      "choices": []
+    },
+    {
+      "id": "final21",
+      "text": "**Final: Escape con Defensas**\nEscapas aprovechando las defensas mejoradas, asegurando una extracción segura y exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final22",
+      "text": "**Final: Hackeo Potenciado**\nProcedes con el hackeo usando las herramientas avanzadas, logrando penetrar completamente en los sistemas del NeuroBank.",
+      "choices": []
+    },
+    {
+      "id": "final23",
+      "text": "**Final: Distracción Estratégica**\nUsas la información adicional para crear distracciones que facilitan el hackeo y la extracción de datos.",
+      "choices": []
+    },
+    {
+      "id": "final24",
+      "text": "**Final: Continuación Sin Cambios**\nProcedes con el hackeo sin cambios, enfrentándote a las defensas de la IA con tus tácticas originales.",
+      "choices": []
+    },
+    {
+      "id": "final25",
+      "text": "**Final: Adaptación Ligera**\nAjustas ligeramente tu enfoque basado en la nueva información, mejorando tus posibilidades de éxito.",
+      "choices": []
+    },
+    {
+      "id": "final26",
+      "text": "**Final: Sabotaje Completo**\nFinalizas el hackeo exitosamente, extrayendo toda la información necesaria antes de que la IA pueda reaccionar.",
+      "choices": []
+    },
+    {
+      "id": "final27",
+      "text": "**Final: Destrucción del Sistema**\nDestruyes todos los sistemas del NeuroBank, asegurando que no puedan rastrearte ni recuperar la información.",
+      "choices": []
+    },
+    {
+      "id": "final28",
+      "text": "**Final: Hackeo y Defensa**\nProcedes con el hackeo usando la nueva estrategia, enfrentándote a las defensas de la IA con mayor eficacia.",
+      "choices": []
+    },
+    {
+      "id": "final29",
+      "text": "**Final: Fortalecimiento de Defensas**\nFortaleces las defensas adicionales antes de hackear, asegurando una mayor protección contra la IA.",
+      "choices": []
+    },
+    {
+      "id": "final30",
+      "text": "**Final: Escape Seguro**\nCompleta la misión con éxito, escapando con los datos extraídos sin contratiempos.",
+      "choices": []
+    },
+    {
+      "id": "final31",
+      "text": "**Final: Persecución Intensa**\nEnfrentas a las fuerzas de seguridad que intentan detenerte durante la fuga, resultando en un final dramático.",
+      "choices": []
+    },
+    {
+      "id": "final32",
+      "text": "**Final: Escape con Trampas**\nInicias la fuga con los datos extraídos, aprovechando las trampas colocadas para asegurar una extracción exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final33",
+      "text": "**Final: Ocultación Exitosa**\nLogras borrar rastros antes de escapar, asegurando que tu actividad no pueda ser rastreada.",
+      "choices": []
+    },
+    {
+      "id": "final34",
+      "text": "**Final: Hackeo y Escape Exitoso**\nCompletas el hackeo con éxito y escapas del NeuroBank, cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final35",
+      "text": "**Final: Protección Exitosa y Escape**\nAseguras la información antes de escapar, garantizando que los datos críticos no puedan ser rastreados.",
+      "choices": []
+    },
+    {
+      "id": "final36",
+      "text": "**Final: Combate en Fuga**\nEnfrentas a las fuerzas que intentan detenerte durante la fuga, resultando en un final lleno de acción.",
+      "choices": []
+    },
+    {
+      "id": "final37",
+      "text": "**Final: Escape Rápido**\nUtilizas tus habilidades para escapar rápidamente, logrando salir con los datos antes de ser atrapado.",
+      "choices": []
+    },
+    {
+      "id": "final38",
+      "text": "**Final: Hackeo a Contrarreloj Exitoso**\nLogras completar el hackeo a contrarreloj, extrayendo toda la información vital antes de que el sistema se reinicie.",
+      "choices": []
+    },
+    {
+      "id": "final39",
+      "text": "**Final: Extracción Completa**\nSacrificas parte de la información para asegurar una extracción rápida y segura, completando la misión con éxito parcial.",
+      "choices": []
+    },
+    {
+      "id": "final40",
+      "text": "**Final: Hackeo Reforzado y Exitosa Extracción**\nFinalizas el hackeo con defensas reforzadas, extrayendo toda la información necesaria y asegurando el éxito de la misión.",
+      "choices": []
+    },
+    {
+      "id": "final41",
+      "text": "**Final: Escape con Defensas Mejoradas**\nEscapas aprovechando las defensas mejoradas, asegurando una extracción segura y exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final42",
+      "text": "**Final: Extracción Exitosa**\nDescargas la información vital y escapas con éxito, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final43",
+      "text": "**Final: Protección Exitosa de Datos**\nAseguras la información antes de escapar, garantizando que los datos críticos no puedan ser rastreados.",
+      "choices": []
+    },
+    {
+      "id": "final44",
+      "text": "**Final: Cierre de Acceso Seguro**\nDecides cerrar tu acceso antes de ser detectado, completando la misión con éxito y asegurando la extracción de datos.",
+      "choices": []
+    },
+    {
+      "id": "final45",
+      "text": "**Final: Escape Seguro con Datos**\nDecides escapar de manera segura con los datos extraídos, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final46",
+      "text": "**Final: Persistencia en Hackeo**\nNo te rindes y continúas el hackeo, logrando extraer la información necesaria a pesar de las dificultades.",
+      "choices": []
+    },
+    {
+      "id": "final47",
+      "text": "**Final: Redoblamiento de Defensas**\nMejoras tus defensas para contrarrestar a la IA, asegurando una extracción más segura y exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final48",
+      "text": "**Final: Completar Misión con Éxito**\nCompleta la misión exitosamente, extrayendo toda la información necesaria y escapando sin contratiempos.",
+      "choices": []
+    },
+    {
+      "id": "final49",
+      "text": "**Final: Persecución Final**\nEnfrentas a las fuerzas de seguridad en una última confrontación durante la fuga, resultando en un final dramático.",
+      "choices": []
+    },
+    {
+      "id": "final50",
+      "text": "**Final: Extracción y Dominio**\nLogras extraer toda la información vital del NeuroBank, dominando los sistemas y cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final51",
+      "text": "**Final: Destrucción del Sistema y Escape**\nDestruyes los sistemas del NeuroBank y escapas, asegurando que la información no pueda ser utilizada por terceros.",
+      "choices": []
+    },
+    {
+      "id": "final52",
+      "text": "**Final: Combate con Defensas**\nEnfrentas las defensas de la IA en una batalla intensa, logrando finalmente superar los obstáculos y completar el hackeo.",
+      "choices": []
+    },
+    {
+      "id": "final53",
+      "text": "**Final: Escape Antes de Confrontación**\nDecides escapar antes de enfrentar las defensas de la IA, asegurando tu supervivencia pero sin completar el hackeo.",
+      "choices": []
+    },
+    {
+      "id": "final54",
+      "text": "**Final: Hackeo a Contrarreloj Exitoso**\nLogras completar el hackeo a contrarreloj, extrayendo toda la información vital antes de que el sistema se reinicie.",
+      "choices": []
+    },
+    {
+      "id": "final55",
+      "text": "**Final: Extracción Segura y Escape**\nDecides borrar rastros antes de escapar, asegurando una extracción segura y sin ser detectado.",
+      "choices": []
+    },
+    {
+      "id": "final56",
+      "text": "**Final: Misión Exitosa**\nCompleta la misión con éxito, escapando con los datos extraídos y cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final57",
+      "text": "**Final: Abandono de Misión**\nDecides abandonar la misión y escapar, sobreviviendo pero sin éxito en tu objetivo.",
+      "choices": []
+    },
+    {
+      "id": "final58",
+      "text": "**Final: Hackeo y Escape Exitoso**\nCompletas el hackeo con éxito y escapas del NeuroBank, cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final59",
+      "text": "**Final: Ocultación y Escape**\nBorras rastros antes de hackear, asegurando que tu actividad no pueda ser rastreada y escapando con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final60",
+      "text": "**Final: Hackeo y Escape Directo**\nSigues hacia el núcleo a pesar de los bloqueos, enfrentándote a las defensas finales y completando el hackeo con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final61",
+      "text": "**Final: Cambio de Enfoque y Escape**\nAjustas tu enfoque para superar los bloqueos y decides escapar aprovechando la nueva estrategia.",
+      "choices": []
+    },
+    {
+      "id": "final62",
+      "text": "**Final: Hackeo Completo y Éxito**\nCompletas el hackeo con éxito, extrayendo toda la información necesaria antes de que la IA pueda reaccionar.",
+      "choices": []
+    },
+    {
+      "id": "final63",
+      "text": "**Final: Ocultación Exitosa y Hackeo**\nLogras borrar rastros antes de finalizar el hackeo, completando la misión con éxito y sin ser detectado.",
+      "choices": []
+    },
+    {
+      "id": "final64",
+      "text": "**Final: Campamento Estratégico**\nEstableces un campamento temporal para planificar, mejorando tus posibilidades de éxito en futuras incursiones.",
+      "choices": []
+    },
+    {
+      "id": "final65",
+      "text": "**Final: Uso de Equipo Mejorado**\nUtilizas el equipo disponible para mejorar tus posibilidades, asegurando un hackeo más eficiente y seguro.",
+      "choices": []
+    },
+    {
+      "id": "final66",
+      "text": "**Final: Escape Exitoso con Datos**\nLogras completar el hackeo y escapar con éxito, cambiando el destino de la humanidad con la información obtenida.",
+      "choices": []
+    },
+    {
+      "id": "final67",
+      "text": "**Final: Ocultación y Escape**\nBorras rastros antes de escapar, asegurando que tu actividad no pueda ser rastreada y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final68",
+      "text": "**Final: Hackeo Exitoso y Escape**\nFinalizas el hackeo con éxito, extrayendo toda la información necesaria y escapando sin ser detectado.",
+      "choices": []
+    },
+    {
+      "id": "final69",
+      "text": "**Final: Escape con Información**\nEscapas con los datos antes de ser detectado, asegurando que la información llegue a su destino sin contratiempos.",
+      "choices": []
+    },
+    {
+      "id": "final70",
+      "text": "**Final: Dominio de la Información**\nLogras extraer toda la información vital del NeuroBank, dominando los sistemas y cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final71",
+      "text": "**Final: Control Completo y Escape**\nDestruyes los sistemas del NeuroBank y escapas, asegurando que la información no pueda ser utilizada por terceros.",
+      "choices": []
+    },
+    {
+      "id": "final72",
+      "text": "**Final: Búsqueda de Lo Faltante**\nIntentas encontrar lo que falta en la información, pero descubres más secretos oscuros del NeuroBank.",
+      "choices": []
+    },
+    {
+      "id": "final73",
+      "text": "**Final: Misión Incompleta y Escape**\nAceptas que la misión está incompleta y escapas, sobreviviendo pero sin lograr tu objetivo principal.",
+      "choices": []
+    },
+    {
+      "id": "final74",
+      "text": "**Final: Hackeo Potenciado y Éxito**\nProcedes con el hackeo usando la nueva táctica, enfrentándote a las defensas de la IA con mayor eficacia y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final75",
+      "text": "**Final: Abandono por Complejidad**\nDecides abandonar el hackeo debido a la complejidad aumentada, escapando con vida pero sin éxito.",
+      "choices": []
+    },
+    {
+      "id": "final76",
+      "text": "**Final: Escape Inmediato sin Éxito**\nInicias la fuga sin completar la misión, escapando con vida pero sin lograr tu objetivo.",
+      "choices": []
+    },
+    {
+      "id": "final77",
+      "text": "**Final: Escape con Decisión**\nEsperas a que la situación se calme antes de escapar, asegurando tu supervivencia pero sin éxito en la misión.",
+      "choices": []
+    },
+    {
+      "id": "final78",
+      "text": "**Final: Extracción Exitosa y Escape**\nLogras completar el hackeo y extraer la información vital, escapando con éxito del NeuroBank.",
+      "choices": []
+    },
+    {
+      "id": "final79",
+      "text": "**Final: Protección y Escape**\nAseguras la información antes de escapar, garantizando que los datos críticos no puedan ser rastreados.",
+      "choices": []
+    },
+    {
+      "id": "final80",
+      "text": "**Final: Control Total y Extracción**\nDestruyes los sistemas del NeuroBank y descargas toda la información necesaria, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final81",
+      "text": "**Final: Escape Controlado**\nDecides escapar mientras mantienes el control de los sistemas desactivados, asegurando una extracción segura.",
+      "choices": []
+    },
+    {
+      "id": "final82",
+      "text": "**Final: Hackeo Adaptado y Éxito**\nProcedes con el hackeo usando la nueva estrategia, enfrentándote a las defensas de la IA con mayor eficacia y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final83",
+      "text": "**Final: Fortalecimiento y Escape**\nFortaleces las defensas adicionales antes de hackear, asegurando una mayor protección contra la IA y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final84",
+      "text": "**Final: Hackeo con Apoyo de Alianzas**\nProcedes con el hackeo con el apoyo de tus alianzas, logrando completar la misión con éxito y extrayendo la información vital.",
+      "choices": []
+    },
+    {
+      "id": "final85",
+      "text": "**Final: Traición y Dominio**\nUtilizas las alianzas para tu beneficio personal, traicionando a tus aliados y dominando el NeuroBank a tu manera.",
+      "choices": []
+    },
+    {
+      "id": "final86",
+      "text": "**Final: Hackeo Mejorado y Éxito**\nComienzas el hackeo con el plan mejorado, enfrentándote a las defensas de la IA y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final87",
+      "text": "**Final: Implementación de Trampas y Éxito**\nImplementas trampas según el plan, facilitando el hackeo y extrayendo la información necesaria con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final88",
+      "text": "**Final: Hackeo y Escape Coordinado**\nProcedes con el hackeo mejorado y escapas con los datos extraídos, asegurando el éxito de la misión.",
+      "choices": []
+    },
+    {
+      "id": "final89",
+      "text": "**Final: Traición Dentro del Equipo**\nDetectas traiciones dentro del equipo, complicando la misión y enfrentándote a conflictos internos.",
+      "choices": []
+    },
+    {
+      "id": "final90",
+      "text": "**Final: Hackeo Exitoso y Escape**\nCompletas el hackeo con éxito, extrayendo toda la información necesaria y escapando sin ser detectado.",
+      "choices": []
+    },
+    {
+      "id": "final91",
+      "text": "**Final: Escape Antes de Finalizar Hackeo**\nDecides escapar antes de finalizar el hackeo, dejando la misión incompleta pero sobreviviendo.",
+      "choices": []
+    },
+    {
+      "id": "final92",
+      "text": "**Final: Hackeo Completo y Sabotaje**\nFinalizas el hackeo exitosamente, extrayendo toda la información necesaria y asegurando que el NeuroBank no pueda rastrearte.",
+      "choices": []
+    },
+    {
+      "id": "final93",
+      "text": "**Final: Escape Facilidado por Sabotaje**\nAprovechas el sabotaje para escapar con los datos extraídos de manera segura.",
+      "choices": []
+    },
+    {
+      "id": "final94",
+      "text": "**Final: Extracción Total y Dominio**\nDescargas toda la información vital y logras escapar con éxito, dominando el NeuroBank y cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final95",
+      "text": "**Final: Destrucción de Sistemas y Extracción**\nDestruyes todos los sistemas antes de extraer datos, asegurando que la información no pueda ser rastreada y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final96",
+      "text": "**Final: Hackeo Mejorado y Éxito**\nProcedes con el hackeo mejorado, enfrentándote a las defensas de la IA con mayor eficacia y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final97",
+      "text": "**Final: Abandono Seguro**\nDecides abandonar el hackeo por seguridad, escapando sin éxito pero asegurando tu supervivencia.",
+      "choices": []
+    },
+    {
+      "id": "final98",
+      "text": "**Final: Hackeo Completo y Escape**\nFinalizas el hackeo con éxito, extrayendo toda la información necesaria y escapando del NeuroBank con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final99",
+      "text": "**Final: Protección y Escape Seguro**\nAseguras los datos antes de escapar, garantizando que la información llegue a su destino sin ser rastreada.",
+      "choices": []
+    },
+    {
+      "id": "final100",
+      "text": "**Final: Misión Exitosa**\nCompleta la misión con éxito, escapando con los datos extraídos y cambiando el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final101",
+      "text": "**Final: Abandono y Escape Seguro**\nDecides abandonar la misión y escapar, sobreviviendo pero sin lograr tu objetivo principal.",
+      "choices": []
+    },
+    {
+      "id": "final102",
+      "text": "**Final: Extracción Total y Escape Exitoso**\nLogras extraer toda la información vital y escapar exitosamente, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final103",
+      "text": "**Final: Ocultación Exitosa y Escape**\nBorras rastros antes de escapar, asegurando que tu actividad no pueda ser rastreada y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final104",
+      "text": "**Final: Control Total y Escape**\nDestruyes los sistemas del NeuroBank y escapas, asegurando que la información no pueda ser utilizada por terceros.",
+      "choices": []
+    },
+    {
+      "id": "final105",
+      "text": "**Final: Escape Controlado**\nDecides escapar mientras mantienes el control de los sistemas desactivados, asegurando una extracción segura.",
+      "choices": []
+    },
+    {
+      "id": "final106",
+      "text": "**Final: Hackeo y Éxito Total**\nProcedes con el hackeo mejorado, enfrentándote a las defensas de la IA y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final107",
+      "text": "**Final: Escape Antes del Éxito Completo**\nDecides escapar antes de finalizar el hackeo, completando la misión con éxito parcial y asegurando tu supervivencia.",
+      "choices": []
+    },
+    {
+      "id": "final108",
+      "text": "**Final: Escape Seguro con Defensas Reforzadas**\nEscapas aprovechando las defensas reforzadas, asegurando una extracción segura y exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final109",
+      "text": "**Final: Abandono con Seguridad**\nDecides abandonar la misión y escapar, sobreviviendo pero sin lograr tu objetivo principal.",
+      "choices": []
+    },
+    {
+      "id": "final110",
+      "text": "**Final: Hackeo Independiente y Éxito**\nProcedes con el hackeo de manera independiente, logrando extraer la información necesaria sin ayuda externa.",
+      "choices": []
+    },
+    {
+      "id": "final111",
+      "text": "**Final: Hackeo Independiente y Escape**\nProcedes con el hackeo de manera independiente y logras extraer la información necesaria antes de escapar con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final112",
+      "text": "**Final: Hackeo Detallado y Éxito**\nTe concentras en detalles específicos, maximizando la eficiencia del hackeo y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final113",
+      "text": "**Final: Escape Rápido con Éxito**\nInicias la fuga antes de que la IA contraataque, logrando escapar con éxito antes de que el sistema se reinicie.",
+      "choices": []
+    },
+    {
+      "id": "final114",
+      "text": "**Final: Hackeo Total y Escape Exitoso**\nCompletas el hackeo y logras penetrar completamente en los sistemas del NeuroBank, extrayendo toda la información necesaria y escapando con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final115",
+      "text": "**Final: Ocultación y Escape Exitosa**\nLogras borrar rastros antes de escapar, asegurando que tu actividad no pueda ser rastreada y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final116",
+      "text": "**Final: Hackeo Completo y Éxito**\nFinalizas el hackeo con éxito, extrayendo toda la información necesaria y completando la misión.",
+      "choices": []
+    },
+    {
+      "id": "final117",
+      "text": "**Final: Escape Seguro con Datos Extraídos**\nEscapas con los datos extraídos antes de ser detectado, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final118",
+      "text": "**Final: Hackeo Completo y Dominio**\nCompletas el hackeo con éxito, extrayendo toda la información necesaria antes de que la IA pueda reaccionar.",
+      "choices": []
+    },
+    {
+      "id": "final119",
+      "text": "**Final: Escape Exitoso con Hackeo Completo**\nLogras completar el hackeo y extraer la información necesaria, escapando exitosamente del NeuroBank.",
+      "choices": []
+    },
+    {
+      "id": "final120",
+      "text": "**Final: Hackeo Adaptado y Éxito**\nProcedes con el hackeo usando la nueva táctica, enfrentándote a las defensas de la IA con mayor eficacia y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final121",
+      "text": "**Final: Escape Aprovechando Nueva Estrategia**\nDecides escapar aprovechando la nueva estrategia, asegurando una extracción segura y exitosa.",
+      "choices": []
+    },
+    {
+      "id": "final122",
+      "text": "**Final: Hackeo Potenciado con Información Adicional**\nImplementas la información adicional en tu hackeo, mejorando tus posibilidades de éxito y completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final123",
+      "text": "**Final: Almacenamiento de Información para Futuro**\nGuardas la información para uso futuro, completando la misión con éxito y preparando futuras incursiones.",
+      "choices": []
+    },
+    {
+      "id": "final124",
+      "text": "**Final: Acuerdo Completo y Escape**\nAceptas los términos de la IA y obtienes acceso seguro a la información. Escapas exitosamente con los datos necesarios, asegurando el éxito de la misión.",
+      "choices": []
+    },
+    {
+      "id": "final125",
+      "text": "**Final: Protección Exitosa de Datos**\nAseguras los datos antes de escapar, garantizando que los datos críticos no puedan ser rastreados. Completa la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final126",
+      "text": "**Final: Éxito con Tecnología Avanzada**\nUtilizas la tecnología de infrarrojos para evadir los sensores del NeuroBank. Logras extraer la información vital y escapar sin ser detectado, cambiando el destino de la humanidad."
+    },
+    {
+      "id": "final127",
+      "text": "**Final: Desactivación Manual Exitosa**\nCon habilidad y rapidez, logras desactivar los sistemas de seguridad manualmente. Extraes la información vital y escapas exitosamente, asegurando el éxito de la misión."
+    },
+    {
+      "id": "final128",
+      "text": "**Final: Misión Exitosa**\nCompleta la misión con éxito, escapando con los datos extraídos y asegurando el cambio en el destino de la humanidad.",
+      "choices": []
+    },
+    {
+      "id": "final129",
+      "text": "**Final: Persecución Final**\nEnfrentas a las fuerzas de seguridad en una última confrontación durante la fuga, resultando en un final dramático.",
+      "choices": []
+    },
+    {
+      "id": "final130",
+      "text": "**Final: Protección Exitosa y Escape**\nAseguras la información antes de escapar, garantizando que los datos críticos no puedan ser rastreados.",
+      "choices": []
+    },
+    {
+      "id": "final131",
+      "text": "**Final: Escape Seguro con Datos Extraídos**\nEscapas con los datos extraídos antes de ser detectado, completando la misión con éxito.",
+      "choices": []
+    },
+    {
+      "id": "final132",
+      "text": "**Final: Acuerdo Completo y Escape**\nAceptas los términos de la IA y obtienes acceso seguro a la información. Escapas exitosamente con los datos necesarios, asegurando el éxito de la misión.",
+      "choices": []
+    },
+    {
+      "id": "final133",
+      "text": "**Final: Traición y Dominio**\nUtilizas las alianzas para tu beneficio personal, traicionando a tus aliados y dominando el NeuroBank a tu manera.",
+      "choices": []
+    },
+    {
+      "id": "final134",
+      "text": "**Final: Hackeo Desastroso**\nIntentas extraer datos adicionales, pero el sistema detecta tu actividad. La IA te atrapa y la misión fracasa.",
+      "choices": []
+    },
+    {
+      "id": "final135",
+      "text": "**Final: Hackeo Persistente**\nDecides continuar el hackeo para obtener más datos, enfrentándote a nuevas defensas de la IA, pero logras extraer información crucial.",
+      "choices": []
+    },
+    {
+      "id": "final136",
+      "text": "**Final: Preparación Exitosa**\nMejoras tu equipo para la próxima misión, asegurando una mayor eficiencia y éxito en futuras incursiones.",
+      "choices": []
+    },
+    {
+      "id": "final137",
+      "text": "**Final: Alianzas Fuertes**\nFormas nuevas alianzas que fortalecen tu posición en futuras misiones, aumentando tus posibilidades de éxito.",
+      "choices": []
+    },
+    {
+      "id": "final_secu",
+      "text": "**Final: Persecución Mortal**\nDurante la fuga, las fuerzas de seguridad te persiguen implacablemente. A pesar de tus esfuerzos, no logras escapar y la misión termina en fracaso, convirtiéndote en otro cadáver en el basurero digital de Neo-Tokio.",
+      "choices": []
+    },
+    {
+      "id": "final134__v2",
+      "text": "**Final: Extracción Exitosa a Ciegas**\nA pesar de tu ceguera, logras extraer toda la información vital del NeuroBank. Escapas exitosamente, cambiando el destino de la humanidad con los datos obtenidos."
+    },
+    {
+      "id": "final135__v2",
+      "text": "**Final: Ocultación y Escape Seguro**\nDecides borrar tus huellas antes de escapar. Aunque logras ocultar tu actividad, algunos datos podrían perderse en el proceso, pero logras salir sin ser detectado."
+    },
+    {
+      "id": "final136__v2",
+      "text": "**Final: Misión Fallida por Ceguera**\nLa ceguera interrumpe tu hackeo, y las defensas de la IA te capturan. La misión termina en fracaso, atrapándote dentro del NeuroBank."
+    },
+    {
+      "id": "final137__v2",
+      "text": "**Final: Escape Rápido sin Éxito**\nUtilizas tus habilidades para escapar rápidamente, pero sin los datos esenciales, limitando el impacto de tu misión."
+    },
+    {
+      "id": "final138",
+      "text": "**Final: Hackeo Completo con Visibilidad Total**\nLogras descargar toda la información necesaria gracias a tu hackeo exitoso con plena visibilidad. Escapas con éxito, asegurando el cambio en el destino de la humanidad."
+    },
+    {
+      "id": "final139",
+      "text": "**Final: Desactivación de Sistemas y Escape**\nDestruyes todos los sistemas del NeuroBank antes de extraer datos, asegurando que la información no pueda ser rastreada y completando la misión con éxito."
+    },
+    {
+      "id": "final140",
+      "text": "**Final: Campamento Estratégico**\nEstableces un campamento temporal para planificar, mejorando tus posibilidades de éxito en futuras incursiones."
+    },
+    {
+      "id": "final141",
+      "text": "**Final: Uso de Equipo Mejorado**\nUtilizas el equipo disponible para mejorar tus posibilidades, asegurando un hackeo más eficiente y seguro."
+    },
+    {
+      "id": "final142",
+      "text": "**Final: Hackeo Flexible y Éxito**\nAdaptas tu hackeo a medida que avanzas, mejorando tu eficiencia y completando la misión con éxito."
+    },
+    {
+      "id": "final143",
+      "text": "**Final: Hackeo Detallado y Éxito**\nTe concentras en detalles específicos, maximizando la eficiencia del hackeo y completando la misión con éxito."
+    },
+    {
+      "id": "final144",
+      "text": "**Final: Hackeo Mejorado con Sensores**\nActivaste sensores adicionales que compensan tu falta de visión, logrando completar el hackeo con éxito y escapando con los datos."
+    },
+    {
+      "id": "final145",
+      "text": "**Final: Abandono Estratégico**\nDecides que es demasiado arriesgado continuar, abandonando el hackeo y escapando con vida, pero sin éxito en tu misión."
+    },
+    {
+      "id": "final146",
+      "text": "**Final: Hackeo Reforzado y Éxito**\nFinalizas el hackeo con defensas reforzadas, extrayendo toda la información necesaria y asegurando el éxito de la misión."
+    },
+    {
+      "id": "final147",
+      "text": "**Final: Escape con Defensas Mejoradas**\nEscapas aprovechando las defensas mejoradas, asegurando una extracción segura y exitosa."
+    },
+    {
+      "id": "final148",
+      "text": "**Final: Hackeo Mejorado y Éxito**\nProcedes con el hackeo mejorado mientras las trampas están activas, logrando extraer la información necesaria con éxito."
+    },
+    {
+      "id": "final149",
+      "text": "**Final: Abandono Tras Trampas**\nDecides abandonar el hackeo tras establecer trampas, escapando con vida pero sin lograr tu objetivo principal."
+    },
+    {
+      "id": "final150",
+      "text": "**Final: Hackeo con Apoyo de Alianzas**\nProcedes con el hackeo con el apoyo de tus alianzas, logrando completar la misión con éxito y extrayendo la información vital."
+    },
+    {
+      "id": "final151",
+      "text": "**Final: Traición y Dominio**\nUtilizas las alianzas para tu beneficio personal, traicionando a tus aliados y dominando el NeuroBank a tu manera."
+    },
+    {
+      "id": "final152",
+      "text": "**Final: Conquista de Sistemas**\nTomar control de los sistemas del NeuroBank te permite dominar la infraestructura, cambiando el equilibrio de poder en Neo-Tokio."
+    },
+    {
+      "id": "final153",
+      "text": "**Final: Ocultación Exitosa Tras Traición**\nBorras todas las huellas de tu traición y logras escapar con la información, asegurando que tu actividad no pueda ser rastreada."
+    },
+    {
+      "id": "final154",
+      "text": "**Final: Hackeo Completo con Éxito**\nCompletas el hackeo con éxito siguiendo el plan detallado, extrayendo toda la información necesaria y escapando sin contratiempos."
+    },
+    {
+      "id": "final155",
+      "text": "**Final: Implementación de Trampas y Éxito**\nColocas trampas según el plan, facilitando la extracción de datos y escapando exitosamente con la información."
+    },
+    {
+      "id": "final156",
+      "text": "**Final: Hackeo Coordinado y Éxito**\nProcedes con el hackeo mejorado y escapas con los datos extraídos, asegurando el éxito de la misión gracias a la buena coordinación con tu equipo."
+    },
+    {
+      "id": "final157",
+      "text": "**Final: Descubrimiento de Traiciones**\nDetectas traiciones dentro del equipo, lo que complica la misión y conduce a un desenlace catastrófico."
+    },
+    {
+      "id": "final158",
+      "text": "**Final: Hackeo Exitoso y Escape**\nCompletas el hackeo con éxito, extrayendo toda la información necesaria y escapando sin ser detectado."
+    },
+    {
+      "id": "final159",
+      "text": "**Final: Escape Antes del Hackeo Completo**\nDecides escapar antes de finalizar el hackeo, completando la misión con éxito parcial y asegurando tu supervivencia."
+    },
+    {
+      "id": "final160",
+      "text": "**Final: Hackeo Completo con Sabotaje**\nFinalizas el hackeo exitosamente, extrayendo toda la información necesaria y asegurando que el NeuroBank no pueda rastrearte."
+    },
+    {
+      "id": "final161",
+      "text": "**Final: Escape Facilidado por Sabotaje**\nAprovechas el sabotaje para escapar con los datos extraídos de manera segura."
+    },
+    {
+      "id": "final162",
+      "text": "**Final: Extracción Total y Dominio**\nDescargas toda la información vital y logras escapar con éxito, dominando el NeuroBank y cambiando el destino de la humanidad."
+    },
+    {
+      "id": "final163",
+      "text": "**Final: Destrucción de Sistemas y Extracción**\nDestruyes todos los sistemas antes de extraer datos, asegurando que la información no pueda ser rastreada y completando la misión con éxito."
+    },
+    {
+      "id": "final164",
+      "text": "**Final: Hackeo Reforzado y Éxito**\nFinalizas el hackeo con defensas reforzadas, extrayendo toda la información necesaria y asegurando el éxito de la misión."
+    },
+    {
+      "id": "final165",
+      "text": "**Final: Escape con Defensas Mejoradas**\nEscapas aprovechando las defensas mejoradas, asegurando una extracción segura y exitosa."
+    },
+    {
+      "id": "final166",
+      "text": "**Final: Hackeo y Sabotaje Exitoso**\nLogras sabotear el sistema completamente y extraer todos los datos necesarios, escapando sin ser detectado."
+    },
+    {
+      "id": "final167",
+      "text": "**Final: Ocultación Exitosa y Escape**\nDecides borrar tus huellas antes de escapar, asegurando que tu actividad no pueda ser rastreada y completando la misión con éxito."
+    },
+    {
+      "id": "final168",
+      "text": "**Final: Misión Exitosa**\nCompleta la misión con éxito, escapando con los datos extraídos y asegurando el cambio en el destino de la humanidad."
+    },
+    {
+      "id": "final169",
+      "text": "**Final: Abandono y Escape Seguro**\nDecides abandonar la misión y escapar, sobreviviendo pero sin lograr tu objetivo principal."
+    }
+  ]
+}

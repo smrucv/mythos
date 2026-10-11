@@ -1,4 +1,4 @@
-# Mythos Recovery v1.2.1
+# Mythos v1.2.1
 
 - Inicio diferido del controlador de Chigüire Grove hasta un frame de Flutter + 300 ms. Evita gastar la duración de animación durante la transición desde la ventana nativa.
 - Se conserva intacta la animación original al estar habilitadas las animaciones del dispositivo.

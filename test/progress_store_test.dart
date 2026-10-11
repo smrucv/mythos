@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mythos_recovery/models/story.dart';
-import 'package:mythos_recovery/services/progress_store.dart';
+import 'package:mythos/models/story.dart';
+import 'package:mythos/services/progress_store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -17,6 +17,10 @@ void main() {
   ]''').stories.single;
 
   setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  test('la clave de progreso usa la identidad Mythos', () {
+    expect(ProgressStore.storageKey, 'mythos.progress.v1');
+  });
 
   test('guarda, restaura, deshace decisiones y reinicia', () async {
     final store = await ProgressStore.open();

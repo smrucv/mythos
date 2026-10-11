@@ -7,7 +7,7 @@ if (-not (Get-Command flutter -ErrorAction SilentlyContinue)) {
 
 Write-Host '[1/5] Verificando plataforma Android...'
 if (-not (Test-Path 'android/app/src/main/AndroidManifest.xml')) {
-    flutter create --platforms=android --project-name=mythos_recovery --org com.mythos --no-pub .
+    flutter create --platforms=android --project-name=mythos --org com.mythos --no-pub .
     if ($LASTEXITCODE -ne 0) { throw 'flutter create fallo' }
 } else {
     Write-Host 'Android ya esta creado; se conservaran sus archivos existentes.'
@@ -26,8 +26,9 @@ if (Test-Path -LiteralPath $testDemo) {
     }
 }
 
-Write-Host '[2/5] Aplicando branding nativo...'
+Write-Host '[2/5] Aplicando configuracion Android de Mythos...'
 & (Join-Path $PSScriptRoot 'aplicar_branding_android.ps1')
+& (Join-Path $PSScriptRoot 'actualizar_identidad_android.ps1')
 
 Write-Host '[3/5] Resolviendo dependencias...'
 flutter pub get
@@ -41,5 +42,5 @@ Write-Host '[5/5] Pruebas automaticas...'
 flutter test
 if ($LASTEXITCODE -ne 0) { throw 'flutter test fallo' }
 
-Write-Host 'Proyecto preparado. En Android Studio: Open -> carpeta Mythos_Recovery_v1, seleccionar dispositivo y Run.'
+Write-Host 'Proyecto preparado. En Android Studio: Open -> carpeta Mythos, seleccionar dispositivo y Run.'
 Write-Host 'Alternativa consola: flutter run'

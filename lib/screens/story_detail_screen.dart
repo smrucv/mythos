@@ -92,9 +92,8 @@ class StoryDetailScreen extends StatelessWidget {
                         SizedBox(width: 9),
                         Expanded(
                           child: Text(
-                            'Esta historia contiene identificadores repetidos '
-                            'en los datos originales. Se respeta el contenido '
-                            'recuperado; algunas rutas pueden ser ambiguas.',
+                            'Esta historia contiene identificadores de nodo duplicados. '
+                            'Algunas rutas pueden no funcionar como se espera.',
                             style: TextStyle(
                               fontSize: 12,
                               color: MythosPalette.muted,

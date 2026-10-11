@@ -5,15 +5,9 @@ import 'package:flutter/material.dart';
 import '../screens/chiguire_grove_splash.dart';
 import 'mythos_theme.dart';
 
-/// Orden de arranque: splash nativo (Android) -> Chigüire Grove -> Mythos -> biblioteca.
-/// Las pantallas nativas de Android se configuran en scripts/aplicar_branding_android.ps1.
+/// Animación original del estudio -> MYTHOS -> biblioteca, sin marca nativa previa.
 class StartupSequence extends StatefulWidget {
-  const StartupSequence({
-    super.key,
-    required this.child,
-    this.enabled = true,
-  });
-
+  const StartupSequence({super.key, required this.child, this.enabled = true});
   final Widget child;
   final bool enabled;
 
@@ -21,117 +15,119 @@ class StartupSequence extends StatefulWidget {
   State<StartupSequence> createState() => _StartupSequenceState();
 }
 
-enum _StartupStage { grove, mythos, ready }
+enum _StartupStage { grove, toMythos, mythos, toLibrary, ready }
 
-class _StartupSequenceState extends State<StartupSequence> {
+class _StartupSequenceState extends State<StartupSequence>
+    with SingleTickerProviderStateMixin {
   late _StartupStage _stage;
+  late final AnimationController _fade;
+  late final CurvedAnimation _opacity;
+  Timer? _hold;
+  bool _reducedMotion = false;
 
   @override
   void initState() {
     super.initState();
     _stage = widget.enabled ? _StartupStage.grove : _StartupStage.ready;
+    _fade = AnimationController(vsync: this)..addStatusListener(_onFadeStatus);
+    _opacity = CurvedAnimation(parent: _fade, curve: Curves.easeInOut);
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final query = MediaQuery.maybeOf(context);
+    _reducedMotion = (query?.disableAnimations ?? false) ||
+        (query?.accessibleNavigation ?? false);
+    _fade.duration = Duration(milliseconds: _reducedMotion ? 0 : 600);
   }
 
   void _showMythos() {
-    if (mounted && _stage == _StartupStage.grove) {
-      assert(() {
-        debugPrint('MYTHOS_STARTUP: transicion Chiguire -> MYTHOS');
-        return true;
-      }());
+    if (!mounted || _stage != _StartupStage.grove) return;
+    setState(() => _stage = _StartupStage.toMythos);
+    _fade.forward(from: 0);
+  }
+
+  void _onFadeStatus(AnimationStatus status) {
+    if (!mounted || status != AnimationStatus.completed) return;
+    if (_stage == _StartupStage.toMythos) {
       setState(() => _stage = _StartupStage.mythos);
+      // Contar la permanencia solamente después del fundido de entrada.
+      _hold = Timer(const Duration(milliseconds: 1500), _showLibrary);
+    } else if (_stage == _StartupStage.toLibrary) {
+      setState(() => _stage = _StartupStage.ready);
     }
   }
 
   void _showLibrary() {
-    if (mounted && _stage == _StartupStage.mythos) {
-      assert(() {
-        debugPrint('MYTHOS_STARTUP: transicion MYTHOS -> Biblioteca');
-        return true;
-      }());
-      setState(() => _stage = _StartupStage.ready);
-    }
+    if (!mounted || _stage != _StartupStage.mythos) return;
+    setState(() => _stage = _StartupStage.toLibrary);
+    _fade.forward(from: 0);
   }
 
   @override
   void didUpdateWidget(covariant StartupSequence oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // Si se desactiva para pruebas, no reproducir pantallas de arranque.
     if (oldWidget.enabled && !widget.enabled) {
+      _hold?.cancel();
+      _fade.stop();
       _stage = _StartupStage.ready;
     }
   }
 
   @override
-  Widget build(BuildContext context) {
-    final Widget foreground = switch (_stage) {
-      _StartupStage.grove => ColoredBox(
-          key: const ValueKey('chiguire-grove-stage'),
-          color: const Color(0xFFF5F2EA),
-          child: ChiguireGroveSplashScreen(onFinished: _showMythos),
-        ),
-      _StartupStage.mythos => MythosTitleSplash(
-          key: const ValueKey('mythos-title-stage'),
-          onFinished: _showLibrary,
-        ),
-      _StartupStage.ready => const SizedBox.expand(
-          key: ValueKey('startup-ready'),
-        ),
-    };
+  void dispose() {
+    _hold?.cancel();
+    _fade.removeStatusListener(_onFadeStatus);
+    _opacity.dispose();
+    _fade.dispose();
+    super.dispose();
+  }
 
+  @override
+  Widget build(BuildContext context) {
+    final ready = _stage == _StartupStage.ready;
     return Stack(
       fit: StackFit.expand,
       children: [
-        widget.child,
-        Positioned.fill(
-          child: IgnorePointer(
-            ignoring: _stage == _StartupStage.ready,
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 250),
-              switchInCurve: Curves.easeInOut,
-              switchOutCurve: Curves.easeInOut,
-              child: foreground,
+        ExcludeSemantics(
+          excluding: !ready,
+          child: IgnorePointer(ignoring: !ready, child: widget.child),
+        ),
+        if (_stage == _StartupStage.grove || _stage == _StartupStage.toMythos)
+          ExcludeSemantics(
+            excluding: _stage != _StartupStage.grove,
+            child: ColoredBox(
+              key: const ValueKey('chiguire-grove-stage'),
+              color: const Color(0xFFF5F2EA),
+              child: ChiguireGroveSplashScreen(onFinished: _showMythos),
             ),
           ),
-        ),
+        if (_stage != _StartupStage.grove && !ready)
+          FadeTransition(
+            // Una capa opaca permanece debajo durante todo el fundido.
+            // Así la biblioteca nunca se filtra entre estudio y MYTHOS.
+            opacity: _stage == _StartupStage.toMythos
+                ? _opacity
+                : _stage == _StartupStage.toLibrary
+                    ? ReverseAnimation(_opacity)
+                    : const AlwaysStoppedAnimation(1),
+            child: const MythosTitleSplash(
+              key: ValueKey('mythos-title-stage'),
+            ),
+          ),
+        if (ready)
+          const IgnorePointer(
+            child: SizedBox.expand(key: ValueKey('startup-ready')),
+          ),
       ],
     );
   }
 }
 
-/// Presentación minimalista aprobada: fondo #10101A, libro y texto MYTHOS.
-/// Implementada como widgets/pintura vectorial Flutter, sin imagen rasterizada.
-class MythosTitleSplash extends StatefulWidget {
-  const MythosTitleSplash({super.key, required this.onFinished});
-
-  final VoidCallback onFinished;
-
-  @override
-  State<MythosTitleSplash> createState() => _MythosTitleSplashState();
-}
-
-class _MythosTitleSplashState extends State<MythosTitleSplash> {
-  Timer? _timer;
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _timer?.cancel();
-    final query = MediaQuery.maybeOf(context);
-    final reducedMotion = (query?.disableAnimations ?? false) ||
-        (query?.accessibleNavigation ?? false);
-    _timer = Timer(
-      reducedMotion
-          ? const Duration(milliseconds: 650)
-          : const Duration(milliseconds: 1500),
-      widget.onFinished,
-    );
-  }
-
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
+/// Presentación minimalista: fondo #10101A, libro y texto MYTHOS.
+class MythosTitleSplash extends StatelessWidget {
+  const MythosTitleSplash({super.key});
 
   @override
   Widget build(BuildContext context) => ColoredBox(

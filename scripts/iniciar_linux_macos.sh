@@ -5,7 +5,7 @@ if ! command -v flutter >/dev/null 2>&1; then
   echo 'Flutter no encontrado en PATH; instala el SDK antes de continuar.' >&2
   exit 1
 fi
-flutter create --platforms=android --project-name=mythos_recovery --org com.mythos --no-pub .
+flutter create --platforms=android --project-name=mythos --org com.mythos --no-pub .
 # El ejemplo generado por Flutter usa MyApp; Mythos tiene MythosApp.
 # Eliminar solo el test demo reconocible, nunca una prueba personalizada.
 if [[ -f test/widget_test.dart ]] && \

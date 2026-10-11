@@ -1,4 +1,4 @@
-package com.mythos.mythos_recovery
+package com.mythos.mythos
 
 import io.flutter.embedding.android.FlutterActivity
 

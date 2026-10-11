@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../models/story.dart';
+import '../services/story_repository.dart';
 import '../services/progress_store.dart';
 import '../widgets/mythos_theme.dart';
 import '../widgets/story_cover.dart';
 
 class LibraryScreen extends StatefulWidget {
-  final StoryCatalog catalog;
+  final StoryRepository catalog;
   final ProgressStore progress;
 
   const LibraryScreen({
@@ -52,16 +53,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
         ),
         actions: [
           IconButton(
-            tooltip: 'Acerca de la recuperación',
+            tooltip: 'Acerca de Mythos',
             onPressed: () => showAboutDialog(
               context: context,
-              applicationName: 'Mythos Recovery',
+              applicationName: 'Mythos',
               applicationVersion: '1.0.0',
               children: [
                 const Text(
-                  'Reconstrucción independiente basada en los recursos '
-                  'del APK conservado. Guarda tus partidas localmente. '
-                  'Las historias originales no se modificaron.',
+                  'Historias interactivas en las que cada decisión cuenta. '
+                  'Tu progreso se guarda en este dispositivo.',
                 ),
               ],
             ),
@@ -183,10 +183,11 @@ class _LibraryScreenState extends State<LibraryScreen> {
                       builder: (context, _) => ListView.separated(
                         padding: const EdgeInsets.fromLTRB(18, 0, 18, 26),
                         itemCount: stories.length,
-                        separatorBuilder: (context, index) => const SizedBox(height: 12),
+                        separatorBuilder: (context, index) =>
+                            const SizedBox(height: 12),
                         itemBuilder: (context, index) {
                           final story = stories[index];
-                          final saved = widget.progress.forStory(story);
+                          final saved = widget.progress.forSummary(story);
                           return _StoryCard(
                             story: story,
                             saved: saved,
@@ -204,7 +205,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
 }
 
 class _StoryCard extends StatelessWidget {
-  final Story story;
+  final StorySummary story;
   final StoryProgress? saved;
   final VoidCallback onTap;
 

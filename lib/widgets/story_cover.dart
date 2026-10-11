@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/story.dart';
 
 class StoryCover extends StatelessWidget {
-  final Story story;
+  final StoryMetadata story;
   final double? height;
   final BorderRadius? borderRadius;
   final bool darkenBottom;

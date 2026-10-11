@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/services.dart';
-import 'package:mythos_recovery/models/story.dart';
+import 'package:mythos/models/story.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('el catalogo recuperado contiene las cuatro historias y 592 nodos',
+  test('el catalogo de Mythos contiene las cuatro historias y 592 nodos',
       () async {
     final catalog = await StoryCatalog.fromAssets();
     expect(catalog.stories.length, 4);
@@ -27,17 +27,14 @@ void main() {
     }
   });
 
-  test('los 12 IDs duplicados originales quedan auditados y sin alterar',
-      () async {
+  test('El Asalto Neon conserva 354 definiciones con IDs unicos', () async {
     final catalog = await StoryCatalog.fromAssets();
     final problematic = catalog.byId('cyberpunk_heist')!;
-    expect(problematic.duplicateNodeIds.length, 12);
+    expect(problematic.duplicateNodeIds, isEmpty);
     expect(problematic.nodes.length, 354);
-    // El codigo de lectura usa la primera entrada en el archivo.
-    final first = problematic.nodes.firstWhere(
-      (node) => node.id == problematic.duplicateNodeIds.first,
-    );
-    expect(problematic.nodeById(first.id), same(first));
+    expect(problematic.nodes.map((node) => node.id).toSet().length, 354);
+    expect(
+        problematic.nodes.where((node) => node.id.endsWith('__v2')).length, 12);
   });
 
   test('una historia minima admite nodos sin campo choices', () {

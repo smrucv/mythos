@@ -1,0 +1,65 @@
+{
+  "storyId": "cyberpunk_heist",
+  "renames": [
+    {
+      "definitionIndex": 153,
+      "oldId": "node8bg",
+      "newId": "node8bg__v2"
+    },
+    {
+      "definitionIndex": 154,
+      "oldId": "node8bh",
+      "newId": "node8bh__v2"
+    },
+    {
+      "definitionIndex": 155,
+      "oldId": "node8bi",
+      "newId": "node8bi__v2"
+    },
+    {
+      "definitionIndex": 156,
+      "oldId": "node8bj",
+      "newId": "node8bj__v2"
+    },
+    {
+      "definitionIndex": 157,
+      "oldId": "node8bk",
+      "newId": "node8bk__v2"
+    },
+    {
+      "definitionIndex": 158,
+      "oldId": "node8bl",
+      "newId": "node8bl__v2"
+    },
+    {
+      "definitionIndex": 159,
+      "oldId": "node8bm",
+      "newId": "node8bm__v2"
+    },
+    {
+      "definitionIndex": 160,
+      "oldId": "node8bn",
+      "newId": "node8bn__v2"
+    },
+    {
+      "definitionIndex": 318,
+      "oldId": "final134",
+      "newId": "final134__v2"
+    },
+    {
+      "definitionIndex": 319,
+      "oldId": "final135",
+      "newId": "final135__v2"
+    },
+    {
+      "definitionIndex": 320,
+      "oldId": "final136",
+      "newId": "final136__v2"
+    },
+    {
+      "definitionIndex": 321,
+      "oldId": "final137",
+      "newId": "final137__v2"
+    }
+  ]
+}

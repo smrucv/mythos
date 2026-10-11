@@ -1,4 +1,4 @@
-# Mythos Recovery v1.2 — Inicio y branding
+# Mythos v1.2 — Inicio y branding
 
 - Animación original `chiguire_grove_splash.dart` recibida del usuario, incorporada sin rediseño (5,7 segundos; 650 ms con movimiento reducido).
 - Isotipo SVG original de Chigüire Grove incorporado como asset de Flutter.

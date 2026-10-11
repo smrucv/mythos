@@ -1,0 +1,2158 @@
+{
+  "id": "odisea_destino",
+  "title": "La Odisea del Destino",
+  "category": "Fantasía",
+  "estimatedDuration": 120,
+  "coverImage": "assets/images/odisea_destino.webp",
+  "description": "Un viaje extraordinario por senderos mágicos. Tres rutas principales se abren ante ti en un mundo donde cada decisión puede cambiarlo todo. Atrévete a desentrañar los misterios ocultos y forjar tu propio destino.",
+  "nodes": [
+    {
+      "id": "node1",
+      "text": "Te encuentras frente a tres caminos en un antiguo bosque. Cada uno emana una energía distinta: a la izquierda, notas un susurro ancestral; a la derecha, una brisa fresca; al centro, una niebla plateada. Sientes que tu elección marcará el rumbo de una odisea irrepetible.",
+      "choices": [
+        {
+          "text": "Tomar el sendero de la izquierda",
+          "nextNodeId": "nodeA1"
+        },
+        {
+          "text": "Dirigirte por el camino de la derecha",
+          "nextNodeId": "nodeB1"
+        },
+        {
+          "text": "Adentrarte en la niebla plateada",
+          "nextNodeId": "nodeC1"
+        }
+      ]
+    },
+    {
+      "id": "nodeA1",
+      "text": "El sendero de la izquierda se adentra entre árboles majestuosos. Un leve murmullo a lo lejos te invita a explorar sin demora.",
+      "choices": [
+        {
+          "text": "Avanzar hacia el murmullo intrigante",
+          "nextNodeId": "nodeA2"
+        },
+        {
+          "text": "Explorar los árboles cercanos con calma",
+          "nextNodeId": "nodeA3"
+        }
+      ]
+    },
+    {
+      "id": "nodeA2",
+      "text": "El canto de un ave desconocida resuena en la penumbra. El ambiente parece susurrarte secretos de tiempos remotos.",
+      "choices": [
+        {
+          "text": "Seguir el canto con curiosidad",
+          "nextNodeId": "nodeA4"
+        },
+        {
+          "text": "Ignorar el canto y acelerar el paso",
+          "nextNodeId": "nodeA5"
+        }
+      ]
+    },
+    {
+      "id": "nodeA3",
+      "text": "Las cortezas de los árboles presentan marcas antiguas. Sientes una ligera brisa acariciarte el rostro.",
+      "choices": [
+        {
+          "text": "Examinar las marcas grabadas",
+          "nextNodeId": "nodeA4"
+        },
+        {
+          "text": "Avanzar sin detenerte",
+          "nextNodeId": "nodeA5"
+        }
+      ]
+    },
+    {
+      "id": "nodeA4",
+      "text": "Una sensación de calma te invade al seguir adelante. El bosque se ensancha, y notas un suave resplandor entre las sombras.",
+      "choices": [
+        {
+          "text": "Acercarte al resplandor con decisión",
+          "nextNodeId": "nodeA6"
+        },
+        {
+          "text": "Rodear el lugar con precaución",
+          "nextNodeId": "nodeA7"
+        }
+      ]
+    },
+    {
+      "id": "nodeA5",
+      "text": "Las hojas crujen bajo tus pies y un aroma a musgo llena tus sentidos. Sientes que algo observa tus movimientos.",
+      "choices": [
+        {
+          "text": "Ignorar la sensación y seguir adelante",
+          "nextNodeId": "nodeA6"
+        },
+        {
+          "text": "Pausar para escuchar al bosque",
+          "nextNodeId": "nodeA7"
+        }
+      ]
+    },
+    {
+      "id": "nodeA6",
+      "text": "Descubres un claro bañado por una luz dorada. En el centro, un pequeño manantial refleja el cielo con nitidez.",
+      "choices": [
+        {
+          "text": "Acercarte al agua y refrescarte",
+          "nextNodeId": "nodeA8"
+        },
+        {
+          "text": "Rodear el claro sin tocar el manantial",
+          "nextNodeId": "nodeA9"
+        }
+      ]
+    },
+    {
+      "id": "nodeA7",
+      "text": "El viento trae un murmullo lejano de voces antiguas, como si el bosque guardara un recuerdo vivo de su historia.",
+      "choices": [
+        {
+          "text": "Seguir el viento en busca de su origen",
+          "nextNodeId": "nodeA8"
+        },
+        {
+          "text": "Mantener la cautela y no desviarte",
+          "nextNodeId": "nodeA9"
+        }
+      ]
+    },
+    {
+      "id": "nodeA8",
+      "text": "El follaje se vuelve denso, pero distingues un sendero que parece guiarte a un lugar más iluminado.",
+      "choices": [
+        {
+          "text": "Avanzar con confianza por ese sendero",
+          "nextNodeId": "nodeA10"
+        },
+        {
+          "text": "Tomar una ruta lateral apenas visible",
+          "nextNodeId": "nodeA11"
+        }
+      ]
+    },
+    {
+      "id": "nodeA9",
+      "text": "Pisadas suaves resuenan cerca. Podrían ser animales del bosque o algo más. El ambiente se tiñe de un leve misterio.",
+      "choices": [
+        {
+          "text": "Intentar ver quién o qué está ahí",
+          "nextNodeId": "nodeA10"
+        },
+        {
+          "text": "Proseguir sin mirar atrás",
+          "nextNodeId": "nodeA11"
+        }
+      ]
+    },
+    {
+      "id": "nodeA10",
+      "text": "Al avanzar, percibes un canto de aves que parece acompañar tus pasos. Sientes que el bosque te da la bienvenida.",
+      "choices": [
+        {
+          "text": "Entrar en sintonía con el entorno",
+          "nextNodeId": "nodeA12"
+        },
+        {
+          "text": "Mantenerte en silencio y alerta",
+          "nextNodeId": "nodeA13"
+        }
+      ]
+    },
+    {
+      "id": "nodeA11",
+      "text": "Los troncos se alzan imponentes. Entre las ramas, vislumbras un rayo de sol que marca un camino hacia la espesura.",
+      "choices": [
+        {
+          "text": "Seguir el rayo de sol como guía",
+          "nextNodeId": "nodeA12"
+        },
+        {
+          "text": "Adentrarte más en la penumbra",
+          "nextNodeId": "nodeA13"
+        }
+      ]
+    },
+    {
+      "id": "nodeA12",
+      "text": "Una suave bruma cubre el suelo. De pronto, sientes una ligera vibración, como si el corazón del bosque latiera bajo tus pies.",
+      "choices": [
+        {
+          "text": "Permanecer quieto y sentir ese pulso",
+          "nextNodeId": "nodeA14"
+        },
+        {
+          "text": "Seguir caminando para descubrir su origen",
+          "nextNodeId": "nodeA15"
+        }
+      ]
+    },
+    {
+      "id": "nodeA13",
+      "text": "Una ráfaga de viento mueve las hojas, revelando señales grabadas en la corteza de un roble. Parecen antiguos símbolos de protección.",
+      "choices": [
+        {
+          "text": "Estudiar los símbolos con detenimiento",
+          "nextNodeId": "nodeA14"
+        },
+        {
+          "text": "Seguir tu camino sin tocarlos",
+          "nextNodeId": "nodeA15"
+        }
+      ]
+    },
+    {
+      "id": "nodeA14",
+      "text": "El bosque se alza majestuoso a tu alrededor. Un rayo de luz ilumina un claro donde flores azules se mecen al ritmo del viento.",
+      "choices": [
+        {
+          "text": "Dirigirte hacia las flores para contemplarlas",
+          "nextNodeId": "nodeA16"
+        },
+        {
+          "text": "Seguir una suave vereda que bordea el claro",
+          "nextNodeId": "nodeA17"
+        }
+      ]
+    },
+    {
+      "id": "nodeA15",
+      "text": "Caminas con paso firme mientras pequeños destellos de luz aparecen y se desvanecen, como si el bosque respirara magia.",
+      "choices": [
+        {
+          "text": "Tocar esos destellos para ver qué sucede",
+          "nextNodeId": "nodeA16"
+        },
+        {
+          "text": "Mantener la distancia y no interferir",
+          "nextNodeId": "nodeA17"
+        }
+      ]
+    },
+    {
+      "id": "nodeA16",
+      "text": "Un canto lejano resuena. Podría ser un coro de aves o algo más místico. El aire adquiere un aroma dulce que te reconforta.",
+      "choices": [
+        {
+          "text": "Seguir ese canto con el corazón abierto",
+          "nextNodeId": "nodeA18"
+        },
+        {
+          "text": "Conservar la calma y no dejarte llevar del todo",
+          "nextNodeId": "nodeA19"
+        }
+      ]
+    },
+    {
+      "id": "nodeA17",
+      "text": "Sientes un cosquilleo en la nuca, como si una presencia invisible te acompañara. El sendero se hace sinuoso entre raíces retorcidas.",
+      "choices": [
+        {
+          "text": "Encender una luz para sentirte más seguro",
+          "nextNodeId": "nodeA18"
+        },
+        {
+          "text": "Adaptar tus ojos a la penumbra y avanzar",
+          "nextNodeId": "nodeA19"
+        }
+      ]
+    },
+    {
+      "id": "nodeA18",
+      "text": "Ves un sendero que desciende hacia un arroyo cristalino. El agua refleja el verdor del bosque y te invita a descansar unos instantes.",
+      "choices": [
+        {
+          "text": "Bajar y mojar tus manos en el arroyo",
+          "nextNodeId": "nodeA20"
+        },
+        {
+          "text": "Seguir adelante sin desviarte",
+          "nextNodeId": "nodeA21"
+        }
+      ]
+    },
+    {
+      "id": "nodeA19",
+      "text": "Un soplo de aire frío hace crujir las ramas. Podrías buscar refugio entre unas rocas cubiertas de musgo o continuar tu marcha.",
+      "choices": [
+        {
+          "text": "Refugiarte un instante para observar el entorno",
+          "nextNodeId": "nodeA20"
+        },
+        {
+          "text": "Mantener el paso firme y no detenerte",
+          "nextNodeId": "nodeA21"
+        }
+      ]
+    },
+    {
+      "id": "nodeA20",
+      "text": "El canto de un búho te avisa de que el día avanza. La penumbra se mezcla con haces de luz que crean un mosaico en la senda.",
+      "choices": [
+        {
+          "text": "Seguir el sendero bañado de luces",
+          "nextNodeId": "nodeA22"
+        },
+        {
+          "text": "Internarte entre los árboles más oscuros",
+          "nextNodeId": "nodeA23"
+        }
+      ]
+    },
+    {
+      "id": "nodeA21",
+      "text": "Te internas en una zona con altos helechos, y el murmullo de la brisa te acompaña. Algo en el ambiente te sugiere un giro inminente en tu viaje.",
+      "choices": [
+        {
+          "text": "Dar rienda suelta a tu curiosidad por este nuevo entorno",
+          "nextNodeId": "nodeA22"
+        },
+        {
+          "text": "Permanecer prudente ante lo desconocido",
+          "nextNodeId": "nodeA23"
+        }
+      ]
+    },
+    {
+      "id": "nodeA22",
+      "text": "La vegetación se vuelve exuberante y notas pequeñas esferas lumínicas danzando en el aire, como luciérnagas mágicas.",
+      "choices": [
+        {
+          "text": "Aproximarte con fascinación",
+          "nextNodeId": "nodeA24"
+        },
+        {
+          "text": "Observar a distancia para no romper el encanto",
+          "nextNodeId": "nodeA25"
+        }
+      ]
+    },
+    {
+      "id": "nodeA23",
+      "text": "Un grupo de árboles nudosos forman un arco natural. Te preguntas si es una entrada a un lugar sagrado dentro del bosque.",
+      "choices": [
+        {
+          "text": "Atravesar el arco con respeto",
+          "nextNodeId": "nodeA24"
+        },
+        {
+          "text": "Bordear el arco para no alterar nada",
+          "nextNodeId": "nodeA25"
+        }
+      ]
+    },
+    {
+      "id": "nodeA24",
+      "text": "El aire se vuelve denso y un susurro prolongado parece pronunciar tu nombre. Una energía antigua palpita en la tierra.",
+      "choices": [
+        {
+          "text": "Responder en voz baja para conectar con esa energía",
+          "nextNodeId": "nodeA26"
+        },
+        {
+          "text": "Ignorar el susurro y mantener tus propios pensamientos",
+          "nextNodeId": "nodeA27"
+        }
+      ]
+    },
+    {
+      "id": "nodeA25",
+      "text": "Ciertas enredaderas parecen dibujar patrones en los troncos. Notas que podrían ser parte de un lenguaje vegetal que cuenta historias ocultas.",
+      "choices": [
+        {
+          "text": "Intentar descifrar esos patrones",
+          "nextNodeId": "nodeA26"
+        },
+        {
+          "text": "Ignorarlos y seguir tu camino",
+          "nextNodeId": "nodeA27"
+        }
+      ]
+    },
+    {
+      "id": "nodeA26",
+      "text": "Una ráfaga de viento cálido te envuelve. El bosque parece abrirse más adelante, prometiendo un nuevo paisaje.",
+      "choices": [
+        {
+          "text": "Seguir de inmediato esa apertura",
+          "nextNodeId": "nodeA28"
+        },
+        {
+          "text": "Mirar en detalle antes de avanzar",
+          "nextNodeId": "nodeA29"
+        }
+      ]
+    },
+    {
+      "id": "nodeA27",
+      "text": "Una bandada de aves oscuras surca el cielo, generando un contraste inquietante con la serenidad previa. El bosque retumba a tu alrededor.",
+      "choices": [
+        {
+          "text": "Seguir su vuelo para descubrir qué anunciaban",
+          "nextNodeId": "nodeA28"
+        },
+        {
+          "text": "Replegarte hacia zonas más seguras",
+          "nextNodeId": "nodeA29"
+        }
+      ]
+    },
+    {
+      "id": "nodeA28",
+      "text": "Te encuentras con una pequeña caída de agua que brilla con tonos celestes. El sonido relajante te invita a una pausa breve.",
+      "choices": [
+        {
+          "text": "Beber un poco del agua cristalina",
+          "nextNodeId": "nodeA30"
+        },
+        {
+          "text": "Contemplar la cascada sin tocarla",
+          "nextNodeId": "nodeA31"
+        }
+      ]
+    },
+    {
+      "id": "nodeA29",
+      "text": "Al retroceder un poco, adviertes un desvío que antes no habías visto. Ramas retorcidas forman un pasillo natural hacia lo desconocido.",
+      "choices": [
+        {
+          "text": "Curiosear por el pasillo de ramas",
+          "nextNodeId": "nodeA30"
+        },
+        {
+          "text": "Ignorarlo y seguir a terreno despejado",
+          "nextNodeId": "nodeA31"
+        }
+      ]
+    },
+    {
+      "id": "nodeA30",
+      "text": "Una curiosa paz inunda el ambiente. Te parece escuchar un débil tintineo, como si campanas diminutas se agitasen en la distancia.",
+      "choices": [
+        {
+          "text": "Seguir ese tintineo con entusiasmo",
+          "nextNodeId": "nodeA32"
+        },
+        {
+          "text": "Mantener la cautela ante lo que sea que suene",
+          "nextNodeId": "nodeA33"
+        }
+      ]
+    },
+    {
+      "id": "nodeA31",
+      "text": "El suelo cambia a un musgo acolchado que amortigua tus pasos. Notas cómo el silencio se hace más profundo.",
+      "choices": [
+        {
+          "text": "Aprovechar ese silencio para meditar brevemente",
+          "nextNodeId": "nodeA32"
+        },
+        {
+          "text": "Seguir avanzando sin quedarte",
+          "nextNodeId": "nodeA33"
+        }
+      ]
+    },
+    {
+      "id": "nodeA32",
+      "text": "Árboles entrelazados forman un túnel verde repleto de hojas. La temperatura asciende levemente, como si te acercaras a un núcleo vital.",
+      "choices": [
+        {
+          "text": "Sumergirte en ese túnel sin dudar",
+          "nextNodeId": "nodeA34"
+        },
+        {
+          "text": "Explorar la zona lateral antes de entrar",
+          "nextNodeId": "nodeA35"
+        }
+      ]
+    },
+    {
+      "id": "nodeA33",
+      "text": "Un suave resplandor celeste aparece al fondo del sendero. Podría ser un fenómeno natural o algo más allá de tu comprensión.",
+      "choices": [
+        {
+          "text": "Acercarte para descubrir ese resplandor",
+          "nextNodeId": "nodeA34"
+        },
+        {
+          "text": "Mantener cierta distancia y observar con calma",
+          "nextNodeId": "nodeA35"
+        }
+      ]
+    },
+    {
+      "id": "nodeA34",
+      "text": "El canto de la brisa se torna melodioso, y notas cómo hojas y pétalos flotan en el aire, danzando a tu alrededor.",
+      "choices": [
+        {
+          "text": "Abrir tus brazos y unirte a esa danza",
+          "nextNodeId": "nodeA36"
+        },
+        {
+          "text": "Seguir tu camino sin dejarte distraer",
+          "nextNodeId": "nodeA37"
+        }
+      ]
+    },
+    {
+      "id": "nodeA35",
+      "text": "Sientes un estremecimiento. Tal vez el bosque intenta ponerse en contacto contigo, o quizá sea solo la emoción del viaje.",
+      "choices": [
+        {
+          "text": "Intentar comunicarte con el entorno",
+          "nextNodeId": "nodeA36"
+        },
+        {
+          "text": "Reprimir la sensación y avanzar",
+          "nextNodeId": "nodeA37"
+        }
+      ]
+    },
+    {
+      "id": "nodeA36",
+      "text": "Pequeñas flores doradas se iluminan a tu paso. Un cosquilleo en tu pecho te hace sentir parte del latido del bosque.",
+      "choices": [
+        {
+          "text": "Tocar esas flores para sentir su energía",
+          "nextNodeId": "nodeA38"
+        },
+        {
+          "text": "Solo contemplarlas con respeto",
+          "nextNodeId": "nodeA39"
+        }
+      ]
+    },
+    {
+      "id": "nodeA37",
+      "text": "Raíces gruesas surgen del suelo, formando escalones naturales que ascienden hacia un claro. Cada paso retumba ligeramente.",
+      "choices": [
+        {
+          "text": "Subir con determinación",
+          "nextNodeId": "nodeA38"
+        },
+        {
+          "text": "Bordear las raíces por un costado",
+          "nextNodeId": "nodeA39"
+        }
+      ]
+    },
+    {
+      "id": "nodeA38",
+      "text": "Al subir, descubres un círculo de piedras grabadas con runas antiguas. Un leve brillo pulsante emerge de ellas.",
+      "choices": [
+        {
+          "text": "Acercarte para descifrar las runas",
+          "nextNodeId": "nodeA40"
+        },
+        {
+          "text": "Rodear el círculo sin perturbarlo",
+          "nextNodeId": "nodeA41"
+        }
+      ]
+    },
+    {
+      "id": "nodeA39",
+      "text": "El viento se intensifica. Un aroma herbal te envuelve, y escuchas un susurro que podría ser de espíritus guardianes.",
+      "choices": [
+        {
+          "text": "Invocar valor y seguir ese susurro",
+          "nextNodeId": "nodeA40"
+        },
+        {
+          "text": "Permanecer en silencio y continuar",
+          "nextNodeId": "nodeA41"
+        }
+      ]
+    },
+    {
+      "id": "nodeA40",
+      "text": "Una abertura entre las rocas deja pasar un rayo de luz que cae directamente sobre un símbolo dibujado en el suelo.",
+      "choices": [
+        {
+          "text": "Entrar en el haz de luz",
+          "nextNodeId": "nodeA42"
+        },
+        {
+          "text": "Evitar la zona iluminada",
+          "nextNodeId": "nodeA43"
+        }
+      ]
+    },
+    {
+      "id": "nodeA41",
+      "text": "Los sonidos de la vida silvestre te rodean: aleteos, crujidos y un lejano rumor de agua corriendo bajo la tierra.",
+      "choices": [
+        {
+          "text": "Seguir los sonidos subterráneos",
+          "nextNodeId": "nodeA42"
+        },
+        {
+          "text": "Mantenerte en la superficie y avanzar",
+          "nextNodeId": "nodeA43"
+        }
+      ]
+    },
+    {
+      "id": "nodeA42",
+      "text": "Encuentras un antiguo poste de madera con inscripciones. Parecen indicar rutas a distintos rincones del bosque.",
+      "choices": [
+        {
+          "text": "Elegir la ruta más clara y señalizada",
+          "nextNodeId": "nodeA44"
+        },
+        {
+          "text": "Tomar el camino enigmático cubierto de musgo",
+          "nextNodeId": "nodeA45"
+        }
+      ]
+    },
+    {
+      "id": "nodeA43",
+      "text": "Una suave penumbra domina el ambiente. El aire adquiere un matiz dulce y los árboles parecen susurrar entre sí.",
+      "choices": [
+        {
+          "text": "Escuchar con atención esos susurros",
+          "nextNodeId": "nodeA44"
+        },
+        {
+          "text": "Ignorarlos y seguir firme adelante",
+          "nextNodeId": "nodeA45"
+        }
+      ]
+    },
+    {
+      "id": "nodeA44",
+      "text": "El suelo cruje a cada paso. Sientes que el bosque entero late con un pulso rítmico, como si acompañara tus decisiones.",
+      "choices": [
+        {
+          "text": "Dejarte llevar por ese ritmo",
+          "nextNodeId": "nodeA46"
+        },
+        {
+          "text": "Permanecer consciente y racional",
+          "nextNodeId": "nodeA47"
+        }
+      ]
+    },
+    {
+      "id": "nodeA45",
+      "text": "Te adentras en un corredor verde de hojas tupidas. La luz apenas penetra, creando juegos de sombras enigmáticas.",
+      "choices": [
+        {
+          "text": "Avanzar sin dudar, sintiendo un leve escalofrío",
+          "nextNodeId": "nodeA46"
+        },
+        {
+          "text": "Encender una antorcha para ver mejor",
+          "nextNodeId": "nodeA47"
+        }
+      ]
+    },
+    {
+      "id": "nodeA46",
+      "text": "Un arco natural de ramas conduce a un claro iluminado por un sol suave. Podrías haber hallado el corazón del bosque.",
+      "choices": [
+        {
+          "text": "Pasar por el arco con respeto",
+          "nextNodeId": "nodeA48"
+        },
+        {
+          "text": "Rodear el arco para contemplar primero el claro",
+          "nextNodeId": "nodeA49"
+        }
+      ]
+    },
+    {
+      "id": "nodeA47",
+      "text": "Un coro de aves te sorprende desde lo alto. Sus cantos se entrelazan como si te dieran la bienvenida a un lugar sagrado.",
+      "choices": [
+        {
+          "text": "Seguir el canto y adentrarte en el claro",
+          "nextNodeId": "nodeA48"
+        },
+        {
+          "text": "Explorar los bordes del bosque antes de entrar",
+          "nextNodeId": "nodeA49"
+        }
+      ]
+    },
+    {
+      "id": "nodeA48",
+      "text": "Un haz de luz desciende sobre una gran piedra central. El aire es tan puro que cada respiración te reconforta profundamente.",
+      "choices": [
+        {
+          "text": "Tocar la piedra y sentir su energía",
+          "nextNodeId": "nodeA50"
+        },
+        {
+          "text": "Contemplar la piedra en silencio",
+          "nextNodeId": "nodeA50"
+        }
+      ]
+    },
+    {
+      "id": "nodeA49",
+      "text": "Sombras suaves danzan alrededor. Percibes un latido firme en tu interior, como si tu corazón y el bosque fueran uno solo.",
+      "choices": [
+        {
+          "text": "Acercarte al centro del claro con determinación",
+          "nextNodeId": "nodeA50"
+        },
+        {
+          "text": "Observar un momento más antes de avanzar",
+          "nextNodeId": "nodeA50"
+        }
+      ]
+    },
+    {
+      "id": "nodeA50",
+      "text": "El corazón del sendero se presenta ante ti: un círculo de luz rodeado de raíces y antiguas runas. Sientes que tu odisea en esta ruta está a punto de alcanzar su desenlace.",
+      "choices": [
+        {
+          "text": "Abrazar la magia que emana del lugar",
+          "nextNodeId": "finalA1"
+        },
+        {
+          "text": "Recorrer las runas para descubrir su secreto",
+          "nextNodeId": "finalA2"
+        }
+      ]
+    },
+    {
+      "id": "finalA1",
+      "text": "Una energía ancestral fluye a través de ti, fusionando tu esencia con la del bosque. Has sellado un pacto con la vida que palpita en cada hoja y en cada raíz.",
+      "choices": []
+    },
+    {
+      "id": "finalA2",
+      "text": "Al descifrar los símbolos, tu mente se expande con antiguas verdades. El Bosque de la Encrucijada te revela sus secretos y te concede la sabiduría de sus guardianes eternos.",
+      "choices": []
+    },
+    {
+      "id": "nodeB1",
+      "text": "El camino de la derecha serpentea entre árboles de corteza blanca. Un murmullo de agua te recuerda la cercanía de un arroyo claro.",
+      "choices": [
+        {
+          "text": "Avanzar hacia el sonido del agua",
+          "nextNodeId": "nodeB2"
+        },
+        {
+          "text": "Explorar los troncos claros y su brillo peculiar",
+          "nextNodeId": "nodeB3"
+        }
+      ]
+    },
+    {
+      "id": "nodeB2",
+      "text": "Divisas el arroyo, sus aguas cristalinas reflejan la luz del sol con un destello radiante. Un pez salta fugazmente.",
+      "choices": [
+        {
+          "text": "Agacharte para sentir el agua en tus manos",
+          "nextNodeId": "nodeB4"
+        },
+        {
+          "text": "Bordear el arroyo y seguir río arriba",
+          "nextNodeId": "nodeB5"
+        }
+      ]
+    },
+    {
+      "id": "nodeB3",
+      "text": "Al acercarte a los troncos, te sorprende la textura plateada de la corteza. Es casi como si reflejara tu propio rostro.",
+      "choices": [
+        {
+          "text": "Palpar la corteza para entender su tacto",
+          "nextNodeId": "nodeB4"
+        },
+        {
+          "text": "Guardar distancia y continuar el camino",
+          "nextNodeId": "nodeB5"
+        }
+      ]
+    },
+    {
+      "id": "nodeB4",
+      "text": "Un leve murmullo se eleva de la corriente, como una canción natural que te invita a relajarte y a dejarte llevar por su armonía.",
+      "choices": [
+        {
+          "text": "Permanecer un instante contemplando ese murmullo",
+          "nextNodeId": "nodeB6"
+        },
+        {
+          "text": "Seguir adelante sin pausa",
+          "nextNodeId": "nodeB7"
+        }
+      ]
+    },
+    {
+      "id": "nodeB5",
+      "text": "La claridad del bosque da paso a un paraje más sombrío. El olor a tierra húmeda te hace sentir que te adentras en un lugar secreto.",
+      "choices": [
+        {
+          "text": "Examinar el suelo y la vegetación peculiar",
+          "nextNodeId": "nodeB6"
+        },
+        {
+          "text": "Ignorar detalles y acelerar el paso",
+          "nextNodeId": "nodeB7"
+        }
+      ]
+    },
+    {
+      "id": "nodeB6",
+      "text": "Un ave con plumas iridiscentes cruza tu camino. Su canto breve y alegre te inspira una ligera sonrisa.",
+      "choices": [
+        {
+          "text": "Tratar de seguir al ave para observarla mejor",
+          "nextNodeId": "nodeB8"
+        },
+        {
+          "text": "Dejar que se marche y continuar",
+          "nextNodeId": "nodeB9"
+        }
+      ]
+    },
+    {
+      "id": "nodeB7",
+      "text": "Avanzas con decisión. Escuchas crujidos lejanos, tal vez ramas que se quiebran bajo pasos que no son los tuyos.",
+      "choices": [
+        {
+          "text": "Indagar el origen de esos crujidos",
+          "nextNodeId": "nodeB8"
+        },
+        {
+          "text": "Ignorarlos y mantener tu ruta",
+          "nextNodeId": "nodeB9"
+        }
+      ]
+    },
+    {
+      "id": "nodeB8",
+      "text": "El ambiente se llena de motas de luz flotantes, como luciérnagas diurnas que bailan a tu alrededor con suavidad.",
+      "choices": [
+        {
+          "text": "Interaccionar con las motas lumínicas",
+          "nextNodeId": "nodeB10"
+        },
+        {
+          "text": "Admirarlas de lejos y seguir adelante",
+          "nextNodeId": "nodeB11"
+        }
+      ]
+    },
+    {
+      "id": "nodeB9",
+      "text": "El sendero se vuelve amplio y despejado. Un rayo de sol desciende sobre un árbol solitario, dotándolo de un aire majestuoso.",
+      "choices": [
+        {
+          "text": "Acercarte al árbol para contemplarlo",
+          "nextNodeId": "nodeB10"
+        },
+        {
+          "text": "Continuar sin desviarte de tu camino",
+          "nextNodeId": "nodeB11"
+        }
+      ]
+    },
+    {
+      "id": "nodeB10",
+      "text": "Percibes el leve olor de flores silvestres mezclado con la brisa. El horizonte se vislumbra entre las copas de los árboles.",
+      "choices": [
+        {
+          "text": "Buscar el origen de las flores",
+          "nextNodeId": "nodeB12"
+        },
+        {
+          "text": "Avanzar hacia el horizonte sin titubeo",
+          "nextNodeId": "nodeB13"
+        }
+      ]
+    },
+    {
+      "id": "nodeB11",
+      "text": "Un murmullo de hojas se intensifica a tu espalda, aunque no puedes ver quién o qué lo causa. Tu corazón late con expectación.",
+      "choices": [
+        {
+          "text": "Voltear para enfrentar lo que haya",
+          "nextNodeId": "nodeB12"
+        },
+        {
+          "text": "Seguir con la mirada al frente",
+          "nextNodeId": "nodeB13"
+        }
+      ]
+    },
+    {
+      "id": "nodeB12",
+      "text": "El sendero asciende suavemente. Un canto lejano te anima a creer que no viajas solo en esta ruta.",
+      "choices": [
+        {
+          "text": "Seguir el canto enérgico",
+          "nextNodeId": "nodeB14"
+        },
+        {
+          "text": "Permanecer silencioso y atento",
+          "nextNodeId": "nodeB15"
+        }
+      ]
+    },
+    {
+      "id": "nodeB13",
+      "text": "Bancos de niebla tenue envuelven la parte baja del camino. Te debates entre adentrarte en ella o esquivarla.",
+      "choices": [
+        {
+          "text": "Cruzar la niebla y no detenerte",
+          "nextNodeId": "nodeB14"
+        },
+        {
+          "text": "Rodear la zona para evitar la incertidumbre",
+          "nextNodeId": "nodeB15"
+        }
+      ]
+    },
+    {
+      "id": "nodeB14",
+      "text": "Observas un brillo en la lejanía, como si algo reflectara la luz. El bosque se llena de un canto discreto pero constante.",
+      "choices": [
+        {
+          "text": "Caminar hacia el brillo intrigante",
+          "nextNodeId": "nodeB16"
+        },
+        {
+          "text": "Confiar en el canto y buscar su origen",
+          "nextNodeId": "nodeB17"
+        }
+      ]
+    },
+    {
+      "id": "nodeB15",
+      "text": "A medida que avanzas, sientes bajo tus pies la vibración sutil de un flujo de agua subterránea, recordándote lo vivo que está todo.",
+      "choices": [
+        {
+          "text": "Intentar encontrar esa corriente subterránea",
+          "nextNodeId": "nodeB16"
+        },
+        {
+          "text": "Ignorarla y mantener el rumbo principal",
+          "nextNodeId": "nodeB17"
+        }
+      ]
+    },
+    {
+      "id": "nodeB16",
+      "text": "Llegas a un claro rodeado de arbustos con flores rojas. El aire es cálido y tranquilizador, como un abrazo silente.",
+      "choices": [
+        {
+          "text": "Oler las flores y sentir su fragancia",
+          "nextNodeId": "nodeB18"
+        },
+        {
+          "text": "Pasar de largo sin perturbar el lugar",
+          "nextNodeId": "nodeB19"
+        }
+      ]
+    },
+    {
+      "id": "nodeB17",
+      "text": "Una suave llovizna empieza a caer, refrescando el ambiente. Las gotas danzan sobre las hojas, creando un ritmo hipnótico.",
+      "choices": [
+        {
+          "text": "Detenerte para disfrutar de la llovizna",
+          "nextNodeId": "nodeB18"
+        },
+        {
+          "text": "Protegerte bajo la espesura de un gran árbol",
+          "nextNodeId": "nodeB19"
+        }
+      ]
+    },
+    {
+      "id": "nodeB18",
+      "text": "El bosque recobra un brillo especial tras la lluvia. Pequeños arcoíris se forman en las gotas que cuelgan de las ramas.",
+      "choices": [
+        {
+          "text": "Avanzar con optimismo, confiando en la ruta",
+          "nextNodeId": "nodeB20"
+        },
+        {
+          "text": "Observar con fascinación esos destellos",
+          "nextNodeId": "nodeB21"
+        }
+      ]
+    },
+    {
+      "id": "nodeB19",
+      "text": "El olor a tierra mojada inunda tus sentidos. Un suspiro de viento suave roza tu mejilla, despertando una emoción contenida.",
+      "choices": [
+        {
+          "text": "Dejar fluir esa emoción y continuar",
+          "nextNodeId": "nodeB20"
+        },
+        {
+          "text": "Controlar tus sentimientos y enfocarte en el viaje",
+          "nextNodeId": "nodeB21"
+        }
+      ]
+    },
+    {
+      "id": "nodeB20",
+      "text": "Notas un viejo puente de madera que cruza sobre un arroyo caudaloso. El musgo cubre las tablas con un verde intenso.",
+      "choices": [
+        {
+          "text": "Atravesar el puente con paso firme",
+          "nextNodeId": "nodeB22"
+        },
+        {
+          "text": "Buscar un vado más seguro para cruzar",
+          "nextNodeId": "nodeB23"
+        }
+      ]
+    },
+    {
+      "id": "nodeB21",
+      "text": "El ambiente se aquieta como si aguardara tu siguiente movimiento. Un coro de insectos comienza su canto crepuscular.",
+      "choices": [
+        {
+          "text": "Permanecer un momento para escucharlos",
+          "nextNodeId": "nodeB22"
+        },
+        {
+          "text": "Reemprender la marcha sin demora",
+          "nextNodeId": "nodeB23"
+        }
+      ]
+    },
+    {
+      "id": "nodeB22",
+      "text": "Tras cruzar, el paisaje se abre a una suave colina. El aire fresco acaricia tu frente, y te sientes más liviano.",
+      "choices": [
+        {
+          "text": "Subir la colina para apreciar las vistas",
+          "nextNodeId": "nodeB24"
+        },
+        {
+          "text": "Rodear la colina y adentrarte en un valle boscoso",
+          "nextNodeId": "nodeB25"
+        }
+      ]
+    },
+    {
+      "id": "nodeB23",
+      "text": "Encuentras un recodo con rocas planas que podrían servir de puente natural. El sol deja entrever un rayo tibio sobre el agua.",
+      "choices": [
+        {
+          "text": "Cruzar pisando con cuidado las rocas",
+          "nextNodeId": "nodeB24"
+        },
+        {
+          "text": "Desviarte un poco más en busca de otro acceso",
+          "nextNodeId": "nodeB25"
+        }
+      ]
+    },
+    {
+      "id": "nodeB24",
+      "text": "La subida te muestra un panorama espléndido del bosque. Un soplo de esperanza te llena el corazón.",
+      "choices": [
+        {
+          "text": "Gozar del paisaje y descender con calma",
+          "nextNodeId": "nodeB26"
+        },
+        {
+          "text": "Inspirarte en la vista y proseguir sin dilación",
+          "nextNodeId": "nodeB27"
+        }
+      ]
+    },
+    {
+      "id": "nodeB25",
+      "text": "Los árboles se entrelazan a tu alrededor, creando un pasillo natural. Notas pequeños frutos brillantes colgando de las ramas.",
+      "choices": [
+        {
+          "text": "Cosechar uno de esos frutos con curiosidad",
+          "nextNodeId": "nodeB26"
+        },
+        {
+          "text": "Ignorarlos y mantenerte en tu ruta",
+          "nextNodeId": "nodeB27"
+        }
+      ]
+    },
+    {
+      "id": "nodeB26",
+      "text": "Una cálida luz rasante te indica que el día avanza. El bosque adquiere tonos dorados, intensificando su belleza misteriosa.",
+      "choices": [
+        {
+          "text": "Avanzar arropado por ese atardecer",
+          "nextNodeId": "nodeB28"
+        },
+        {
+          "text": "Buscar un lugar para resguardarte si cae la noche",
+          "nextNodeId": "nodeB29"
+        }
+      ]
+    },
+    {
+      "id": "nodeB27",
+      "text": "El crujir de ramas secas bajo tus pies resuena con un eco leve. Sientes la cercanía de algo grandioso que te espera.",
+      "choices": [
+        {
+          "text": "Mantener la serenidad y seguir adelante",
+          "nextNodeId": "nodeB28"
+        },
+        {
+          "text": "Acelerar el paso, ansioso por descubrir más",
+          "nextNodeId": "nodeB29"
+        }
+      ]
+    },
+    {
+      "id": "nodeB28",
+      "text": "Aparece un valle cubierto de flores púrpuras. El viento produce una danza ondulante en aquel manto vegetal.",
+      "choices": [
+        {
+          "text": "Sumergirte en el valle para sentir esa danza",
+          "nextNodeId": "nodeB30"
+        },
+        {
+          "text": "Observar desde la orilla antes de avanzar",
+          "nextNodeId": "nodeB31"
+        }
+      ]
+    },
+    {
+      "id": "nodeB29",
+      "text": "La espesura del bosque recupera fuerza. Un perfume sutil de hierbas desconocidas invade el ambiente y despierta tu curiosidad.",
+      "choices": [
+        {
+          "text": "Seguir el perfume para encontrar su origen",
+          "nextNodeId": "nodeB30"
+        },
+        {
+          "text": "Mantener tu trayectoria principal sin desvíos",
+          "nextNodeId": "nodeB31"
+        }
+      ]
+    },
+    {
+      "id": "nodeB30",
+      "text": "El susurro de hojas y flores te envuelve como una melodía suave. El lugar parece casi onírico.",
+      "choices": [
+        {
+          "text": "Dejarte llevar por esa atmósfera hipnótica",
+          "nextNodeId": "nodeB32"
+        },
+        {
+          "text": "Conservar la alerta ante cualquier sorpresa",
+          "nextNodeId": "nodeB33"
+        }
+      ]
+    },
+    {
+      "id": "nodeB31",
+      "text": "Un rayo de sol penetra las copas, iluminando el suelo con un fulgor dorado que parece guiarte. Sientes un impulso de seguirlo.",
+      "choices": [
+        {
+          "text": "Caminar tras ese fulgor motivador",
+          "nextNodeId": "nodeB32"
+        },
+        {
+          "text": "Ignorarlo y proseguir tu ruta original",
+          "nextNodeId": "nodeB33"
+        }
+      ]
+    },
+    {
+      "id": "nodeB32",
+      "text": "El bosque se abre en un espacio con rocas talladas. Algunas presentan símbolos antiguos que parecen narrar historias de un pasado remoto.",
+      "choices": [
+        {
+          "text": "Examinar de cerca las tallas en las rocas",
+          "nextNodeId": "nodeB34"
+        },
+        {
+          "text": "Observarlas por encima y no detenerte mucho",
+          "nextNodeId": "nodeB35"
+        }
+      ]
+    },
+    {
+      "id": "nodeB33",
+      "text": "Una corriente de aire fresco acaricia tu rostro. Es casi como un susurro que te dice que sigas sin mirar atrás.",
+      "choices": [
+        {
+          "text": "Responder al aire con una sonrisa y seguir",
+          "nextNodeId": "nodeB34"
+        },
+        {
+          "text": "Mantener la concentración en tus pasos",
+          "nextNodeId": "nodeB35"
+        }
+      ]
+    },
+    {
+      "id": "nodeB34",
+      "text": "El atardecer tiñe el cielo de naranjas y rosados. Notas un suave ulular de aves nocturnas, preludio de la noche venidera.",
+      "choices": [
+        {
+          "text": "Buscar un refugio donde pasar la noche",
+          "nextNodeId": "nodeB36"
+        },
+        {
+          "text": "Continuar sin pausa, confiado en tu resistencia",
+          "nextNodeId": "nodeB37"
+        }
+      ]
+    },
+    {
+      "id": "nodeB35",
+      "text": "La penumbra se cierne. Diminutos destellos, como estrellas en miniatura, parpadean a ras del suelo. Te preguntas si son flores lumínicas.",
+      "choices": [
+        {
+          "text": "Observar con detalle esos destellos",
+          "nextNodeId": "nodeB36"
+        },
+        {
+          "text": "No distraerte y avanzar con cuidado",
+          "nextNodeId": "nodeB37"
+        }
+      ]
+    },
+    {
+      "id": "nodeB36",
+      "text": "Un sonido lejano, parecido a un tambor, rompe el silencio del anochecer. El ritmo se mezcla con tu propio pulso.",
+      "choices": [
+        {
+          "text": "Seguir el tambor y ver quién lo toca",
+          "nextNodeId": "nodeB38"
+        },
+        {
+          "text": "Ignorarlo, evitando riesgos, y proseguir",
+          "nextNodeId": "nodeB39"
+        }
+      ]
+    },
+    {
+      "id": "nodeB37",
+      "text": "La noche cae despacio, y el bosque se llena de sonidos crípticos. Sientes un leve escalofrío, como si algo te vigilara.",
+      "choices": [
+        {
+          "text": "Permanecer firme y mostrar valentía",
+          "nextNodeId": "nodeB38"
+        },
+        {
+          "text": "Agudizar los sentidos y avanzar en silencio",
+          "nextNodeId": "nodeB39"
+        }
+      ]
+    },
+    {
+      "id": "nodeB38",
+      "text": "Entre los árboles, divisas una luz tenue, tal vez una hoguera o luciérnagas congregadas. El aire huele a leña quemada.",
+      "choices": [
+        {
+          "text": "Acercarte para investigar la fuente de luz",
+          "nextNodeId": "nodeB40"
+        },
+        {
+          "text": "Mantener distancia y rodear la zona",
+          "nextNodeId": "nodeB41"
+        }
+      ]
+    },
+    {
+      "id": "nodeB39",
+      "text": "Un suave crujido te alerta. Podrías seguir un sendero que desciende o continuar por uno que asciende hacia una colina.",
+      "choices": [
+        {
+          "text": "Bajar por el sendero envuelto en sombras",
+          "nextNodeId": "nodeB40"
+        },
+        {
+          "text": "Subir a la colina en busca de una vista clara",
+          "nextNodeId": "nodeB41"
+        }
+      ]
+    },
+    {
+      "id": "nodeB40",
+      "text": "Desciendes y te rodean helechos gigantes. El ambiente se siente más húmedo, con el canto de ranas que retumba alrededor.",
+      "choices": [
+        {
+          "text": "Observar la vida anfibia con curiosidad",
+          "nextNodeId": "nodeB42"
+        },
+        {
+          "text": "Mantener el paso y no entretenerte",
+          "nextNodeId": "nodeB43"
+        }
+      ]
+    },
+    {
+      "id": "nodeB41",
+      "text": "Subes entre raíces retorcidas que hacen de escalones. El aire es más frío aquí arriba, y el cielo estrellado te cubre.",
+      "choices": [
+        {
+          "text": "Contemplar las estrellas y sentir su inmensidad",
+          "nextNodeId": "nodeB42"
+        },
+        {
+          "text": "No distraerte y descender al otro lado",
+          "nextNodeId": "nodeB43"
+        }
+      ]
+    },
+    {
+      "id": "nodeB42",
+      "text": "Un claro surge repentinamente, rodeado de rocas con formas talladas. Parecen vestigios de una civilización antigua.",
+      "choices": [
+        {
+          "text": "Explorar las rocas y sus grabados",
+          "nextNodeId": "nodeB44"
+        },
+        {
+          "text": "Seguir de largo sin tocar nada",
+          "nextNodeId": "nodeB45"
+        }
+      ]
+    },
+    {
+      "id": "nodeB43",
+      "text": "El camino se estrecha hasta casi desaparecer. Un leve silbido de viento te indica un sendero oculto detrás de un matorral.",
+      "choices": [
+        {
+          "text": "Apartar el matorral y tomar ese camino",
+          "nextNodeId": "nodeB44"
+        },
+        {
+          "text": "Ignorarlo y seguir el rastro principal",
+          "nextNodeId": "nodeB45"
+        }
+      ]
+    },
+    {
+      "id": "nodeB44",
+      "text": "La luna asoma en el cielo, bañando todo con una luz plateada que da al bosque un aspecto casi de ensueño.",
+      "choices": [
+        {
+          "text": "Detenerte a disfrutar ese espectáculo lunar",
+          "nextNodeId": "nodeB46"
+        },
+        {
+          "text": "Avanzar en la penumbra sin demorarte",
+          "nextNodeId": "nodeB47"
+        }
+      ]
+    },
+    {
+      "id": "nodeB45",
+      "text": "Una suave corriente de aire te envuelve. Parece provenir de un claro cercano, y escuchas un murmullo que te invita a acercarte.",
+      "choices": [
+        {
+          "text": "Guiarte por el murmullo y llegar al claro",
+          "nextNodeId": "nodeB46"
+        },
+        {
+          "text": "Buscar otro sendero más discreto",
+          "nextNodeId": "nodeB47"
+        }
+      ]
+    },
+    {
+      "id": "nodeB46",
+      "text": "Llegas a un claro iluminado por luciérnagas. Parecen coreografiar una danza antigua, llena de simbolismo y belleza.",
+      "choices": [
+        {
+          "text": "Unirte a la danza en silencio",
+          "nextNodeId": "nodeB48"
+        },
+        {
+          "text": "Admirarla desde la distancia",
+          "nextNodeId": "nodeB49"
+        }
+      ]
+    },
+    {
+      "id": "nodeB47",
+      "text": "El murmullo se desvanece a medida que sigues adelante. El bosque oscila entre un refugio acogedor y un misterio insondable.",
+      "choices": [
+        {
+          "text": "Encender tu linterna para sentirte protegido",
+          "nextNodeId": "nodeB48"
+        },
+        {
+          "text": "Avanzar con tus propios sentidos agudizados",
+          "nextNodeId": "nodeB49"
+        }
+      ]
+    },
+    {
+      "id": "nodeB48",
+      "text": "De pronto, se abre ante ti un escenario imponente: un acantilado con vistas sobre un inmenso valle. La brisa te acaricia el alma.",
+      "choices": [
+        {
+          "text": "Asomarte con valor para contemplar la profundidad",
+          "nextNodeId": "nodeB50"
+        },
+        {
+          "text": "Retroceder un poco y rodear con cautela",
+          "nextNodeId": "nodeB50"
+        }
+      ]
+    },
+    {
+      "id": "nodeB49",
+      "text": "Entre sombras, distingues un desfiladero que corta el bosque. El rumor de agua lejano sugiere que un río cruza el valle.",
+      "choices": [
+        {
+          "text": "Descender por el desfiladero con cuidado",
+          "nextNodeId": "nodeB50"
+        },
+        {
+          "text": "Buscar un camino alterno para alcanzar el fondo",
+          "nextNodeId": "nodeB50"
+        }
+      ]
+    },
+    {
+      "id": "nodeB50",
+      "text": "El filo del acantilado revela una vista espectacular: un valle de neblina dorada se extiende hacia el horizonte. El destino de esta ruta yace ante tus ojos.",
+      "choices": [
+        {
+          "text": "Dar un paso de fe hacia la bruma brillante",
+          "nextNodeId": "finalB1"
+        },
+        {
+          "text": "Invocar tu coraje y lanzarte a lo desconocido",
+          "nextNodeId": "finalB2"
+        }
+      ]
+    },
+    {
+      "id": "finalB1",
+      "text": "Te deslizas en la bruma dorada y el tiempo parece detenerse. Un poder sutil reaviva tu espíritu, transformándote en viajero de un nuevo amanecer.",
+      "choices": []
+    },
+    {
+      "id": "finalB2",
+      "text": "Con un salto al vacío, la niebla te envuelve. Cuando abres los ojos, comprendes que has trascendido la frontera de lo conocido, convertido en guardián de una verdad ancestral.",
+      "choices": []
+    },
+    {
+      "id": "nodeC1",
+      "text": "La niebla plateada te envuelve al adentrarte por el camino central. Cada paso resuena con un eco extraño en la penumbra.",
+      "choices": [
+        {
+          "text": "Avanzar con la mano extendida para orientarte",
+          "nextNodeId": "nodeC2"
+        },
+        {
+          "text": "Encender una luz que penetre en la niebla",
+          "nextNodeId": "nodeC3"
+        }
+      ]
+    },
+    {
+      "id": "nodeC2",
+      "text": "La niebla se arremolina, formando figuras efímeras que se disuelven ante tus ojos. Un viento helado te roza la piel.",
+      "choices": [
+        {
+          "text": "Tocar esas figuras para sentir si son reales",
+          "nextNodeId": "nodeC4"
+        },
+        {
+          "text": "Avanzar sin detenerte a investigar",
+          "nextNodeId": "nodeC5"
+        }
+      ]
+    },
+    {
+      "id": "nodeC3",
+      "text": "La luz de tu antorcha revela una senda empedrada oculta. Las piedras tienen musgo plateado que brilla con reflejos pálidos.",
+      "choices": [
+        {
+          "text": "Seguir las piedras con cautela",
+          "nextNodeId": "nodeC4"
+        },
+        {
+          "text": "Apagar la luz y guiarte por el instinto",
+          "nextNodeId": "nodeC5"
+        }
+      ]
+    },
+    {
+      "id": "nodeC4",
+      "text": "El silencio parece total, salvo por un rumor lejano que podría ser un río subterráneo o el latido mismo del mundo.",
+      "choices": [
+        {
+          "text": "Intentar encontrar la fuente de ese rumor",
+          "nextNodeId": "nodeC6"
+        },
+        {
+          "text": "Conservar la calma y seguir recto",
+          "nextNodeId": "nodeC7"
+        }
+      ]
+    },
+    {
+      "id": "nodeC5",
+      "text": "Un destello fugaz cruza la niebla, similar a un relámpago silencioso. Sientes un cosquilleo en tu interior.",
+      "choices": [
+        {
+          "text": "Buscar el origen de ese destello",
+          "nextNodeId": "nodeC6"
+        },
+        {
+          "text": "Ignorarlo y apurar el paso",
+          "nextNodeId": "nodeC7"
+        }
+      ]
+    },
+    {
+      "id": "nodeC6",
+      "text": "La niebla se disipa un poco y descubres viejos muros de piedra cubiertos de líquenes brillantes. Podrían haber sido parte de un templo.",
+      "choices": [
+        {
+          "text": "Explorar los muros en busca de inscripciones",
+          "nextNodeId": "nodeC8"
+        },
+        {
+          "text": "Rodear los muros y continuar",
+          "nextNodeId": "nodeC9"
+        }
+      ]
+    },
+    {
+      "id": "nodeC7",
+      "text": "El suelo se hunde ligeramente a tu paso, como si un túnel subterráneo recorriera esta sección del bosque nebuloso.",
+      "choices": [
+        {
+          "text": "Tratar de encontrar una entrada al subsuelo",
+          "nextNodeId": "nodeC8"
+        },
+        {
+          "text": "Seguir adelante sin perder altura",
+          "nextNodeId": "nodeC9"
+        }
+      ]
+    },
+    {
+      "id": "nodeC8",
+      "text": "Un leve viento se filtra a través de rendijas, creando un susurro que te rodea. Parecen palabras ininteligibles, como un conjuro antiguo.",
+      "choices": [
+        {
+          "text": "Tratar de entender ese susurro arcano",
+          "nextNodeId": "nodeC10"
+        },
+        {
+          "text": "Cubrir tus oídos y marcharte",
+          "nextNodeId": "nodeC11"
+        }
+      ]
+    },
+    {
+      "id": "nodeC9",
+      "text": "El ambiente se oscurece. Nubes cubren la tenue luz y la niebla se espesa de nuevo. Notas un escalofrío recorrer tu espalda.",
+      "choices": [
+        {
+          "text": "Encender una luz para disipar la penumbra",
+          "nextNodeId": "nodeC10"
+        },
+        {
+          "text": "Confiar en tus sentidos y avanzar en la oscuridad",
+          "nextNodeId": "nodeC11"
+        }
+      ]
+    },
+    {
+      "id": "nodeC10",
+      "text": "La niebla gira a tu alrededor, revelando brevemente un sendero de losas antiguas que asciende, bordeado por arbustos plateados.",
+      "choices": [
+        {
+          "text": "Subir por las losas con determinación",
+          "nextNodeId": "nodeC12"
+        },
+        {
+          "text": "Rodear los arbustos y tomar otro camino",
+          "nextNodeId": "nodeC13"
+        }
+      ]
+    },
+    {
+      "id": "nodeC11",
+      "text": "Te adentras en un corredor natural de niebla. Cada paso resuena en tu mente como un eco solitario, amplificando la sensación de misterio.",
+      "choices": [
+        {
+          "text": "Caminar más rápido para superar la inquietud",
+          "nextNodeId": "nodeC12"
+        },
+        {
+          "text": "Mantener un paso calmo y meditar en cada respiración",
+          "nextNodeId": "nodeC13"
+        }
+      ]
+    },
+    {
+      "id": "nodeC12",
+      "text": "Notas pequeños destellos danzando entre la bruma, como fragmentos de luna atrapados en el aire. Te sientes en un lugar irreal.",
+      "choices": [
+        {
+          "text": "Alargar la mano para tocar uno de esos destellos",
+          "nextNodeId": "nodeC14"
+        },
+        {
+          "text": "Dejarlos pasar y continuar sin intervención",
+          "nextNodeId": "nodeC15"
+        }
+      ]
+    },
+    {
+      "id": "nodeC13",
+      "text": "La humedad se condensa, formando gotas que caen como diminutas perlas. Un goteo constante marca el compás de tu avance.",
+      "choices": [
+        {
+          "text": "Recoger una gota y sentir su pureza",
+          "nextNodeId": "nodeC14"
+        },
+        {
+          "text": "Evitar tocar el agua y seguir moviéndote",
+          "nextNodeId": "nodeC15"
+        }
+      ]
+    },
+    {
+      "id": "nodeC14",
+      "text": "El velo de niebla se abre un instante, dejando ver ruinas de un antiguo altar. Sientes un cosquilleo de anticipación en la piel.",
+      "choices": [
+        {
+          "text": "Acercarte al altar en busca de respuestas",
+          "nextNodeId": "nodeC16"
+        },
+        {
+          "text": "Rodear las ruinas sin tocarlas",
+          "nextNodeId": "nodeC17"
+        }
+      ]
+    },
+    {
+      "id": "nodeC15",
+      "text": "Una corriente subterránea resuena con fuerza. Podrías hallar una entrada por la que descienden las aguas, o ignorarla y proseguir.",
+      "choices": [
+        {
+          "text": "Buscar esa entrada bajo la tierra",
+          "nextNodeId": "nodeC16"
+        },
+        {
+          "text": "Mantener tu rumbo en la superficie",
+          "nextNodeId": "nodeC17"
+        }
+      ]
+    },
+    {
+      "id": "nodeC16",
+      "text": "Alrededor del altar, oyes un canto lejano. Podrían ser voces que se perdieron en el tiempo. Un escalofrío recorre tu espalda.",
+      "choices": [
+        {
+          "text": "Intentar seguir el canto a toda costa",
+          "nextNodeId": "nodeC18"
+        },
+        {
+          "text": "Conservar la prudencia y explorar con calma",
+          "nextNodeId": "nodeC19"
+        }
+      ]
+    },
+    {
+      "id": "nodeC17",
+      "text": "La niebla adquiere matices azulados. Destellos esporádicos surcan el aire, como si capturaras visiones de otro mundo.",
+      "choices": [
+        {
+          "text": "Avanzar con asombro, contemplando cada destello",
+          "nextNodeId": "nodeC18"
+        },
+        {
+          "text": "Protegerte la vista y mantenerte enfocado",
+          "nextNodeId": "nodeC19"
+        }
+      ]
+    },
+    {
+      "id": "nodeC18",
+      "text": "Percibes un vaho frío en tu rostro. Un lejano murmullo de pasos, quizá un eco del pasado, te pone los pelos de punta.",
+      "choices": [
+        {
+          "text": "Llamar a la presencia que creas sentir",
+          "nextNodeId": "nodeC20"
+        },
+        {
+          "text": "Mantenerte en silencio y seguir el sendero",
+          "nextNodeId": "nodeC21"
+        }
+      ]
+    },
+    {
+      "id": "nodeC19",
+      "text": "Entre sombras, notas el contorno de una puerta de piedra semienterrada. El ambiente se torna cargado de un antiguo poder latente.",
+      "choices": [
+        {
+          "text": "Intentar abrir la puerta y ver qué hay tras ella",
+          "nextNodeId": "nodeC20"
+        },
+        {
+          "text": "Ignorarla y mantener el rumbo principal",
+          "nextNodeId": "nodeC21"
+        }
+      ]
+    },
+    {
+      "id": "nodeC20",
+      "text": "Te adentras un poco más en la niebla, que ahora parece susurrar tu nombre. Cada paso genera un eco en tus pensamientos.",
+      "choices": [
+        {
+          "text": "Contestar a la niebla y establecer un vínculo",
+          "nextNodeId": "nodeC22"
+        },
+        {
+          "text": "Mantener tu silencio para no revelar nada",
+          "nextNodeId": "nodeC23"
+        }
+      ]
+    },
+    {
+      "id": "nodeC21",
+      "text": "La niebla se hace más densa, pero adviertes un brillo ambarino entre sus pliegues. Tal vez sea una fuente de calor o luz natural.",
+      "choices": [
+        {
+          "text": "Seguir el brillo con curiosidad",
+          "nextNodeId": "nodeC22"
+        },
+        {
+          "text": "Permanecer alejado y tantear el camino con cuidado",
+          "nextNodeId": "nodeC23"
+        }
+      ]
+    },
+    {
+      "id": "nodeC22",
+      "text": "Un leve murmullo de agua corre bajo la superficie, y el suelo vibra suavemente con cada paso que das.",
+      "choices": [
+        {
+          "text": "Buscar un acceso subterráneo siguiendo la vibración",
+          "nextNodeId": "nodeC24"
+        },
+        {
+          "text": "Mantenerte en la superficie y avanzar con cautela",
+          "nextNodeId": "nodeC25"
+        }
+      ]
+    },
+    {
+      "id": "nodeC23",
+      "text": "Un viento repentino dispersa parte de la niebla y te permite ver la silueta de viejos pilares que apuntan al cielo.",
+      "choices": [
+        {
+          "text": "Acercarte a los pilares para inspeccionarlos",
+          "nextNodeId": "nodeC24"
+        },
+        {
+          "text": "Evadir los pilares y mantener el camino libre",
+          "nextNodeId": "nodeC25"
+        }
+      ]
+    },
+    {
+      "id": "nodeC24",
+      "text": "Encuentras restos de un muro circular, como si hubiera sido un observatorio o un santuario perdido en la bruma.",
+      "choices": [
+        {
+          "text": "Entrar en el círculo y palpar las rocas",
+          "nextNodeId": "nodeC26"
+        },
+        {
+          "text": "Rodear el lugar para no perturbarlo",
+          "nextNodeId": "nodeC27"
+        }
+      ]
+    },
+    {
+      "id": "nodeC25",
+      "text": "Las sombras adquieren formas difusas. Quizá sean árboles retorcidos o vestigios de antiguas construcciones enterradas.",
+      "choices": [
+        {
+          "text": "Tratar de identificar qué hay debajo de la niebla",
+          "nextNodeId": "nodeC26"
+        },
+        {
+          "text": "Continuar sin detenerte a investigar",
+          "nextNodeId": "nodeC27"
+        }
+      ]
+    },
+    {
+      "id": "nodeC26",
+      "text": "La niebla parece cargarse de energía eléctrica, y tu cabello se eriza. Sientes una presencia que te observa, aunque no la ves.",
+      "choices": [
+        {
+          "text": "Hablar en voz alta para intentar comunicarte",
+          "nextNodeId": "nodeC28"
+        },
+        {
+          "text": "Guardar silencio y aligerar el paso",
+          "nextNodeId": "nodeC29"
+        }
+      ]
+    },
+    {
+      "id": "nodeC27",
+      "text": "Un estallido lejano retumba, como un trueno apagado que hace temblar la tierra. El bosque de niebla susurra con mayor intensidad.",
+      "choices": [
+        {
+          "text": "Buscar refugio entre unas rocas musgosas",
+          "nextNodeId": "nodeC28"
+        },
+        {
+          "text": "Continuar sin temor, confiando en tu instinto",
+          "nextNodeId": "nodeC29"
+        }
+      ]
+    },
+    {
+      "id": "nodeC28",
+      "text": "Descubres un estrecho sendero que desciende bajo un arco natural de raíces. El aire se siente más denso y cargado de magia.",
+      "choices": [
+        {
+          "text": "Adentrarte en ese sendero subterráneo",
+          "nextNodeId": "nodeC30"
+        },
+        {
+          "text": "Mantenerte en la superficie y bordear el arco",
+          "nextNodeId": "nodeC31"
+        }
+      ]
+    },
+    {
+      "id": "nodeC29",
+      "text": "La niebla pareciera trenzarse en espirales que rodean tus piernas. El ambiente te invita a seguir, como un llamado incesante.",
+      "choices": [
+        {
+          "text": "Responder a ese llamado y acelerar el paso",
+          "nextNodeId": "nodeC30"
+        },
+        {
+          "text": "Oponerte, avanzando con calma y decisión propia",
+          "nextNodeId": "nodeC31"
+        }
+      ]
+    },
+    {
+      "id": "nodeC30",
+      "text": "Desciendes por una suave pendiente. El suelo brilla con motas plateadas que emiten una luz sutil, casi hipnótica.",
+      "choices": [
+        {
+          "text": "Recoger una de esas motas para estudiarla",
+          "nextNodeId": "nodeC32"
+        },
+        {
+          "text": "Ignorar la tentación y seguir adelante",
+          "nextNodeId": "nodeC33"
+        }
+      ]
+    },
+    {
+      "id": "nodeC31",
+      "text": "La neblina se ondula al ritmo de una brisa leve. A lo lejos, parece oírse el rumor de una cascada o de aguas profundas.",
+      "choices": [
+        {
+          "text": "Dirigirte a ese rumor de agua",
+          "nextNodeId": "nodeC32"
+        },
+        {
+          "text": "Tomar el camino opuesto para mantenerte en lo seco",
+          "nextNodeId": "nodeC33"
+        }
+      ]
+    },
+    {
+      "id": "nodeC32",
+      "text": "Una brisa helada te envuelve, tan intensa que por un momento te quedas sin aliento. Sientes que algo monumental yace cerca.",
+      "choices": [
+        {
+          "text": "Seguir sin rendirte, dejándote guiar por el instinto",
+          "nextNodeId": "nodeC34"
+        },
+        {
+          "text": "Frenar para recuperar el aliento y la calma",
+          "nextNodeId": "nodeC35"
+        }
+      ]
+    },
+    {
+      "id": "nodeC33",
+      "text": "El sendero asciende ligeramente y la niebla se torna más fina, permitiendo ver la silueta de ruinas antiguas en la lejanía.",
+      "choices": [
+        {
+          "text": "Cambiar de rumbo hacia esas ruinas",
+          "nextNodeId": "nodeC34"
+        },
+        {
+          "text": "Seguir tu camino original sin desviarte",
+          "nextNodeId": "nodeC35"
+        }
+      ]
+    },
+    {
+      "id": "nodeC34",
+      "text": "Un conjunto de pilares de piedra desgastados por el tiempo se alza ante ti. Su superficie luce tallados que recuerdan a constelaciones.",
+      "choices": [
+        {
+          "text": "Tocar los pilares e intentar descifrar su mensaje",
+          "nextNodeId": "nodeC36"
+        },
+        {
+          "text": "Rodearlos sin interferir",
+          "nextNodeId": "nodeC37"
+        }
+      ]
+    },
+    {
+      "id": "nodeC35",
+      "text": "La penumbra regresa a medida que avanzas. Un murmullo casi humano se percibe en la brisa, pero no distingues palabras claras.",
+      "choices": [
+        {
+          "text": "Detenerte a escuchar con más atención",
+          "nextNodeId": "nodeC36"
+        },
+        {
+          "text": "No prestar atención y seguir firme",
+          "nextNodeId": "nodeC37"
+        }
+      ]
+    },
+    {
+      "id": "nodeC36",
+      "text": "Un haz de luz lunar atraviesa la niebla, revelando un antiguo pedestal de roca. Bajo él, parece latir algo con energía propia.",
+      "choices": [
+        {
+          "text": "Retirar la roca para descubrir qué oculta",
+          "nextNodeId": "nodeC38"
+        },
+        {
+          "text": "Conservar el pedestal intacto y rodearlo",
+          "nextNodeId": "nodeC39"
+        }
+      ]
+    },
+    {
+      "id": "nodeC37",
+      "text": "El silencio se hace intenso. La niebla es ahora tenue, y percibes un leve aroma a flores nocturnas que flotan en el aire.",
+      "choices": [
+        {
+          "text": "Seguir ese aroma con anhelo",
+          "nextNodeId": "nodeC38"
+        },
+        {
+          "text": "Ignorar el olor y avanzar sin pausa",
+          "nextNodeId": "nodeC39"
+        }
+      ]
+    },
+    {
+      "id": "nodeC38",
+      "text": "Más adelante, vislumbras un claro bañado por la luz de la luna. Podría ser el corazón de este bosque en la niebla.",
+      "choices": [
+        {
+          "text": "Entrar al claro con el corazón abierto",
+          "nextNodeId": "nodeC40"
+        },
+        {
+          "text": "Acercarte con prudencia para observar primero",
+          "nextNodeId": "nodeC41"
+        }
+      ]
+    },
+    {
+      "id": "nodeC39",
+      "text": "Los árboles se adelgazan, como si te encaminaran a una zona amplia. El suelo se siente más firme y seco bajo tus pies.",
+      "choices": [
+        {
+          "text": "Avanzar con paso firme hacia lo abierto",
+          "nextNodeId": "nodeC40"
+        },
+        {
+          "text": "Tomar un desvío entre unos matorrales",
+          "nextNodeId": "nodeC41"
+        }
+      ]
+    },
+    {
+      "id": "nodeC40",
+      "text": "Entras en un espacio donde la niebla brilla tenuemente. La luna se refleja en la humedad del aire, dándole un tono plateado hipnótico.",
+      "choices": [
+        {
+          "text": "Quedarte unos instantes a contemplar el espectáculo",
+          "nextNodeId": "nodeC42"
+        },
+        {
+          "text": "Proseguir antes de quedarte demasiado tiempo",
+          "nextNodeId": "nodeC43"
+        }
+      ]
+    },
+    {
+      "id": "nodeC41",
+      "text": "Tropiezas con una piedra tallada que sobresale. Al tocarla, sientes un cosquilleo eléctrico que te recorre las manos.",
+      "choices": [
+        {
+          "text": "Apartar la mano de inmediato",
+          "nextNodeId": "nodeC42"
+        },
+        {
+          "text": "Mantener el contacto para explorar esa energía",
+          "nextNodeId": "nodeC43"
+        }
+      ]
+    },
+    {
+      "id": "nodeC42",
+      "text": "Una suave vibración recorre el aire. Podrías jurar que escuchas un latido, como un corazón inmenso durmiente bajo la tierra.",
+      "choices": [
+        {
+          "text": "Tratar de sincronizar tu pulso con ese latido",
+          "nextNodeId": "nodeC44"
+        },
+        {
+          "text": "Ignorar ese sentimiento y avanzar con determinación",
+          "nextNodeId": "nodeC45"
+        }
+      ]
+    },
+    {
+      "id": "nodeC43",
+      "text": "Un resplandor azulado cruza la niebla, dejando una estela etérea. Sientes que el bosque te pone a prueba en cada paso.",
+      "choices": [
+        {
+          "text": "Seguir ese resplandor para ver a dónde conduce",
+          "nextNodeId": "nodeC44"
+        },
+        {
+          "text": "Mantener tu propio rumbo sin distracciones",
+          "nextNodeId": "nodeC45"
+        }
+      ]
+    },
+    {
+      "id": "nodeC44",
+      "text": "Los árboles se retiran gradualmente, como abriendo un pasillo hacia un lugar que emana energía antigua. El aire es denso y solemne.",
+      "choices": [
+        {
+          "text": "Caminar con reverencia, sintiendo la sacralidad",
+          "nextNodeId": "nodeC46"
+        },
+        {
+          "text": "Mantenerte alerta y no bajar la guardia",
+          "nextNodeId": "nodeC47"
+        }
+      ]
+    },
+    {
+      "id": "nodeC45",
+      "text": "El suelo comienza a elevarse ligeramente. Ves la cima de una colina donde la niebla se arremolina formando un espiral plateado.",
+      "choices": [
+        {
+          "text": "Ascender la colina y enfrentar esa espiral",
+          "nextNodeId": "nodeC46"
+        },
+        {
+          "text": "Bordear la colina para ver si hay otra entrada",
+          "nextNodeId": "nodeC47"
+        }
+      ]
+    },
+    {
+      "id": "nodeC46",
+      "text": "Subes y la niebla se enrosca alrededor de tus piernas. Cada bocanada de aire sabe a misterio y libertad mezclados.",
+      "choices": [
+        {
+          "text": "Dejarte llevar por esa sensación y avanzar",
+          "nextNodeId": "nodeC48"
+        },
+        {
+          "text": "Frenar un instante para reflexionar",
+          "nextNodeId": "nodeC49"
+        }
+      ]
+    },
+    {
+      "id": "nodeC47",
+      "text": "Una suave luminosidad te indica que más allá de la colina hay un claro. La niebla forma un arco, como si te invitara a cruzarlo.",
+      "choices": [
+        {
+          "text": "Atravesar el arco de niebla para descubrir el claro",
+          "nextNodeId": "nodeC48"
+        },
+        {
+          "text": "Contemplar la forma antes de decidir",
+          "nextNodeId": "nodeC49"
+        }
+      ]
+    },
+    {
+      "id": "nodeC48",
+      "text": "El viento sopla con mayor intensidad, dispersando parte de la niebla. Divisas un círculo de menhires antiguos al fondo.",
+      "choices": [
+        {
+          "text": "Avanzar directamente hacia los menhires",
+          "nextNodeId": "nodeC50"
+        },
+        {
+          "text": "Rodear el lugar para observar antes de entrar",
+          "nextNodeId": "nodeC50"
+        }
+      ]
+    },
+    {
+      "id": "nodeC49",
+      "text": "Entre claros y penumbras, distingues tallas misteriosas en la roca. Parecen símbolos que marcan el final de este sendero brumoso.",
+      "choices": [
+        {
+          "text": "Tocar las tallas y sentir si tienen poder",
+          "nextNodeId": "nodeC50"
+        },
+        {
+          "text": "Respetar las tallas y continuar al final del camino",
+          "nextNodeId": "nodeC50"
+        }
+      ]
+    },
+    {
+      "id": "nodeC50",
+      "text": "La niebla se disipa gradualmente, revelando un círculo de menhires grabados con runas lumínicas. Sientes un pulso de energía que anuncia la culminación de tu odisea.",
+      "choices": [
+        {
+          "text": "Colocar tus manos sobre las runas y abrir tu corazón al bosque",
+          "nextNodeId": "finalC1"
+        },
+        {
+          "text": "Entonar un canto ancestral y dejar que la magia te envuelva",
+          "nextNodeId": "finalC2"
+        }
+      ]
+    },
+    {
+      "id": "finalC1",
+      "text": "Los menhires cobran vida con resplandores arcanos. Tu espíritu se eleva y comprendes que la niebla no era sino un velo entre realidades, ahora entreabierto por tu valor.",
+      "choices": []
+    },
+    {
+      "id": "finalC2",
+      "text": "Un coro de voces antiguas resuena a tu alrededor. Sientes la unión con el bosque y con los secretos que han dormido en la niebla por siglos. Tu aventura ha forjado un lazo eterno.",
+      "choices": []
+    }
+  ]
+}

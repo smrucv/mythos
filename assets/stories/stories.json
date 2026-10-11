@@ -5421,7 +5421,7 @@
         ]
       },
       {
-        "id": "node8bg",
+        "id": "node8bg__v2",
         "text": "[PLANIFICACIÓN DETALLADA] Creas un plan detallado basado en la información recopilada, maximizando tus posibilidades de éxito.",
         "choices": [
           {
@@ -5435,7 +5435,7 @@
         ]
       },
       {
-        "id": "node8bh",
+        "id": "node8bh__v2",
         "text": "[COMPARTIR INFORMACIÓN] Compartes la información con tu equipo, mejorando la coordinación durante el hackeo.",
         "choices": [
           {
@@ -5449,7 +5449,7 @@
         ]
       },
       {
-        "id": "node8bi",
+        "id": "node8bi__v2",
         "text": "[HACKEO EXITOSO] Comienzas el hackeo con el plan mejorado, enfrentándote a las defensas de la IA.",
         "choices": [
           {
@@ -5463,7 +5463,7 @@
         ]
       },
       {
-        "id": "node8bj",
+        "id": "node8bj__v2",
         "text": "[DEPLOY DE TRAMPAS] Colocas trampas según el nuevo plan, dificultando el avance de los guardias y la IA.",
         "choices": [
           {
@@ -5477,7 +5477,7 @@
         ]
       },
       {
-        "id": "node8bk",
+        "id": "node8bk__v2",
         "text": "[COMPLETAR HACKEO] Inicias el hackeo y logras penetrar completamente en los sistemas del NeuroBank.",
         "choices": [
           {
@@ -5491,7 +5491,7 @@
         ]
       },
       {
-        "id": "node8bl",
+        "id": "node8bl__v2",
         "text": "[PROTEGER SISTEMAS] Decides fortalecer tus defensas antes de continuar con el hackeo.",
         "choices": [
           {
@@ -5505,7 +5505,7 @@
         ]
       },
       {
-        "id": "node8bm",
+        "id": "node8bm__v2",
         "text": "[COMPLETAR HACKEO CON SABOTAJE] Finalizas el hackeo con éxito, extrayendo toda la información necesaria.",
         "choices": [
           {
@@ -5519,7 +5519,7 @@
         ]
       },
       {
-        "id": "node8bn",
+        "id": "node8bn__v2",
         "text": "[ESCAPADA SEGURA] Decides escapar antes de que se detecte el sabotaje, asegurando una extracción segura pero incompleta.",
         "choices": [
           {
@@ -6478,19 +6478,19 @@
         "choices": []
       },
       {
-        "id": "final134",
+        "id": "final134__v2",
         "text": "**Final: Extracción Exitosa a Ciegas**\nA pesar de tu ceguera, logras extraer toda la información vital del NeuroBank. Escapas exitosamente, cambiando el destino de la humanidad con los datos obtenidos."
       },
       {
-        "id": "final135",
+        "id": "final135__v2",
         "text": "**Final: Ocultación y Escape Seguro**\nDecides borrar tus huellas antes de escapar. Aunque logras ocultar tu actividad, algunos datos podrían perderse en el proceso, pero logras salir sin ser detectado."
       },
       {
-        "id": "final136",
+        "id": "final136__v2",
         "text": "**Final: Misión Fallida por Ceguera**\nLa ceguera interrumpe tu hackeo, y las defensas de la IA te capturan. La misión termina en fracaso, atrapándote dentro del NeuroBank."
       },
       {
-        "id": "final137",
+        "id": "final137__v2",
         "text": "**Final: Escape Rápido sin Éxito**\nUtilizas tus habilidades para escapar rápidamente, pero sin los datos esenciales, limitando el impacto de tu misión."
       },
       {
