@@ -1,0 +1,160 @@
+{
+  "source": "assets/stories/stories.json",
+  "sha256": "1fd1ed38f0812b088dde543c0aeaf859afadc21f09ac2608f3da180d22d27b1d",
+  "story_count": 4,
+  "total_nodes": 592,
+  "total_duplicate_ids": 12,
+  "stories": [
+    {
+      "id": "laberinto_medianoche",
+      "title": "El Laberinto de la Medianoche",
+      "nodes": 69,
+      "unique_node_ids": 69,
+      "choices": 147,
+      "endings": 8,
+      "duplicated_node_ids": [],
+      "duplicate_details": {},
+      "missing_targets": [],
+      "cover_exists": true
+    },
+    {
+      "id": "odisea_destino",
+      "title": "La Odisea del Destino",
+      "nodes": 157,
+      "unique_node_ids": 157,
+      "choices": 303,
+      "endings": 6,
+      "duplicated_node_ids": [],
+      "duplicate_details": {},
+      "missing_targets": [],
+      "cover_exists": true
+    },
+    {
+      "id": "android_secret",
+      "title": "El Secreto del Androide",
+      "nodes": 12,
+      "unique_node_ids": 12,
+      "choices": 18,
+      "endings": 3,
+      "duplicated_node_ids": [],
+      "duplicate_details": {},
+      "missing_targets": [],
+      "cover_exists": true
+    },
+    {
+      "id": "cyberpunk_heist",
+      "title": "El Asalto Neon",
+      "nodes": 354,
+      "unique_node_ids": 342,
+      "choices": 348,
+      "endings": 179,
+      "duplicated_node_ids": [
+        "node8bg",
+        "node8bh",
+        "node8bi",
+        "node8bj",
+        "node8bk",
+        "node8bl",
+        "node8bm",
+        "node8bn",
+        "final134",
+        "final135",
+        "final136",
+        "final137"
+      ],
+      "duplicate_details": {
+        "node8bg": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node7w"
+          ]
+        },
+        "node8bh": {
+          "occurrences": 2,
+          "texts_are_different": false,
+          "incoming_from": [
+            "node7w"
+          ]
+        },
+        "node8bi": {
+          "occurrences": 2,
+          "texts_are_different": false,
+          "incoming_from": [
+            "node7x"
+          ]
+        },
+        "node8bj": {
+          "occurrences": 2,
+          "texts_are_different": false,
+          "incoming_from": [
+            "node7x"
+          ]
+        },
+        "node8bk": {
+          "occurrences": 2,
+          "texts_are_different": false,
+          "incoming_from": [
+            "node7y"
+          ]
+        },
+        "node8bl": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node7y"
+          ]
+        },
+        "node8bm": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node7z"
+          ]
+        },
+        "node8bn": {
+          "occurrences": 2,
+          "texts_are_different": false,
+          "incoming_from": [
+            "node7z"
+          ]
+        },
+        "final134": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node8au",
+            "node9f"
+          ]
+        },
+        "final135": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node8au",
+            "node9f"
+          ]
+        },
+        "final136": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node8av",
+            "node9h"
+          ]
+        },
+        "final137": {
+          "occurrences": 2,
+          "texts_are_different": true,
+          "incoming_from": [
+            "node8ax",
+            "node9h"
+          ]
+        }
+      },
+      "missing_targets": [],
+      "cover_exists": true
+    }
+  ],
+  "policy": "Read first occurrence of a duplicated id; never change the original assets."
+}

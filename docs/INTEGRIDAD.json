@@ -1,0 +1,37 @@
+{
+  "origin_apk_filename": "mythos-3.apk",
+  "origin_apk_sha256": "2b7e98a778e580e742f8ad452c689b0c670bb3518ad3e81fbe85535a73733b7d",
+  "asset_files": {
+    "assets/images/android_secret.webp": {
+      "bytes": 385562,
+      "sha256": "a5bca4db309887a48a7b41197b35c3da3c0041d5239a31298402e889012f7570",
+      "identical_to_apk": true
+    },
+    "assets/images/cyberpunk_heist.webp": {
+      "bytes": 467022,
+      "sha256": "2ea546673a5a9b5871c7375f5e4eef219ceb00f09bd5830f6ed71b2fcf4fe1f6",
+      "identical_to_apk": true
+    },
+    "assets/images/laberinto_medianoche.webp": {
+      "bytes": 557572,
+      "sha256": "d67cd7c28a3a9c30ee0fa674f945b0d616756e8177d56a2e5f36fab8111e2079",
+      "identical_to_apk": true
+    },
+    "assets/images/library.webp": {
+      "bytes": 510706,
+      "sha256": "09213bfbd5e1378897e16f17145c00d8afa2c4019c1d0afa2bbc4d7a21d69286",
+      "identical_to_apk": true
+    },
+    "assets/images/odisea_destino.webp": {
+      "bytes": 445344,
+      "sha256": "dfda5e4a8964b88af02d557ce74524644971961326216756bd60770fe5ed14a9",
+      "identical_to_apk": true
+    },
+    "assets/stories/stories.json": {
+      "bytes": 266107,
+      "sha256": "1fd1ed38f0812b088dde543c0aeaf859afadc21f09ac2608f3da180d22d27b1d",
+      "identical_to_apk": true
+    }
+  },
+  "byte_for_byte_match_with_apk": true
+}

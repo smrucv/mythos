@@ -1,0 +1,24 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+**/doc/api/
+**/flutter_*.png
+*.iml
+.idea/
+.vscode/
+# Android local config & signing
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+# Local generated files
+*.log
+.DS_Store
+Thumbs.db
+gradle_error.txt
