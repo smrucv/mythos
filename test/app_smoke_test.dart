@@ -22,7 +22,11 @@ void main() {
        ]}
     ]''');
 
-    await tester.pumpWidget(MythosApp(catalog: catalog, progress: store));
+    await tester.pumpWidget(MythosApp(
+      catalog: catalog,
+      progress: store,
+      showStartupSplash: false,
+    ));
     await tester.pumpAndSettle();
     expect(find.text('Una historia de prueba'), findsOneWidget);
     await tester.tap(find.text('Una historia de prueba'));

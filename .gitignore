@@ -21,4 +21,3 @@ android/key.properties
 *.log
 .DS_Store
 Thumbs.db
-gradle_error.txt

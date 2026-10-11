@@ -7,15 +7,18 @@ import 'screens/story_detail_screen.dart';
 import 'screens/story_reader_screen.dart';
 import 'services/progress_store.dart';
 import 'widgets/mythos_theme.dart';
+import 'widgets/startup_sequence.dart';
 
 class MythosApp extends StatefulWidget {
   final StoryCatalog catalog;
   final ProgressStore progress;
+  final bool showStartupSplash;
 
   const MythosApp({
     super.key,
     required this.catalog,
     required this.progress,
+    this.showStartupSplash = true,
   });
 
   @override
@@ -68,6 +71,10 @@ class _MythosAppState extends State<MythosApp> {
         debugShowCheckedModeBanner: false,
         theme: createMythosTheme(),
         routerConfig: _router,
+        builder: (context, child) => StartupSequence(
+          enabled: widget.showStartupSplash,
+          child: child ?? const SizedBox.shrink(),
+        ),
       );
 }
 

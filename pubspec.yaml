@@ -1,7 +1,7 @@
 name: mythos_recovery
 description: Reconstruccion editable de Mythos a partir de los recursos del APK conservado.
 publish_to: none
-version: 1.0.0+1
+version: 1.2.1+3
 
 environment:
   sdk: '>=3.5.0 <4.0.0'
@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^14.8.1
+  flutter_svg: ^2.2.0
+  audioplayers: ^6.4.0
   shared_preferences: ^2.3.5
 
 dev_dependencies:
@@ -22,3 +24,4 @@ flutter:
   assets:
     - assets/stories/stories.json
     - assets/images/
+    - assets/branding/chiguire_grove_isotipo_original_trazado.svg
