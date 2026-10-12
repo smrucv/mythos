@@ -1,5 +1,5 @@
 {
-  "phase": 1,
+  "phase": "2B",
   "source": "assets/stories/stories.json",
   "policy": "Disconnected nodes are preserved editorial drafts; no automatic reconnection or deletion.",
   "stories": [
@@ -28,7 +28,7 @@
       "storyId": "cyberpunk_heist",
       "definitions": 354,
       "uniqueIds": 354,
-      "reachableDefinitions": 309,
+      "reachableDefinitions": 313,
       "drafts": [
         {
           "id": "node7ae",
@@ -651,42 +651,6 @@
               "text": "[ALMACENAR INFORMACIÓN] Guardar la información para uso futuro"
             }
           ],
-          "outgoingIds": [],
-          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
-        },
-        {
-          "id": "final134__v2",
-          "definitionIndex": 318,
-          "isEnding": true,
-          "reason": "renamed_duplicate_without_incoming_reference",
-          "incomingReferences": [],
-          "outgoingIds": [],
-          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
-        },
-        {
-          "id": "final135__v2",
-          "definitionIndex": 319,
-          "isEnding": true,
-          "reason": "renamed_duplicate_without_incoming_reference",
-          "incomingReferences": [],
-          "outgoingIds": [],
-          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
-        },
-        {
-          "id": "final136__v2",
-          "definitionIndex": 320,
-          "isEnding": true,
-          "reason": "renamed_duplicate_without_incoming_reference",
-          "incomingReferences": [],
-          "outgoingIds": [],
-          "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
-        },
-        {
-          "id": "final137__v2",
-          "definitionIndex": 321,
-          "isEnding": true,
-          "reason": "renamed_duplicate_without_incoming_reference",
-          "incomingReferences": [],
           "outgoingIds": [],
           "editorialDecision": "Preserve unchanged; author must explicitly approve any reconnection."
         }

@@ -67,6 +67,20 @@ Map<String, List<String>> histories(
   return result;
 }
 
+Map<String, dynamic> expectedPhase2Node(String storyId,
+    Map<String, dynamic> historical, List<dynamic> authorizedChanges) {
+  final expected = jsonDecode(jsonEncode(historical)) as Map<String, dynamic>;
+  if (storyId != 'cyberpunk_heist') return expected;
+  for (final change in authorizedChanges) {
+    if (expected['id'] != change['sourceNodeId']) continue;
+    final choice = expected['choices'][change['decisionNumber'] - 1];
+    expect(choice['text'], change['choiceText']);
+    expect(choice['nextNodeId'], change['from']);
+    choice['nextNodeId'] = change['to'];
+  }
+  return expected;
+}
+
 class MemoryBundle extends CachingAssetBundle {
   final Map<String, String> data;
   MemoryBundle(this.data);
@@ -248,8 +262,7 @@ void main() {
     );
   });
 
-  test(
-      'cuatro historias conservan cada texto, decision y todas las rutas previas',
+  test('cuatro historias conservan contenido salvo los cuatro destinos B1-B4',
       () async {
     final old = jsonDecode(
         File('test/fixtures/stories_before_integrity_phase1.json')
@@ -263,6 +276,9 @@ void main() {
       for (final row in renames['renames'] as List)
         row['definitionIndex'] as int: row,
     };
+    final authorizedChanges = (jsonDecode(
+            File('docs/cambios_autorizados_fase2b.json').readAsStringSync())
+        as Map)['changes'] as List;
     var total = 0;
     for (var si = 0; si < old.length; si++) {
       final before = Map<String, dynamic>.from(old[si] as Map);
@@ -277,16 +293,28 @@ void main() {
           expect(expected['id'], byPosition[i]['oldId']);
           expected['id'] = byPosition[i]['newId'];
         }
-        expect(newNodes[i], expected, reason: '${before['id']} nodes[$i]');
+        expect(
+            newNodes[i],
+            expectedPhase2Node(
+                before['id'] as String, expected, authorizedChanges),
+            reason: '${before['id']} nodes[$i]');
       }
       final oldGraph = firstDefinitions(before);
       final newGraph = firstDefinitions(after);
       for (final id in oldGraph.keys) {
-        expect(newGraph[id], oldGraph[id],
+        expect(
+            newGraph[id],
+            expectedPhase2Node(
+                before['id'] as String, oldGraph[id]!, authorizedChanges),
             reason: 'Nodo efectivo anterior $id');
       }
       final start = previousNodes.first['id'] as String;
-      expect(reachable(newGraph, start), reachable(oldGraph, start));
+      final expectedReachable = reachable(oldGraph, start);
+      if (before['id'] == 'cyberpunk_heist') {
+        expectedReachable
+            .addAll(authorizedChanges.map((change) => change['to'] as String));
+      }
+      expect(reachable(newGraph, start), expectedReachable);
       final story = Story.fromJson(after);
       expect(story.duplicateNodeIds, isEmpty);
       expect(story.missingNodeIds, isEmpty);

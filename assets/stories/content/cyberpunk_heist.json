@@ -1838,11 +1838,11 @@
       "choices": [
         {
           "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
-          "nextNodeId": "final134"
+          "nextNodeId": "final134__v2"
         },
         {
           "text": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
-          "nextNodeId": "final135"
+          "nextNodeId": "final135__v2"
         }
       ]
     },
@@ -1852,7 +1852,7 @@
       "choices": [
         {
           "text": "[FINAL FALLIDO] Misión fallida, atrapado por las defensas",
-          "nextNodeId": "final136"
+          "nextNodeId": "final136__v2"
         }
       ]
     },
@@ -1876,7 +1876,7 @@
       "choices": [
         {
           "text": "[ESCAPAR RAPIDAMENTE] Utilizar habilidades para escapar rápidamente",
-          "nextNodeId": "final137"
+          "nextNodeId": "final137__v2"
         }
       ]
     },

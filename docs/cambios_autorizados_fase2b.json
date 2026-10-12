@@ -1,0 +1,43 @@
+{
+  "phase": "2B",
+  "storyId": "cyberpunk_heist",
+  "source": "assets/stories/stories.json",
+  "changes": [
+    {
+      "approval": "B1",
+      "sourceNodeId": "node8au",
+      "definitionIndex": 133,
+      "decisionNumber": 1,
+      "choiceText": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+      "from": "final134",
+      "to": "final134__v2"
+    },
+    {
+      "approval": "B2",
+      "sourceNodeId": "node8au",
+      "definitionIndex": 133,
+      "decisionNumber": 2,
+      "choiceText": "[OCULTAR HUELLAS Y ESCAPAR] Borrar rastros antes de escapar",
+      "from": "final135",
+      "to": "final135__v2"
+    },
+    {
+      "approval": "B3",
+      "sourceNodeId": "node8av",
+      "definitionIndex": 134,
+      "decisionNumber": 1,
+      "choiceText": "[FINAL FALLIDO] Misión fallida, atrapado por las defensas",
+      "from": "final136",
+      "to": "final136__v2"
+    },
+    {
+      "approval": "B4",
+      "sourceNodeId": "node8ax",
+      "definitionIndex": 136,
+      "decisionNumber": 1,
+      "choiceText": "[ESCAPAR RAPIDAMENTE] Utilizar habilidades para escapar rápidamente",
+      "from": "final137",
+      "to": "final137__v2"
+    }
+  ]
+}
