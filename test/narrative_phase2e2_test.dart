@@ -47,14 +47,36 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  test('manifiesto exacto: nueve campos autorizados, sin otras diferencias',
-      () {
+  test('cierre: obtener datos mantiene destino y manifiesto adicional exactos',
+      () async {
+    final additional = jsonDecode(
+        File('docs/ajuste_autorizado_cierre_fase2e2.json')
+            .readAsStringSync()) as Map;
+    expect(additional['extends'], 'docs/cambios_autorizados_fase2e2.json');
+    expect(additional['changes'], [
+      {
+        'nodeId': 'node7k',
+        'path': ['choices', 0, 'text'],
+        'before': '[ACUERDO COMPLETO] Cumplir con las condiciones de la IA',
+        'after':
+            '[OBTENER LOS DATOS] Aprovechar el acceso concedido y obtener la información antes de pagar el precio acordado',
+      }
+    ]);
+    final story = (await StoryCatalog.fromAssets()).byId('cyberpunk_heist')!;
+    expect(story.nodeById('node7k')!.choices.first.nextNodeId, 'node9e');
+    expect(story.nodeById('node7k')!.choices.first.text,
+        (additional['changes'] as List).single['after']);
+    expect(story.nodeById('node7k')!.choices[1].nextNodeId, 'node9f');
+  });
+
+  test('manifiesto exacto: diez campos autorizados, sin otras diferencias', () {
     final manifest = jsonDecode(
             File('docs/cambios_autorizados_fase2e2.json').readAsStringSync())
         as Map;
     expect(manifest['baseCommit'], 'a66c814');
     expect(manifest['storyId'], 'cyberpunk_heist');
-    expect(phase2e2Changes.length, 9);
+    expect(originalPhase2e2Changes.length, 9);
+    expect(phase2e2Changes.length, 10);
     expect(
         phase2e2Changes
             .map((c) => '${c['nodeId']}:${(c['path'] as List).join('.')}')
@@ -63,6 +85,7 @@ void main() {
           'final134:text',
           'node8ak:choices.1.nextNodeId',
           'node7k:text',
+          'node7k:choices.0.text',
           'node9e:text',
           'node9e:choices.0.text',
           'node9e:choices.1.text',

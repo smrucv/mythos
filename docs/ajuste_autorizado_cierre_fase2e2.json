@@ -1,0 +1,18 @@
+{
+  "phase": "2E.2-cierre",
+  "baseCommit": "5f7dab0",
+  "extends": "docs/cambios_autorizados_fase2e2.json",
+  "storyId": "cyberpunk_heist",
+  "changes": [
+    {
+      "nodeId": "node7k",
+      "path": [
+        "choices",
+        0,
+        "text"
+      ],
+      "before": "[ACUERDO COMPLETO] Cumplir con las condiciones de la IA",
+      "after": "[OBTENER LOS DATOS] Aprovechar el acceso concedido y obtener la información antes de pagar el precio acordado"
+    }
+  ]
+}

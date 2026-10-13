@@ -4,9 +4,15 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mythos/models/story.dart';
 
-List<dynamic> get phase2e2Changes => (jsonDecode(
+List<dynamic> get originalPhase2e2Changes => (jsonDecode(
         File('docs/cambios_autorizados_fase2e2.json').readAsStringSync())
     as Map)['changes'] as List;
+
+List<dynamic> get phase2e2Changes => [
+      ...originalPhase2e2Changes,
+      ...(jsonDecode(File('docs/ajuste_autorizado_cierre_fase2e2.json')
+          .readAsStringSync()) as Map)['changes'] as List,
+    ];
 
 Map<String, dynamic> applyPhase2e2(String storyId, Map<String, dynamic> node,
     {bool reverse = false}) {

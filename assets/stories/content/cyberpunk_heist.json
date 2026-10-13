@@ -894,7 +894,7 @@
       "text": "[ACEPTAR INTERCAMBIO] Aceptas acceder a la información a cambio de entregar tu libertad a la IA. La IA te concede acceso a los datos y espera que pagues el precio acordado. Todavía no has entregado tu libertad: después de obtener la información podrás cumplir el pacto o intentar quebrantarlo.",
       "choices": [
         {
-          "text": "[ACUERDO COMPLETO] Cumplir con las condiciones de la IA",
+          "text": "[OBTENER LOS DATOS] Aprovechar el acceso concedido y obtener la información antes de pagar el precio acordado",
           "nextNodeId": "node9e"
         },
         {
