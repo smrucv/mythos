@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'support/narrative_phase2e2.dart';
+
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mythos/models/story.dart';
@@ -78,7 +80,7 @@ Map<String, dynamic> expectedPhase2Node(String storyId,
     expect(choice['nextNodeId'], change['from']);
     choice['nextNodeId'] = change['to'];
   }
-  return expected;
+  return applyPhase2e2(storyId, expected);
 }
 
 class MemoryBundle extends CachingAssetBundle {
@@ -262,7 +264,8 @@ void main() {
     );
   });
 
-  test('cuatro historias conservan contenido salvo los cuatro destinos B1-B4',
+  test(
+      'cuatro historias conservan contenido salvo los cambios autorizados B1-B4 y 2E.2',
       () async {
     final old = jsonDecode(
         File('test/fixtures/stories_before_integrity_phase1.json')
@@ -353,7 +356,8 @@ void main() {
         expect(restored.previousNodeIds, record['previousNodeIds']);
         expect(restored.completed, completed);
         expect(store.forSummary(repo.byId(story.id)!)!.currentNodeId, id);
-        expect(story.nodeById(id)!.text, graph[id]!['text']);
+        expect(story.nodeById(id)!.text,
+            applyPhase2e2(story.id, graph[id]!)['text']);
         expect(
             (await SharedPreferences.getInstance())
                 .getString('mythos.progress.v1'),

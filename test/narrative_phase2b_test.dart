@@ -10,6 +10,7 @@ import 'package:mythos/services/story_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'support/narrative_phase1.dart';
+import 'support/narrative_phase2e2.dart';
 
 const approved = [
   {
@@ -171,7 +172,7 @@ void main() {
       'changes': approved,
     });
     final before = phase1Catalog().byId('cyberpunk_heist')!;
-    final after = (await StoryCatalog.fromAssets()).byId('cyberpunk_heist')!;
+    final after = phase2bFromCurrent().byId('cyberpunk_heist')!;
     final differences = <String>{};
     for (var i = 0; i < before.nodes.length; i++) {
       final old = before.nodes[i];
@@ -318,8 +319,12 @@ void main() {
       expect(restored.completed, isTrue);
       expect(restored.lastUpdated,
           DateTime.parse(savedRecord['lastUpdated'] as String));
-      expect(after.nodeById(restored.currentNodeId)!.text,
-          before.nodeById(change['from'] as String)!.text);
+      expect(
+          after.nodeById(restored.currentNodeId)!.text,
+          applyPhase2e2('cyberpunk_heist', {
+            'id': change['from'],
+            'text': before.nodeById(change['from'] as String)!.text
+          })['text']);
       final preferences = await SharedPreferences.getInstance();
       expect(preferences.getString('mythos.progress.v1'), saved);
       // Deshacer respeta la historia antigua aunque la arista ya haya cambiado.

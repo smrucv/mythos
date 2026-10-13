@@ -4207,7 +4207,7 @@
       },
       {
         "id": "node7k",
-        "text": "[ACEPTAR INTERCAMBIO] Aceptas los términos de la IA, obteniendo acceso seguro a la información a cambio de ciertas concesiones.",
+        "text": "[ACEPTAR INTERCAMBIO] Aceptas acceder a la información a cambio de entregar tu libertad a la IA. La IA te concede acceso a los datos y espera que pagues el precio acordado. Todavía no has entregado tu libertad: después de obtener la información podrás cumplir el pacto o intentar quebrantarlo.",
         "choices": [
           {
             "text": "[ACUERDO COMPLETO] Cumplir con las condiciones de la IA",
@@ -5018,7 +5018,7 @@
           },
           {
             "text": "[ABANDONAR MISION] Decidir abandonar el intento debido a la alta dificultad",
-            "nextNodeId": "final128"
+            "nextNodeId": "final57"
           }
         ]
       },
@@ -5744,14 +5744,14 @@
       },
       {
         "id": "node9e",
-        "text": "[ACUERDO COMPLETO EXITOSO] Cumples completamente con las condiciones de la IA, obteniendo acceso seguro y exitoso a la información.",
+        "text": "[EL PRECIO DEL ACUERDO] Has recibido acceso a la información y obtenido los datos. Sigues dentro del NeuroBank; la IA exige ahora la libertad que prometiste a cambio del acceso. Todavía puedes decidir: cumplir el pacto y permanecer bajo su control, o romperlo e intentar salir con la información. La salida sigue bajo la vigilancia de la IA; aún no has escapado ni entregado tu libertad.",
         "choices": [
           {
-            "text": "[ESCAPAR CON ÉXITO] Iniciar la fuga con los datos extraídos",
+            "text": "[ROMPER EL PACTO] Intentar escapar con los datos sin entregar tu libertad a la IA",
             "nextNodeId": "final132"
           },
           {
-            "text": "[PROTEGER INFORMACIÓN] Asegurar los datos antes de escapar",
+            "text": "[CUMPLIR EL PACTO] Proteger la información y entregar tu libertad como precio del acuerdo",
             "nextNodeId": "final133"
           }
         ]
@@ -5831,7 +5831,7 @@
       },
       {
         "id": "final9",
-        "text": "**Final: Traición Desenfrenada**\nEl técnico te traiciona, interfiriendo en el hackeo. La misión se desmorona y debes enfrentar las consecuencias.",
+        "text": "**Final: Extracción Exitosa, Alianza Rota**\nEl hackeo ya está terminado y los datos están en tus manos. Aprovechas esa ventaja para romper la colaboración: te niegas a continuar la fuga junto al técnico que te ayudó a obtenerlos. Lo dejas atrás y sales del NeuroBank con la información. La extracción se ha logrado, pero la alianza no sobrevive a tu decisión. No sabes qué será del técnico dentro del banco; lo que sí sabes es que has utilizado su ayuda para abandonarlo.",
         "choices": []
       },
       {
@@ -6444,17 +6444,17 @@
       },
       {
         "id": "final132",
-        "text": "**Final: Acuerdo Completo y Escape**\nAceptas los términos de la IA y obtienes acceso seguro a la información. Escapas exitosamente con los datos necesarios, asegurando el éxito de la misión.",
+        "text": "**Final: Datos Recuperados, Pacto Roto**\nDecides romper el acuerdo y conservar tanto los datos obtenidos como tu libertad. Abandonas el acceso concedido por la IA y comienzas a regresar por el camino de entrada. La IA detecta tu retirada, activa la alarma y empieza a bloquear el paso mientras los guardias se acercan. Retomas el hackeo para retrasar el cierre del acceso: la IA contrarresta la intrusión, pero logras cruzar antes de que termine de cerrarse. No puedes sostener el hackeo; cortas la conexión y sigues avanzando. Recurres al sigilo con el que llegaste al núcleo para evitar a los guardias y alcanzas los ductos por los que entraste. Los atraviesas hasta salir del NeuroBank, con la información todavía en tus manos. Has conservado tu libertad, pero la IA conoce tu traición: el pacto queda roto.",
         "choices": []
       },
       {
         "id": "final133",
-        "text": "**Final: Traición y Dominio**\nUtilizas las alianzas para tu beneficio personal, traicionando a tus aliados y dominando el NeuroBank a tu manera.",
+        "text": "**Final: Información Protegida, Libertad Perdida**\nProteges los datos que has obtenido y decides cumplir el acuerdo. La IA te concedió acceso a la información a cambio de tu libertad; ahora aceptas pagar ese precio y renuncias a la fuga. La IA bloquea tu salida y quedas confinado bajo su control dentro del NeuroBank. Conservas la información protegida, pero no consigues sacarla personalmente del edificio. No has destruido los datos ni los has entregado a terceros. El pacto se ha cumplido: el acceso a la información te ha costado la libertad.",
         "choices": []
       },
       {
         "id": "final134",
-        "text": "**Final: Hackeo Desastroso**\nIntentas extraer datos adicionales, pero el sistema detecta tu actividad. La IA te atrapa y la misión fracasa.",
+        "text": "**Final: Fuga Interceptada**\nCon la información que has obtenido, inicias la fuga y buscas la salida. La IA todavía controla las defensas del NeuroBank: detecta tu retirada y bloquea la fuga. Te captura antes de que logres salir del edificio. La misión termina en fracaso; no has conseguido salir del NeuroBank con la información.",
         "choices": []
       },
       {
