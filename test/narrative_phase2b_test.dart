@@ -201,7 +201,7 @@ void main() {
   });
 
   test(
-      'auditoria real: cuatro historias validas, 313 accesibles y 41 borradores',
+      'auditoria real: cuatro historias validas, 314 accesibles y 41 borradores',
       () async {
     final before = phase1Catalog();
     final after = await StoryCatalog.fromAssets();
@@ -210,7 +210,8 @@ void main() {
       final old = before.byId(story.id)!;
       final previous = StoryDiagnostics.inspect(old);
       final actual = StoryDiagnostics.inspect(story);
-      expect(story.nodes.length, old.nodes.length);
+      expect(story.nodes.length,
+          old.nodes.length + (story.id == 'cyberpunk_heist' ? 1 : 0));
       expect(story.nodes.map((n) => n.id).toSet().length, story.nodes.length);
       expect(story.duplicateNodeIds, isEmpty);
       expect(story.missingNodeIds, isEmpty);
@@ -221,7 +222,7 @@ void main() {
         expect(old.nodes.length, 354);
         expect(previous.unreachableNodeIds.length, 45);
         expect(actual.unreachableNodeIds.length, 41);
-        expect(story.nodes.length - actual.unreachableNodeIds.length, 313);
+        expect(story.nodes.length - actual.unreachableNodeIds.length, 314);
         expect(
             previous.unreachableNodeIds.difference(actual.unreachableNodeIds),
             recovered);
@@ -253,7 +254,7 @@ void main() {
         'cycles': actual.cyclicComponents.length
       }));
     }
-    expect(total, 592);
+    expect(total, 593);
   });
 
   for (final path in [...correctedPaths, ...preservedPaths]) {

@@ -5,12 +5,12 @@ import 'package:mythos/models/story.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('el catalogo de Mythos contiene las cuatro historias y 592 nodos',
+  test('el catalogo de Mythos contiene las cuatro historias y 593 nodos',
       () async {
     final catalog = await StoryCatalog.fromAssets();
     expect(catalog.stories.length, 4);
     expect(catalog.stories.fold<int>(0, (total, s) => total + s.nodes.length),
-        592);
+        593);
     expect(catalog.stories.map((story) => story.id).toList(), [
       'laberinto_medianoche',
       'odisea_destino',
@@ -27,12 +27,12 @@ void main() {
     }
   });
 
-  test('El Asalto Neon conserva 354 definiciones con IDs unicos', () async {
+  test('El Asalto Neon conserva 355 definiciones con IDs unicos', () async {
     final catalog = await StoryCatalog.fromAssets();
     final problematic = catalog.byId('cyberpunk_heist')!;
     expect(problematic.duplicateNodeIds, isEmpty);
-    expect(problematic.nodes.length, 354);
-    expect(problematic.nodes.map((node) => node.id).toSet().length, 354);
+    expect(problematic.nodes.length, 355);
+    expect(problematic.nodes.map((node) => node.id).toSet().length, 355);
     expect(
         problematic.nodes.where((node) => node.id.endsWith('__v2')).length, 12);
   });

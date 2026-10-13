@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'narrative_phase2e4.dart';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mythos/models/story.dart';
 
@@ -32,8 +34,10 @@ Map<String, dynamic> applyPhase2e2(String storyId, Map<String, dynamic> node,
 }
 
 StoryCatalog phase2bFromCurrent() {
-  final raw = jsonDecode(File('assets/stories/stories.json').readAsStringSync())
-      as List;
+  final raw = applyPhase2e4Catalog(
+      jsonDecode(File('assets/stories/stories.json').readAsStringSync())
+          as List,
+      reverse: true);
   for (final story in raw) {
     story['nodes'] = [
       for (final node in story['nodes'])

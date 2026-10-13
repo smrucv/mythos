@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'support/narrative_phase2e2.dart';
+import 'support/narrative_phase2e4.dart';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -270,9 +271,10 @@ void main() {
     final old = jsonDecode(
         File('test/fixtures/stories_before_integrity_phase1.json')
             .readAsStringSync()) as List;
-    final now =
+    final now = applyPhase2e4Catalog(
         jsonDecode(await rootBundle.loadString('assets/stories/stories.json'))
-            as List;
+            as List,
+        reverse: true);
     final renames = jsonDecode(
         File('docs/renombres_narrativos_fase1.json').readAsStringSync()) as Map;
     final byPosition = {
@@ -356,8 +358,10 @@ void main() {
         expect(restored.previousNodeIds, record['previousNodeIds']);
         expect(restored.completed, completed);
         expect(store.forSummary(repo.byId(story.id)!)!.currentNodeId, id);
-        expect(story.nodeById(id)!.text,
-            applyPhase2e2(story.id, graph[id]!)['text']);
+        expect(
+            story.nodeById(id)!.text,
+            applyPhase2e4Node(
+                story.id, applyPhase2e2(story.id, graph[id]!))['text']);
         expect(
             (await SharedPreferences.getInstance())
                 .getString('mythos.progress.v1'),

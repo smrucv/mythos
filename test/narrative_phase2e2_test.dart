@@ -8,6 +8,7 @@ import 'package:mythos/services/progress_store.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'support/narrative_phase2e2.dart';
+import 'support/narrative_phase2e4.dart';
 
 const prefix = ['node1', 'node2a', 'node3a', 'node4b', 'node5c'];
 const pact = [...prefix, 'node6f', 'node7k'];
@@ -108,11 +109,11 @@ void main() {
           applyPhase2e2(story['id'], Map<String, dynamic>.from(node))
       ];
     }
-    expect(current, baseline);
+    expect(current, applyPhase2e4Catalog(baseline));
   });
 
   test(
-      'misma accesibilidad, 354 IDs, 313 accesibles, 153 terminales, sin ciclos',
+      'misma accesibilidad anterior mas escena autorizada, 355 IDs, 314 accesibles, 153 terminales, sin ciclos',
       () async {
     final old = phase2bFromCurrent();
     final current = await StoryCatalog.fromAssets();
@@ -125,7 +126,7 @@ void main() {
       expect(story.missingNodeIds, isEmpty);
       expect(story.nodes.map((n) => n.id).toSet().length, story.nodes.length);
       if (story.id == 'cyberpunk_heist') {
-        expect(story.nodes.length, 354);
+        expect(story.nodes.length, 355);
         expect(actual.unreachableNodeIds.length, 41);
         expect(
             story.nodes

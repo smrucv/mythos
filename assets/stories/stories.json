@@ -4730,10 +4730,10 @@
       },
       {
         "id": "node8q",
-        "text": "[EVADIR EXITOSAMENTE] Utilizas rutas alternativas para escapar, evitando a las fuerzas de seguridad.",
+        "text": "[EVASIÓN DURANTE LA RETIRADA] Utilizas rutas alternativas para evitar a las fuerzas de seguridad. Has detenido el hackeo y la misión sigue incompleta. Todavía estás dentro del NeuroBank: puedes mantener la retirada o enfrentarte a los guardias que intentan alcanzarte.",
         "choices": [
           {
-            "text": "[FINAL EXITOSO] Completar la misión con éxito",
+            "text": "[CONTINUAR LA RETIRADA] Seguir las rutas alternativas hasta salir del NeuroBank",
             "nextNodeId": "final30"
           },
           {
@@ -4747,7 +4747,7 @@
         "text": "[CREACIÓN DE DISTRACTORES] Creas una distracción efectiva, facilitando tu fuga.",
         "choices": [
           {
-            "text": "[ESCAPAR CON DATOS] Iniciar la fuga con los datos extraídos",
+            "text": "[APROVECHAR LA DISTRACCIÓN] Continuar la retirada mientras los guardias tienen la atención desviada",
             "nextNodeId": "final32"
           },
           {
@@ -4912,11 +4912,11 @@
       },
       {
         "id": "node8ad",
-        "text": "[ESCAPADA EXITOSA] Decides escapar antes de que el sistema se reinicie, dejando atrás la misión incompleta.",
+        "text": "[ÚLTIMA DECISIÓN EN MANTENIMIENTO] Has decidido retirarte, pero todavía estás en la sala de mantenimiento. El terminal abrió el camino hacia el núcleo; no te entregó la información de la misión. El reinicio ha alertado a más guardias y cada demora aumenta el riesgo. Puedes continuar hacia la salida o detener la retirada y volver al camino del núcleo para intentar extraer los datos antes del reinicio.",
         "choices": [
           {
-            "text": "[FINAL EXITOSO] Completar la misión con éxito",
-            "nextNodeId": "final56"
+            "text": "[INTENTAR LA EXTRACCIÓN] Detener la retirada y dirigirte al núcleo para hackear la información antes del reinicio",
+            "nextNodeId": "node_extraccion_desde_mantenimiento"
           },
           {
             "text": "[ABANDONAR Y ESCAPAR] Decidir abandonar la misión y escapar",
@@ -5936,7 +5936,7 @@
       },
       {
         "id": "final30",
-        "text": "**Final: Escape Seguro**\nCompleta la misión con éxito, escapando con los datos extraídos sin contratiempos.",
+        "text": "**Final: Escape con Misión Incompleta**\n\nMantienes la retirada por las rutas alternativas y consigues dejar atrás a las fuerzas de seguridad. Sales del NeuroBank con vida, sin volver al núcleo ni reanudar el hackeo que decidiste detener. La extracción quedó inconclusa: escapar no ha completado el objetivo de la misión. Has logrado salir del banco, pero no puedes presentar tu retirada como una extracción exitosa.",
         "choices": []
       },
       {
@@ -5946,7 +5946,7 @@
       },
       {
         "id": "final32",
-        "text": "**Final: Escape con Trampas**\nInicias la fuga con los datos extraídos, aprovechando las trampas colocadas para asegurar una extracción exitosa.",
+        "text": "**Final: Retirada Bajo Distracción**\n\nAprovechas la distracción que acabas de crear para alejarte de los guardias. Regresas desde el núcleo por el trayecto del ascensor de emergencia hacia la zona de carga y consigues salir del NeuroBank mientras su atención está desviada. No has reanudado el hackeo que decidiste detener: la extracción sigue incompleta y la misión no se ha cumplido. La distracción te permitió escapar; no convirtió la retirada en una obtención de datos.",
         "choices": []
       },
       {
@@ -6066,7 +6066,7 @@
       },
       {
         "id": "final56",
-        "text": "**Final: Misión Exitosa**\nCompleta la misión con éxito, escapando con los datos extraídos y cambiando el destino de la humanidad.",
+        "text": "**Final: Extracción y Escape Tras el Último Intento**\n\nMantienes el hackeo del núcleo mientras la IA intenta cortar tu acceso. Cada interrupción te obliga a ajustar los comandos y reanudar la transferencia; compruebas la descarga hasta obtener la información necesaria antes del reinicio. Después desconectas el acceso y emprendes la retirada. Vuelves por el trayecto de entrada, evitas a los guardias que buscas dejar atrás y alcanzas los ductos donde la barrera de láseres quedó destruida. Logras salir del NeuroBank con los datos. Has cumplido el objetivo de extracción y escape, pero el éxito no deshace los daños que Lira sufrió ni establece qué consecuencias tendrá esa información fuera del banco.",
         "choices": []
       },
       {
@@ -6620,6 +6620,20 @@
       {
         "id": "final169",
         "text": "**Final: Abandono y Escape Seguro**\nDecides abandonar la misión y escapar, sobreviviendo pero sin lograr tu objetivo principal."
+      },
+      {
+        "id": "node_extraccion_desde_mantenimiento",
+        "text": "[ACCESO AL NÚCLEO] Dejas el terminal de mantenimiento y sigues el trayecto hacia el núcleo que localizaste al manipular la seguridad. Los guardias alertados por el reinicio te obligan a avanzar con cuidado. Llegas al núcleo e inicias un hackeo de sus datos: abrir puertas no era suficiente para obtenerlos. La IA contrarresta la intrusión mientras el reinicio se aproxima. Puedes mantener el intento hasta completar la descarga o interrumpirlo y buscar la salida.",
+        "choices": [
+          {
+            "text": "[SOSTENER EL HACKEO] Resolver los bloqueos de la IA y mantener la descarga hasta obtener la información necesaria",
+            "nextNodeId": "final56"
+          },
+          {
+            "text": "[CORTAR Y RETIRARSE] Interrumpir el hackeo y salir sin completar la misión",
+            "nextNodeId": "final57"
+          }
+        ]
       }
     ]
   }

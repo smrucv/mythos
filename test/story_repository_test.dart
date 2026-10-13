@@ -72,7 +72,7 @@ void main() {
       expect(summary.title, story.title);
       expect(summary.description, story.description);
     }
-    expect(count, 592);
+    expect(count, 593);
   });
 
   test(
